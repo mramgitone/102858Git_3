@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="3718" MadCap:lastWidth="684">
+    <head>
+    </head>
+    <body>
+        <h3 MadCap:conditions="HELIOS_HWI.BasicUser"><a name="Factory"></a>Factory Template Properties (Indicators)</h3>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">Below is an image of the Indicator Factory and User Templates dialog and a description of the fields for each section.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/indicators_templates.PNG" alt="The Indicators Templates dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Indicators Templates Dialog</p>
+        <h3><a name="top"></a>User Template Properties (Indicators)</h3>
+        <p>Below is an image of the Indicator User Template and a description of the fields for each section.</p>
+        <h4>Indicator</h4>
+        <h5>Name</h5>
+        <p>Enter the name to be given to the Indicator Cleaning Mask.  If a name is duplicated, the name will be appended with a number to differentiate it from the original mask.</p>
+        <h4>Indicator Cleanup</h4>
+        <h5>Enable morphological cleaning?</h5>
+        <p>This check box has to be selected to enable indicator cleaning and edit any of the properties in the Indicator Cleaning dialog.  If it is not selected, none of these properties can be edited and indicator cleaning will not be performed.</p>
+        <p>The <code>No Morph Clean</code> Factory Indicator Mask does not perform any indicator cleaning at all.  This mask only creates a stream that passes raw alarm indicators into the Alarm Reporting module.</p>
+        <h5>Maximum false negative rate</h5>
+        <p>This property assists in the removal of false negatives due to spatial sensitivity fluctuations in the system response.  It modifies the logic to only remove runs of connected alarm indicators that are less than the product of Maximum false negative rate and Minimum alarm size.</p>
+        <p>Use of this property can reduce the likelihood that a connected sequence (run) of alarm indicators will be removed because it fails the Minimum alarm size filter.</p>
+        <p>A reduction in value will remove more false negative values, while it increases the value and removes fewer false negative values.  If the <b>Maximum false negative rate</b> is set to 1.0, it will not remove any false negative values.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">When a WCS spatial averaging filter or Spatial Amplitude Adjustment is used, the number of false negatives is significantly reduced, which reduces the need to use this property.</p>
+        </Div>
+        <h5>Minimum alarm size</h5>
+        <p>If a false positive is found, the alarm indicators associated with it are discarded.  If we know that the disturbance of interest is likely to be activate at least 5 metres of the <MadCap:variable name="General.fiber/fibre" /> sensor, then we can set the Minimum alarm size to be 5 metres. Therefore, any disturbance of less than 5 metres could not be from the disturbance of interest.</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle"> 	If the Minimum alarm size is set too high, it can remove valid indicators that just didn’t meet the Minimum event size criteria.</p>
+        </Div>
+        <h5>Minimum lull size</h5>
+        <p>This parameter attempts to remove any false negatives.  A false negative is measured in metres, and is any gap in an indicator run that is less than the Minimum lull size.  When a false negative is found, the gap is filled in with alarm indicators.  The clean routine assumes that if the occasional <MadCap:variable name="General.fiber/fibre" /> location has missed an indicator, this is because of the spatial sensitivity fluctuations, and it simply fills it in.</p>
+        <h5>Maximum alarm size</h5>
+        <p>This property is measured in metres, and is used to reject disturbances that are wider than the Maximum alarm size.  This check occurs after false positives and false negatives have been removed.</p>
+        <p>Its purpose is to reject disturbances that are much wider than the disturbances of interest.</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">In certain circumstances, the Maximum event size property can remove the alarm indicators for two disturbances that occur over the same location range.  Use with caution as this can sometimes remove the disturbances you are trying to alarm on. It is not typically used any more, as it is safer to reject wide disturbances with the Alarm Size filter. <span style="background-color: #1e90ff;">Refer to Alarm Size Filter</span>.</p>
+        </Div>
+        <h5>Minimum alarm duration</h5>
+        <p>This repeats the spatial indicator clean on the neighboured time samples for a given position on the <MadCap:variable name="General.fiber/fibre" />.</p>
+        <p>The temporal indicator clean attempts to remove any false positives in the temporal dimension. A temporal false positive is measured in seconds. It is any temporal run of connected alarm indicators that is less than the Minimum event duration.</p>
+        <h5>Minimum lull duration</h5>
+        <p>This attempts to remove any temporal false negatives.  A temporal false positive is any gap that is less than the Minimum lull duration in seconds.</p>
+        <p>When the temporal indicator clean properties are set, it is recommended that every detection statistic setting, is displayed. The <MadCap:variable name="General.Fibre/Fiber" /> Graph update rate <b>MUST BE</b> set equal to the FFT update rate.  This may not be possible in LiveFibre mode, due to the length of the <MadCap:variable name="General.fiber/fibre" /> being monitored.</p>
+        <p>If a representative time interval of raw data is logged and replayed in the Playback module, you can set the <MadCap:variable name="General.Fibre/Fiber" /> Graph update rate to the FFT update rate. This allows all the indicators to be displayed in the <MadCap:variable name="General.Fibre/Fiber" /> Graph. This makes optimization of the indicator clean properties much easier.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Make sure the Playback speed is set to a small number such as 0.1.</p>
+        </Div>
+        <p>You can also reduce the size of the display browser window to increase the update rate.</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Indicato" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

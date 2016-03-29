@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.Online">
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Print Only Topics/Copyright.htm"
+    StartPageLayout="true"
+    StartSection="false"
+    BreakType="pageLayout"></TocEntry>
+  <TocEntry
+    Title="guidelines_for_review"
+    Link="/Content/0Software/00Welcome/guidelines_for_review.htm" />
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/0Software/00Welcome/welcome.htm"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="What’s New"
+      Link="/Content/0Software/00Welcome/whats_new.htm" />
+    <TocEntry
+      Title="About this Help System"
+      Link="/Content/0Software/00Welcome/about_this_help.htm" />
+  </TocEntry>
+</CatapultToc>

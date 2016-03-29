@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="user_guide_usareview_internal"
+  Type="PDF"
+  Destinations=""
+  MasterToc="/Project/TOCs/User Guide_USA_Reviewer.fltoc"
+  ConditionTagExpression="include[General.PDF or HELIOS_HWI.BasicUser or &quot;HELIOS_HWI.Customer Support&quot;] exclude[General.Online or HELIOS_HWI.AdminUser or HELIOS_HWI.FactoryUser or HELIOS_HWI.InternalOnly] "
+  PatchHeadingLevels="false"
+  InjectEmptyPages="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  GetLatestBeforeCompile="true"
+  OutputFolder="C:\madcap\Helios\Helios\Output\claire_wood\PDF Output\USA"
+  OutputFile="user_guide_usareview">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="expand"
+    GenerateGlossaryProxy="true"
+    GenerateIndexProxy="false"
+    GenerateTOCProxy="true" />
+  <DocumentProperties
+    Title="helios_web_interface_user-guide_usareview"
+    Author="Helios Development Team" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="100"
+    PageLayout="TwoColumnRight"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true"
+    ConvertBookmarks="true"
+    Tagged="true"
+    RestrictPermissions="false"
+    ModifyPassword="xYUDL8EzJK9YCecVK0s9kg=="
+    RestrictPrinting="false"
+    RestrictEditing="false"
+    RestrictCopying="false" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/TCR_Manuals_software.fldes" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="General/About/Preface">Preface</Variable>
+    <Variable
+      Name="General/Welcome/Overview">Overview of</Variable>
+  </Variables>
+</CatapultTarget>

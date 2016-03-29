@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="6581" MadCap:lastWidth="671">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Processi"></a>Processing Tab</h3>
+        <p>This tab enables you to monitor and adjust configurations to manage the compute load and process of data. All the data processes occur in the power spectral of the raw input data.  The flow chart below shows the basic power spectra workflow.  Refer to your training materials for more details.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/preliminary_process_flow.png" title="Preliminary Process Flow Diagram" style="width: 468px; height: 270px;" class="SeventyFivePercent" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: "><a name="Preliminary_Process_Flow_Diagram"></a>Preliminary Process Flow Diagram</p>
+        <p>Below is the guidance about how to configure each setting, as each site is bespoke.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_processing.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">The Processing Tab</p>
+        <h4>Enable Fast Noise Floor Estimate Toggle</h4>
+        <p class="DeveloperQuery">Need some text here</p>
+        <h4><a name="FFTSize"></a>FFT&#160;Size</h4>
+        <p>Fast Fourier Transform (FFT) is used to perform the spectral analysis. This is where time domain data is transformed into frequency domain data. Short FFT sizes (68 to 128) provide better time domain resolution, but can smear spectral resolution at the expense of temporal time resolution reduction. The trade-off is dependent on the signal the system has to detect. Leaks <b>MUST</b> use longer FFT sizes (256 to 1024), as the time is invariant. Impulsive type disturbances require better time resolution, and a shorter FFT size is best. </p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">Any change can also have an impact on the compute load for a <MadCap:variable name="General.fiber/fibre" /> sensor.  An increased FFT size will halve the number of detection statistics computed in a given period of time. This provides a reduction in the compute load at the expense of a reduction in temporal resolution.</p>
+        </Div>
+        <h4>FFT&#160;overlapping percentage</h4>
+        <p>As described above, when  the FFT size is increased, time resolution is lost. This can be overcome by using the overlapping FFT option. To do this select a non-zero FFT overlapping percentage. The values for this overlap are 0% (no overlap), 50% (<MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" alt="one half"><math><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></math></MadCap:equation> of an FFT block overlap) and 75% (<MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" alt="Three quarters"><math><mrow><mfrac><mrow><mn>3</mn></mrow><mrow><mn>4</mn></mrow></mfrac></mrow></math></MadCap:equation> of an FFT block overlap). This overlap enables a larger FFT size to be chosen without sacrificing temporal resolution.</p>
+        <p class="DeveloperQuery">I think the example is fine but the cautionary note afterwards I changed slightly, so that people contact us. Just a note for Paul M - You may be asked to consider tracking these requests, so I've linked it as an email with a specific subject heading. </p>
+        <p class="ExampleHead">Example</p>
+        <p class="Example">An FFT size of 1024 with a 50% overlap has the same temporal resolution as an FFT size of 512 with no overlap. And an FFT size of 1024 with a 75% overlap has the same temporal resolution as an FFT size of 256 with no overlap.</p>
+        <p>However this comes at a cost. An FFT overlap of 50% will require about twice the memory as the same FFT size with no overlap. If an older <MadCap:variable name="General.ProductName2"></MadCap:variable>unit is in use, processing will be slowed down and can stop. This is due to older and slower CUDA&#160;cards. It is recommended that you <a href="mailto:customer.support@fotechsolutions.com?subject=Processing is slow possibly due to older/slower CUDA card" target="_blank">contact Customer Support</a> for a replacement part/unit. </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The overlapped FFT is used only in the computation of the stream detection values. It has no effect on raw data or on the default display. As a reminder the FFT overlapping field will be disabled if there is no stream detection value included in the current processing. If you see this field disabled check that you have actually defined a stream and that the stream's alarm report has been selected in the Alarm Report tab.</p>
+        </Div>
+        <h4>Analysis DC&#160;Cut-off</h4>
+        <p>This removes the very low frequencies from a signal prior to production of the output signal. A typical value for this property is 4-5Hz.</p>
+        <h4><a name="Enable"></a>Enable Frame stacking toggle &amp;&#160;Frame stacking factor</h4>
+        <p class="DeveloperQuery"> I have changed this back to normal text then, if it is a good thing.</p>
+        <p>The Frame Stacking Factor can be used to reduce the processing load to make it easier to process longer <MadCap:variable name="General.fiber/fibre" />s or use higher PRF values!  Prior to a processed flow, an average number for the power spectra is calculated. This can smear out the temporal resolution in a similar fashion to when the FFT Size is increased. However, this occurs without the benefit of an increased frequency resolution.  The higher the Frame stacking factor, the lower the systems temporal resolution will be. In most cases, the Frame Stacking Factor should be kept as low as possible. </p>
+        <p><![CDATA[ 
+
+]]><b>DO NOT USE</b> when the system is required to alarm on very short time duration disturbances.  
+
+</p>
+        <p>This is <b>ONLY</b> used when other stream specific data reduction methods are not sufficient.  Before you use this option, refer to <span style="background-color: #1e90ff;">Section XXX</span> or <span style="background-color: #1e90ff;">refer to your training materials for more information</span>. 
+</p>
+        <p>To turn on and use the Frame Stacking options:</p>
+        <ol>
+            <li>Make sure the <b>Enable frame stacking</b> toggle is checked. The Frame stacking factor list is made available.</li>
+            <li>Select a value great than one (&gt;1) to define the number of power spectra to be calculated as an average.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The main benefit of frame stacking is to handle where you are already at the maximum FFT size and still need more processing power. For example if you want to add more detection streams. This may be especially useful on older <MadCap:variable name="General.ProductName2" /> units that have older and less powerful CUDA cards.</p>
+        </Div>
+        <h4><a name="Sound"></a><MadCap:variable name="General.Fibre/Fiber" /> Graph </h4>
+        <h5>Update Rate</h5>
+        <p>The update rate field specifies how quickly the <MadCap:variable name="General.fiber/fibre" /> shots will be sent to the browser. A higher update rate will give you a faster display (provided the drawing can keep up) but may cause the browser to get bogged down. Decreasing the update rate can make the browser more responsive by the reduction of time taken to display the data. If the browser starts to warn you that <MadCap:variable name="General.fiber/fibre" /> shots are getting dropped, that is an indicator that you may need to either reduce the update rate or increase the decimation (see below).</p>
+        <p>&#160;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">When the alarm detection properties are tuned,  the update rate must be set to the maximum possible value. This is to make sure what is displayed is not misinterpreted. If the browser cannot handle the full update rate,for instance,. if it complains about dropped <MadCap:variable name="General.fiber/fibre" /> shots,  reduce the monitored range in order to concentrate on the portion of the <MadCap:variable name="General.fiber/fibre" /> that is actually tuned, rather than change the update rate to a reduced value.</p>
+        </Div>
+        <p>&#160;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The update rate only affects the display of the data. It does not affect the logged raw data or the logged <MadCap:variable name="General.fiber/fibre" /> graph which always record the full data set.</p>
+        </Div>
+        <p>&#160;</p>
+        <p>The <b>Update Rate</b> field <b>MUST BE</b> set at the maximum rate when the <span style="background-color: #1e90ff;">Alarm detection threshold properties</span> are tuned. This provides the maximum time resolution in the <MadCap:variable name="General.Fibre/Fiber" /> Graph display, and is only done in the <MadCap:xref href="helios_controls.htm#top">Playback Mode</MadCap:xref>, if a Playback Speed multiplier of less than one is used.  The Sound Field Update rate can be set higher if only a few data samples are being sent to <MadCap:variable name="General.ProductName" />.</p>
+        <p>The maximum update rate is displayed underneath the Update rate field.  If you set this field to a larger value, it will default automatically to the calculated maximum value. Refer to your training materials, for more information.</p>
+        <p class="DeveloperQuery">Is the last para of the caution something that should be “designed out” of the product? Is it wise to make this known?</p>
+        <p class="DeveloperQuery">&#160;</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle"> 	It is not always possible to display the maximum update rate.  </p>
+            <p class="cautionMiddle">When the Sound Field Update Rate is set lower than the maximum update rate, not all of the data values are displayed on the <MadCap:variable name="General.Fibre/Fiber" /> Graph.  Instead what is displayed, is the maximum value of the current display type for each <MadCap:variable name="General.fiber/fibre" /> location, over the period between the Sound Field updates. </p>
+            <p class="cautionMiddle">
+
+If you set the Sound Field Update rate too high, it can cause significant delays in the <MadCap:variable name="General.Fibre/Fiber" /> Graph display. 
+</p>
+        </Div>
+        <h5><a name="Spatial"></a>Spatial decimation factor</h5>
+        <p class="DeveloperQuery">I will be using a Responsive Design output. George uses the term “Conventional Screen size”. What if someone is using a laptop or tablet, not a PC with a huge monitor? My touchscreen laptop at home has an 11” screen. Think of the size of a logging truck, pushed for space. The ruggedized laptops are between 14-17”, but are they using tablets? What is the likelihood they’ll use a tablet or even their phone? Using a phone has been known to happen with pdf outputs in oilfields!</p>
+        <p>The spatial decimation factor can be used to decimate the <MadCap:variable name="General.fiber/fibre" /> shots before they are sent to be displayed in the browser. For example, a 40km <MadCap:variable name="General.fiber/fibre" /> will have over 59000 data samples in each <MadCap:variable name="General.fiber/fibre" /> shot whereas most displays are only a couple thousand pixels across. Even the latest top of the line high resolution displays are only about 4000 pixels across. This implies that over 14 data samples are being drawn into a single pixel. The spatial decimation factor allows that decimation to take place on the <MadCap:variable name="General.ProductName2" /> unit before the data is sent to the browser. This can make the browser significantly more responsive.</p>
+        <p>&#160;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The spatial decimal factor only affects the live display. It does not affect the processing, or the raw recorded data, or even the <MadCap:variable name="General.fiber/fibre" /> graph recorded data. It is strictly a display optimization. </p>
+        </Div>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">The spatial decimation factor will typically not change the way your display looks when an entire <MadCap:variable name="General.fiber/fibre" /> is viewed. However, if you zoom-in,  the decimation will start to become obvious. Best practice is to leave out the decimation when you know you are going to zoom into  a concentrated , small portion of the <MadCap:variable name="General.fiber/fibre" />. Increase  the decimation when you are happy with your configuration and just want to monitor the whole <MadCap:variable name="General.fiber/fibre" /> for an extended period of time.</p>
+        </Div>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="helios_controls.htm#top" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles MadCap:conditions="General.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Width="800" Height="800" Padding="1in" PageSize="A4" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="left" Name="LeftCopyright">
+        <Frame X="0px" Y="501px" Width="599px" Height="427px" Flow="body" Right="2px" Bottom="2px" PaddingLeft="2px" PaddingRight="2px" PaddingTop="2px" PaddingBottom="2px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="CopyrightHeading">@Copyright 2008-2015</xhtml:p>
+                        <xhtml:p xhtml:class="Copyright">The full published copyright should go here.</xhtml:p>
+                        <xhtml:p xhtml:class="Copyright">Acknowledgement:&#160;<MadCap:variable xhtml:name="General.Authors" /></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

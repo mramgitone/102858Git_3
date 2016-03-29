@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="HTML"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/User Guide_A4.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/A4_PageLayout/MainBody.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  OutputFile="FotechHTMLBook"
+  OutputFolder="H:\Technical Publications\Output"
+  GetLatestBeforeCompile="true"
+  PatchHeadingLevels="true"
+  Medium="non-print"
+  AutoSizeCaptureCaptions="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

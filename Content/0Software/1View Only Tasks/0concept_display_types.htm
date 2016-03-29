@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="4418" MadCap:lastWidth="942">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Description of Display Types</h1>
+        <p class="para">The Display Types allow you to change what is viewed in the <MadCap:variable name="General.fiber/fibre" /> graph as well as what is logged in the <MadCap:variable name="General.Fibre/Fiber" /> Graph Log. </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If you are limited to view-only permissions then you cannot change the current Display Type, but you will see it change as others who have suitable permission change the current Display Type.</p>
+        </Div>
+        <p class="para">The Display Types that are available at any given time are dependant on the various Alarm Reports that have been configured.</p>
+        <h2>Classification of Display Types</h2>
+        <p>The Display Types are grouped logically (and in the user interface) into three classifications. The basic display types (Default, Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot, Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot, Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot Drift, and Noise Floor) are always available regardless of the <MadCap:variable name="General.ProductName2" /> configuration. This implies that they do not depend on any streams, nor do they change as changes are made to the streams. These Display Types will always be enabled.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/display_types_no_streams.png" alt="Display types with no streams drop-down menu" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">Basic Display Types with no streams</p>
+        <p>The RMS (Root Mean Square) Display Types (Signal RMS, Noise RMS, and Total RMS) give an idea of the power of the system response and how the signal relates to the noise. The definition of the signal comes from the settings of a stream, hence these will only be available if one or more streams are available. If exactly one stream is available these items in the drop-down will select that stream. If more than one stream is available these items will be popup menus which will allow you to select which stream you wish to examine.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/display_types_multiple_streams.png" alt="Display Types Menu for Multiple Streams" class="OneHundredPercentThumbnail" style="width: 55px;height: 47px;" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">Display Types with Multiple Streams</p>
+        <p>The detection and indicator Display Types (Stream Detection Value, Stream Indicators, and Alarm Indicators) provide an indication of the alarming abilities of the current configuration. The Stream Detection Value and Stream Indicators Display Types are stream based hence these will only be available if one or more streams are available. If exactly one stream is available, the items in the drop-down will select that stream. If more than one stream is available these items will be popup menus that allow you to choose which stream you wish to examine. The Alarm Indicators is based on the Alarm Reports settings and will only be available if one or more Alarm Reports are available. If exactly one Alarm Report is available, this menu item will select it. If more than one Alarm Report is available, this menu item will be a popup menu that allows you to choose which one you want to examine.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/display_types_multiple_alarm_indicators.png" alt="Display Type drop-down menu with Multiple Alarm Indicators" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-3: ">Display Types With Multiple Alarm Indicators</p>
+        <p>&#160;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle"> Alarm Reports base is built on one or more streams. Hence if no Alarm Reports are available, no streams will be available either.</p>
+        </Div>
+        <h2>List of Display Types</h2>
+        <h3>Default</h3>
+        <p>The Default display type has been designed to respond to any valid signal disturbance that occurs between DC Cutoff and Nyquist (the full frequency range as defined by the PRF).  It does not require an active Detection Statistic from an active Alarm Report.  The advantage of the Default display type is that it shows the <MadCap:variable name="General.fiber/fibre" /> sensor’s response to disturbances as a function of distance without an active Alarm Report.</p>
+        <h3>Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot</h3>
+        <p>This displays the raw digitized data that comes in directly from the optics module, as a function of distance.  The raw data contains values between zero (0) and 32,7687. 
+
+In addition, all of the previous data display types are derived from the power spectra of the input signal, and all have an update rate equal to the FFT update rate.  
+
+The raw data comes in at the PRF, which is at a much higher update rate.  When the raw <MadCap:variable name="General.fiber/fibre" /> shot is displayed, the system simply takes the first <MadCap:variable name="General.fiber/fibre" /> shot of every FFT block, and sends that raw <MadCap:variable name="General.fiber/fibre" /> shot to the Helios display. No temporal averages occur in the data reduction.</p>
+        <h3>Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot</h3>
+        <p>The Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot display shows the mean value (or DC component) of the <MadCap:variable name="General.fiber/fibre" /> response at each <MadCap:variable name="General.fiber/fibre" /> location over the FFT interval.  It is very similar to the Raw Signal display, but updates much slower (at the FFT update rate rather than the PRF).  This display type shows variations of the non-time varying <MadCap:variable name="General.fiber/fibre" /> response (over the duration of an FFT block) as a function of distance. This response closely reflects the ambient response of the <MadCap:variable name="General.fiber/fibre" /> sensor at each sample point. </p>
+        <h3>Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot Drift</h3>
+        <p>This displays the amplitude variation of the Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot (also known as the DC Baseline) between FFT blocks as a function of distance.  Theoretically, there should be very little drift over time, as the DC Baseline is the <MadCap:variable name="General.fiber/fibre" /> response in the absence of any physical excitation, but in reality any physical system will contain some drift. This display allows you to obtain an indication of just how much drift exists.</p>
+        <h3>Noise Floor</h3>
+        <p>This display provides an indication of the currently estimated noise floor of the system. If the system has also been trained with a noise floor bounding model (any system purchased since 2015 Q3 will have had this procedure done) this display will also show that model as a line graph. This display is mostly used when tuning the noise floor bounds model to suit the needs of a specific installation.</p>
+        <h3>Signal RMS</h3>
+        <p>This displays the time series Root Mean Square (RMS) of the time samples, over an FFT block due to signal power only, with the band limited to the analysis band.  </p>
+        <h3>Noise RMS</h3>
+        <p>This is very similar to the Signal RMS value except that it is the time series RMS over an FFT block due to noise power only, band limited to the analysis band.</p>
+        <h3>Total RMS</h3>
+        <p>This displays the time series RMS over an FFT block that includes signal and noise power, with the band limited to the analysis band. </p>
+        <h3>Stream Detection Value</h3>
+        <p>This displays the Detection Statistic for a particular stream.  This value is a pseudo Signal to Noise Ratio (SNR) of the response of the <MadCap:variable name="General.fiber/fibre" />, with the band limited to the analysis band. 
+
+This value is computed in two stages:
+</p>
+        <ul>
+            <li>The raw Detection Statistic is computed if the spectral processing properties is assigned to a particular stream.  
+</li>
+            <li>The raw Detection Statistic is optionally de-smeared if the Detection Statistic Half-life assigned to a particular stream.  The Stream Detection Value is used as input for the Alarm Threshold module, which generates the Stream Indicators.
+</li>
+        </ul>
+        <h3>Stream Indicators</h3>
+        <p>As described above in Stream Detection Value, raw indicators exist when the Alarm Detection Value falls within a user-defined amplitude range.  
+
+All time and space points with Alarm Detection Values above the Alarm detection threshold, and below the Alarm suppression threshold, will produce a raw indicator.  These raw indicators are can be cleaned to remove false positive and false negative values.  
+
+</p>
+        <p>Cleaned indicators are displayed with this data display type as it optimizes the Alarm detection threshold, and the Indicator Cleaning properties, to produce a solid stream of cleaned indicators. These appear where disturbances of interest are located.</p>
+        <p>
+
+Stream Indicators are the input into the Alarm Reporting module, and without properly conditioned indicators, the probability of robust alarms on desired disturbances is greatly diminished.
+</p>
+        <h3>Alarm Indicators</h3>
+        <p>An Alarm Report can consist of multiple streams, each with a set of Stream Indicators associated with it.  
+
+</p>
+        <p>This display type shows the Boolean combination of the cleaned indicators which are used as input into the Alarm Reporting module.  This is very helpful if you have to fine-tune the Boolean logic, used if you combine individual streams being fed into the Alarm Report logic. </p>
+    </body>
+</html>

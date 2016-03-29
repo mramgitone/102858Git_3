@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="7825" MadCap:lastWidth="916">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>The Admin Menu</h1>
+        <p>The Admin menu is divided up into four distinct sections.  These are as follows (<i>each bullet gives way to drop-down text</i>):</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot><a name="System2"></a>System Configuration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This involves the configuration of the optics module, global properties and definition of override zones.</p>
+                <h3><a name="Hardware"></a>Hardware Properties</h3>
+                <p>This dialog is used to setup some initial properties for a system. Once set, these properties are usually not changed.  A number of the properties contained in this dialog cannot be edited, and only display their current value. For more details, refer to <a href="hardware_properties.htm#top" target="_blank">Hardware Properties.</a></p>
+                <p class="DeveloperQuery">image inspection required. I will have two images here... one for admin, one for factory.&#160;Please let me know if the conditional tagging needs tweaking.</p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_admin.PNG" alt="The Hardware Properties Dialog" MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_admin2.PNG" alt="The Hardware Properties Dialog" MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.Customer Support,HELIOS_HWI.FactoryUser,HELIOS_HWI.InternalOnly" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Hardware Properties Dialog</p>
+                <h3><a name="Optical"></a>Optical Channel Properties</h3>
+                <p>This dialog is used to control the <MadCap:variable name="General.fiber/fibre" /> sensor(s) that are each defined by a unique Optical Channel, connected to the back panel of the <MadCap:variable name="General.ProductName2" /> and configured with the use of the <MadCap:variable name="General.ProductName" />. The Optical Channel Properties dialog, as shown below, contains the core set of properties for each Optical Channel.</p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/optical_channel_properties_dialog.PNG" alt="The Optical Channel Properties Dialog" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-2: ">The Optical Channel Properties Dialog</p>
+                <p>As the Helios controller can only acquire and process a single <MadCap:variable name="General.fiber/fibre" /> sensor at a time, a device is used to sequentially connect each <MadCap:variable name="General.fiber/fibre" /> to the Helios controller. This is known as an Optical Multiplexor.  Because each <MadCap:variable name="General.fiber/fibre" /> sensor is different, it requires its own set of properties.  </p>
+                <p>In addition to the multiple <MadCap:variable name="General.fiber/fibre" /> sensors attached to a single Helios controller, <MadCap:variable name="General.ProductName" /> has been extended to allow for simultaneous detection and awareness on multiple disturbance types.  This requires multiple process streams to alarm on multiple disturbance types.  There is a core set of properties that are defined for each Optical Channel. Additional process properties are defined for each Processing Stream used to satisfy the alarm event requirements.  </p>
+                <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="noteMiddle">The Processing Stream specific properties are discussed later in the <span style="background-color: #1e90ff;">Disturbance Detection</span> and <span style="color: #000000; background-color: #1e90ff;">Alarm Setup</span>.</p>
+                    <p class="DeveloperQuery">I don’t appear to have anything that describes Disturbance Detection. Is Alarm Set-up referring to Detection Statistics &gt;&#160;Alarm Reports?&#160;Just need clarification for setting links.</p>
+                </Div>
+                <p>For a description and instructions of how to set the Optical Channel Properties, refer to  <MadCap:xref href="optical_channel_properties.htm" target="_blank">Optical Channel Properties</MadCap:xref>.</p>
+                <h3><a name="Communic"></a>Communications Properties</h3>
+                <p>Communications properties are where the data logging and raw streaming network properties can be checked and changed to allow for dynamic logging. See the image below and refer to to <MadCap:xref href="communications_properties.htm" target="_blank">Communications Properties</MadCap:xref>for a description and instructions about how to set the properties.</p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/comms_properties_dialog.PNG" alt="The Communications Properties Dialog" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-3: ">The Communications Properties Dialog</p>
+                <h3><a name="Zones..."></a>Zones...</h3>
+                <p>Zones are a very powerful feature of the <MadCap:variable name="General.ProductName" />.  They are user-defined sections of the <MadCap:variable name="General.fiber/fibre" /> sensor. They can be:</p>
+                <ul>
+                    <li>Directly zoomed into with a single click or tap</li>
+                    <li>Instantly logged with a single click or tap</li>
+                    <li>(Optional) Have unique processing properties applied to them, on a per stream basis, that enables them to process data differently than the global <MadCap:variable name="General.fiber/fibre" /> sensor properties.</li>
+                </ul>
+                <p>For a description and instructions of how to create, edit and remove zones, refer to <MadCap:xref href="zone_properties.htm" target="_blank">Zone Properties</MadCap:xref>.</p>
+                <h3>Annotations...</h3>
+                <p class="DeveloperQuery">I need some content here please and I&#160;need to know what call-out explanations to put here and I’ll need to take a better screen shot. This is blurred.</p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/annotations.png" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-4: ">The Annotations Dialog</p>
+                <p>For a description and instructions of how to create and delete annotations, refer to <MadCap:xref href="annotations_properties.htm" target="_blank">Annotations Properties</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot><a name="System3"></a>System Management</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This is where you can set-up alarms, view detection statistics, indicators, define and configure streams and alarm reports.</p>
+                <h3><a name="Detectio"></a>Detection Statistics</h3>
+                <p>This module is responsible for the pre-process of the raw power spectra data, in an attempt to maximize the SNR for a particular type, or class, of disturbance (See <MadCap:xref href="opchan_process_tab.htm#Preliminary_Process_Flow_Diagram" target="_popup">Preliminary Process Flow Diagram</MadCap:xref>).  The objective is to isolate the energy that comes from the disturbance type the system is set up to detect, from all the other energy that can excite the <MadCap:variable name="General.fiber/fibre" /> sensor.</p>
+                <p>The Detection Statistic Module applies sophisticated signal process techniques to the instantaneous power spectra, to compute an optimal Detection Statistic.  The Detection Statistic Module separates disturbance energy into five types of sub-classes:</p>
+                <ul>
+                    <li>Analysis band</li>
+                    <li>Signal intensity relative to the noise floor (strong or weak)</li>
+                    <li>Temporal dynamics (persistent or impulsive)</li>
+                    <li>Spatial extent (localized or non-localized)</li>
+                    <li>Spectral shape (low frequency modeled, low frequency un-modeled or non-low frequency)</li>
+                </ul>
+                <p>The output produced by Helios is based on a Kalman filter, which averages the power spectra to assist in the detection response from subtle low intensity disturbances. This utilises a two dimensional array of data, with distance on one axis, and time shown on the other axis.  For more information, refer to your training materials.</p>
+                <p class="DeveloperQuery">&lt;Is this bad compared to competitors? I need to know so I can word it more appropriately, so it looks like a benefit rather than a drawback.&gt;</p>
+                <p>Due to the nature of our pre-process algorithm, the time dimension of this array has been heavily decimated.  Helios only computes a single row of Detection Statistics for each FFT block that is processed.</p>
+                <p>The exact rate at which output detection statistics are calculated is: </p>
+                <p style="text-align: center;">
+                    <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML">
+                        <math>
+                            <mrow>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>P</mi>
+                                        <mi>R</mi>
+                                        <mi>F</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mo>(</mo>
+                                        <mi>F</mi>
+                                        <mi>F</mi>
+                                        <mi>T</mi>
+                                        <mo>⁢</mo>
+                                        <mtext><![CDATA[ ]]></mtext>
+                                        <mi>S</mi>
+                                        <mi>i</mi>
+                                        <mi>z</mi>
+                                        <mi>e</mi>
+                                        <mo>)</mo>
+                                    </mrow>
+                                </mfrac>
+                            </mrow>
+                        </math>
+                    </MadCap:equation>
+                </p>
+                <p class="DeveloperQuery">Can you let me know what the ALT&#160;text should say about the equation please? Please note - I&#160;only need one line.</p>
+                <p>For more information about the detailed methodology used to optimise a Detection Statistic and fine tune the <MadCap:variable name="General.ProductName2" /> system to detect and alarm on specific disturbance types, refer to your training materials.</p>
+                <p>&#160;</p>
+                <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="cautionMiddle">The Detection Statistics Module consumes the most compute resources of all the modules.  For this reason, the number of simultaneous Active Detection Statistic templates should be kept to a minimum.  Typically, a persistent stream and an impulsive stream are computed in parallel.  For disturbances with different spectral content, a new Detection Statistic template can be created that only changes the Analysis Band.  As this process is at the tail end of the Processing flow, it will not add very much compute load to the system. </p>
+                </Div>
+                <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="cautionMiddle">You must be logged in as a Factory User (See <MadCap:xref href="../0Getting Started/how_to_login.htm#Types" target="_popup">Types of User</MadCap:xref>) to create Factory Templates, and these are usually created during the installation and configuration of your system. However, Factory Templates can be used to create new User templates. Contact your System Administrator or <a href="mailto:customer.support@fotechsolutions.com?subject=Request to Create Factory Templates - Detection Statistics Module" target="_blank">contact us</a> if you need a Fotech Solutions Field Engineer to create these templates for you. </p>
+                    <p class="cautionMiddle">If you are logged in as Factory User, you then complete the same instructions as you would to <MadCap:xref href="../3Factory User Tasks/detection_stats_factory_templates.htm#top" target="_blank">Create a new Factory Template</MadCap:xref>. For a description of what each property and field does, in their respective disturbance, detection and alarm set-up tabs, refer to the list below:</p>
+                </Div>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser">To create, edit and remove a Factory Template, refer to <MadCap:xref href="../3Factory User Tasks/detection_stats_factory_templates.htm#Detectio" target="_blank">Detection Statistics Factory Templates</MadCap:xref>.</p>
+                <p>To create, edit and remove a User Template, refer to <MadCap:xref href="detection_statistics_user_templates.htm#top" target="_blank">Detection Statistics User Templates</MadCap:xref>.</p>
+                <h3><a name="Indicato"></a>Indicators...</h3>
+                <p>This module is used to create an Indicator cleaning mask.  Indicator Cleaning Masks take raw indicators and attempt to remove false positive and false negative values that are not associated with the desired disturbance.</p>
+                <p>The raw indicators are cleaned for distance, and then time.  Event sizes refer to distances in metres and Event durations refer to times in seconds.  It is important to remember the cleaning order, as it can explain why certain cleaning behaviour is observed.  The Indicators (Cleaning) dialog is shown below. Refer to <MadCap:xref href="0concept_user_temp_props_indicators.htm#top" target="_blank">User Template Properties (Indicators)</MadCap:xref> to see a description of the information that goes in each field. </p>
+                <p class="DeveloperQuery">What is the Indicators (Cleaning)&#160;dialog please?&#160;I didn’t understand what was different from the templates screen. If you go to the User Template Properties (Indicators), there is a screen shot already.</p>
+                <p>To create a new User Indicator Template/Create a User Indicator Template from Factory Indicator Template,  Edit and Delete an Indicator Template, refer to <MadCap:xref href="detection_statistics_user_templates.htm#top" target="_blank">Detection Statistics User Templates</MadCap:xref></p>
+                <h3><a name="Streams."></a>Streams...</h3>
+                <p>The output from the Streams Definition Module forms the input to the Alarm Reporting module.  Streams consist of a Detection Statistic template and an Indicator Mask (or Indicator Template).  In addition, the Detection Threshold used to convert the Detection Statistic into Raw Indicators is defined in the Streams dialog.  This is to allow a single Indicator Mask to be re-used with multiple Detection Thresholds.  A detection statistic template and Indicator Mask <b>MUST</b> exist before a Stream can be defined.  You have to select an optimal Detection Threshold to create the raw indicators, as well as select an input Detection Statistic template and Indicator Mask.  If there is no Indicator Mask, refer to <MadCap:xref href="indicator_properties.htm#top" target="_blank">Indicator Properties</MadCap:xref>. Below is the Streams Dialog, refer to <MadCap:xref href="0concept_user_temp_props_streams.htm#top" target="_blank"> User Template Properties (Streams)</MadCap:xref> to see a description of the information that goes in each field. Refer to <MadCap:xref href="detection_statistics_user_templates.htm#top" target="_blank">Detection Statistics User Templates</MadCap:xref>for instructions about how to create, edit and delete the templates in this dialog.</p>
+                <h3><a name="Alarm"></a>Alarm Reports...</h3>
+                <p>The Alarm Reporting Module determines if a valid alarm should be generated.  This happens when cleaned indicators meet the criteria that have been defined, in order, from the:</p>
+                <ul>
+                    <li>	Basic Tracking</li>
+                    <li>Alarm filters</li>
+                    <li>Enabled, high-level rules.</li>
+                </ul>
+                <p>Rather than use the cleaned indicators from a single Stream, the cleaned indicators from a number of Streams can be combined together with Boolean logic and then sent to the Alarm Report decision logic.</p>
+                <p>If more than one stream of indicators is required, they are combined; a Boolean AND operation is used for this.  If more than one stream of indicators is disallowed, they are first combined with a Boolean AND operation, and then removed from the required indicator streams.</p>
+                <p>This is because, all of the required streams <b>MUST BE</b> present, and none of the disallowed streams can be present.  For an example, refer to your training materials.  The basic Stream selection and Tracking properties of the Alarm Reporting module are shown below. Refer to <MadCap:xref href="0contsk_user_temp_props_alarm_reports.htm#top" target="_blank">User Template Properties (Alarm Reports)</MadCap:xref> for a description of the information that goes in each field.</p>
+                <p>To create a new User Alarm Reports Template, Create a User Alarm Reports Template from a Factory Alarm Report Template, Edit and Delete an Alarm Report, refer to <MadCap:xref href="detection_statistics_user_templates.htm#top" target="_popup">Detection Statistics User Templates</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot><a name="Diagnost"></a>Diagnostics</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This is where you can check the FDEL properties and download diagnostic logs to send to Customer Support.</p>
+                <h3><a name="View"></a>View FDEL&#160;Properties...</h3>
+                <p>This feature assists with the determination of system problems. Refer to <MadCap:xref href="view_fdel_properties.htm#top" target="_blank">View FDEL Properties</MadCap:xref>. </p>
+                <h3><a name="Toggle"></a>Toggle dialogs on screen...</h3>
+                <p class="DeveloperQuery">Need intro concept content for this section. If you need to go more in-depth, then we can refer off to<MadCap:xref href="view_fdel_properties.htm#top" target="_blank">View FDEL Properties</MadCap:xref>, which will also need populating.</p>
+                <h3><a name="Download"></a>Download diagnostic logs...</h3>
+                <p>This feature assists with the determination of system problems and can be used to to report a problem with the Helios System. Refer to <MadCap:xref href="download_diagnostic_logs.htm#top" target="_blank">Download Diagnostic Logs</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot><a name="Snapshot"></a>Snapshots</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This enables you to save portions of the database and access them again at a later time.</p>
+                <h3><a name="Save"></a>Save properties snapshot</h3>
+                <p>This is used to save the current database. It is recommended that regular back-ups of your system are scheduled. </p>
+                <p><MadCap:variable name="General.ProductName" /> uses a database to store all of the various property configurations for the Helios Controller.  As the number of Alarm Reports grows, and the number of detection statistics, indicators and stream templates increase, this database can get quite large.  In order to restore a system to a previous state, there is a function that allows a database snapshot to be taken.  This snapshot file is stored on the Helios Controller in a system folder.</p>
+                <p>Refer to <MadCap:xref href="save_properties_snapshot.htm#top" target="_blank">Save Properties Snapshot</MadCap:xref>. <a href="mailto:customer.support@fotechsolutions.com?subject=Request for help in Saving Properties Snapshot" target="_blank">Contact us</a> if you need any further help with this.</p>
+                <h3><a name="Manage2"></a>Manage snapshots...</h3>
+                <p>This is used when you want to upload or download part of, or a whole database. Refer to <MadCap:xref href="manage_snapshots.htm#top" target="_blank">Manage Snapshots</MadCap:xref>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot><a name="System"></a>System &amp;&#160;User Administration</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This is where the Helios database and end user access is managed. This is where you can save database configurations, reset the factory defaults and perform a system restart. </p>
+                <h3><a name="Manage"></a>Manage users...</h3>
+                <p>This function allows you to add/delete and alter users and their system permissions. Refer to <MadCap:xref href="manage_users.htm#top" target="_blank">Manage Users Properties</MadCap:xref>.</p>
+                <h3><a name="Restart"></a>Restart Helios...</h3>
+                <p>This command allows you to restart the Helios system and software. Select this option and follow the prompts to restart the <MadCap:variable name="General.ProductName2" /> unit. This is also done if you need to <MadCap:xref href="../1View Only Tasks/0concept_main_menu.htm#Report" target="_popup">Report a problem...</MadCap:xref>. Complete these tasks:</p>
+                <ol>
+                    <li>Select <b>Admin &gt; Restart Helios</b>.  A confirmation dialog will be displayed. It will prompt you to reboot the Helios system.</li>
+                </ol>
+                <p class="DeveloperQuery">&lt;Image required - obviously I didn’t want to do this in case someone else was using this box and I broke it!&gt;</p>
+                <ol MadCap:continue="true">
+                    <li>Select the <b>OK</b> button to restart the Helios system. Select the <b>Cancel</b> button to dismiss the warning and abort a reboot of the system.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_main_menu.htm#Report" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

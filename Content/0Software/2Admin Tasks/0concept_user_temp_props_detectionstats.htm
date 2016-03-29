@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="7682" MadCap:lastWidth="852">
+    <head>
+    </head>
+    <body>
+        <h3><a name="top"></a>User Template Properties (Detection Statistics)</h3>
+        <h3 MadCap:conditions="HELIOS_HWI.BasicUser"><a name="Factory"></a>Factory Template Properties (Detection Statistics)</h3>
+        <p>Below is an image of the Detection Statistics User Template and a description of the fields for each section.</p>
+        <p class="DeveloperQuery">Is this image OK?&#160;I wasn’t sure if I should change it. It was hard to think about how to capture this information in one hit, unless I&#160;take a screen capture for each region of the scrolled down screen.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/detection_stats_factorytemp.PNG" alt="The Detection Statistics Dialog" class="OneHundredPercentThumbnail" style="width: 73px;height: 48px;" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Detection Statistics Dialog</p>
+        <h4>Template Details</h4>
+        <ul>
+            <li><b>Name</b> - The name of the Alarm Detection Type</li>
+            <li><b>Type</b> - <span style="color: #4b0082;">&lt;text required here&gt;</span></li>
+            <li><b>Is factory template?</b> - If enabled, this becomes a factory template.</li>
+            <li><b>Streams</b> - Displays the name of the Stream, which can be similar to the name of the User Template.</li>
+        </ul>
+        <h4>Detection Statistic</h4>
+        <h5>Analysis band low &amp;&#160;Analysis band high</h5>
+        <p>This restricts the analysis to the frequency range that contains the <MadCap:variable name="General.fiber/fibre" /> disturbance.  A significant increase in the SNR of the system improves the ability to alarm the required disturbance. Since the majority of the environmental noise and nuisance energy contains lower frequencies, keep <i>Analysis band low</i> field as high as possible.</p>
+        <p>The <i>Analysis band high</i> field <b>MUST BE</b> set to the high end of the frequency range. This isolates the disturbance signal that is detected. A lowered <i>Analysis band high</i> cut frequency can assist in the reduction of the compute load.</p>
+        <h5>Ramped edges</h5>
+        <p class="DeveloperQuery">Need content here</p>
+        <h4>Power Spectrum Averaging</h4>
+        <h5>PSD&#160;half-life</h5>
+        <p>This is used in conjunction with the <i>Detection Statistic half-life</i> to regain time resolution by the reversal of temporal smears from the PSD Kalman filter. Careful management of both Kalman filters, improves SNR values without the negative effects of the temporal smears.  The longer the PSD half-life, the more smears are applied.</p>
+        <p>For weak, persistent disturbances, such as leaks, a typical value could be as large as 10 to 15 seconds.  This can reduce the noise floor, and allow lower amplitude signals to be seen above the noise floor.</p>
+        <p>To apply temporal smears, enter a non-zero value for the <i>PSD half-life</i>.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If the PSD Half-life is too long, it can remove short-time duration impulsive disturbances.  <b>ONLY</b> use it with low-amplitude persistent disturbance</p>
+        </Div>
+        <h5>Detection statistic half-life</h5>
+        <p>Governs the time dynamics of the system response, and works in conjunction with the <i>PSD half-life</i>.</p>
+        <p>This property is designed to tighten up (de-smear) the time resolution that the <i>PSD half-life</i> tends to remove (smear) as it attempts to pull weak signals above the noise floor.</p>
+        <p>The <i>Detection statistic half-life</i> is set to a lower value than the <i>PSD half-life</i>, to sharpen up (de-smear) the time resolution of the detection statistic output.  This is because the noise is random, whereas the signal is more coherent over time.</p>
+        <h5>WCS&#160;width</h5>
+        <p>The width of the spatial filter is selected from the values, represented as odd numbers, from the drop-down menu. The values represent the total width of the filter.</p>
+        <ul>
+            <li>Make sure that the <i>Enable spatial averaging</i> check box has been selected.</li>
+        </ul>
+        <p class="DeveloperQuery">&lt;This can be found where?&gt;.</p>
+        <ul>
+            <li>Then select the desired <i>WCS width</i>.</li>
+        </ul>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Both the check box and the WCS width field can be adjusted dynamically.</p>
+        </Div>
+        <p>If the <i>WCS width</i> is larger, it will produce more spatial averaging and if set too large, it can smear disturbances that appear close together. If the <i>WCS width</i> is smaller, it will produce less spatial averaging.  In addition, the location accuracy of a disturbance tends to decrease as the <i>WCS width</i> is increased.</p>
+        <h5>Decimation factor</h5>
+        <p>The decimation factor is determined by:</p>
+        <p>
+            <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" alt="Decimation Factory equation: N over 2 minus 1">
+                <math>
+                    <mrow>
+                        <mrow>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>N</mi>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                </mrow>
+                            </mfrac>
+                            <mo>)</mo>
+                        </mrow>
+                        <mo>−</mo>
+                        <mn>1</mn>
+                    </mrow>
+                </math>
+            </MadCap:equation>
+        </p>
+        <p>Where:</p>
+        <p><i>N</i> is the WCS width value and it adjusts the scale factor for the middle of the <i>N-bins</i>. If an <i>N-bin</i> WCS filter is applied, then a spatial decimation is applied also.</p>
+        <p>This method can be used to reduce the compute load to a level that will allow the system to process a long <MadCap:variable name="General.fiber/fibre" /> sensor with multiple processing streams.  It can be used along with Frame Stacking, where higher FFT Sizes reduce the compute load on the system. <span style="background-color: #1e90ff;">Refer to Frame Stacking</span>.</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle"> 	Care <b>MUST BE</b> taken when the Spatial Decimation is applied, to make sure the narrow disturbances are still detectable. Spaced closely, disturbances can be resolved and still be detected on an individual basis.</p>
+        </Div>
+        <h4>Signal Separation</h4>
+        <h5>Enable strong/weak separation</h5>
+        <p>This module is used when there are reasonably strong signals relative to the background noise.  In the case of footsteps, digging or vehicle movement, this is the most common approach to take.  Strong amplitude implies that the signal is sufficiently high, relative to the noise floor, to not require a lot of temporal averaging to detect it.</p>
+        <p>If this module is selected, the Strong/weak separation factor text field is enabled, as well as the check boxes to include the strong impulsive spectrum and/or the noise floor spectrum.</p>
+        <h5>Strong/weak separation factor</h5>
+        <p>This is a positive number greater than or equal to zero.  The smaller this value is, the more noise energy will make it into the Strong Signal component.</p>
+        <p>If the <i>Strong/Weak separation</i> is enabled, and the separation factor is set to 0, you will see the noise level grow slightly.  This is due to the way the <i>Detection Statistic</i> is computed.</p>
+        <p>If it moves from 0 to 1, the noise level is reduced. As this value gets larger, there will be more noise removed from the strong signal.  A typical value is around 2 to 5.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">In order to separate out the noise from the strong signal, make sure the <b>Include Strong Impulsive spectrum</b> option is selected, and that you de-select the <b>Include Noise Floor spectrum</b> option.  If all the available spectra are selected, then there will be no separation.</p>
+        </Div>
+        <h5>Enable temporal decomposition</h5>
+        <p>This routine is designed to split out signals that exhibit impulsive temporal from more persistent characteristics.  Footsteps would be an example of an impulsive signal, whereas a leak, or even a vehicle driving along the <MadCap:variable name="General.fiber/fibre" /> would be an example of a more persistent signal.</p>
+        <p class="DeveloperQuery">&lt;Is the note below something negative or positive that we are highlighting? Should it be a caution?&gt;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The smaller the <b>Baseline Doubling Period</b> and the <b>Baseline Recovery Period</b> values, the more impulsive energy can leak into the persistent signal spectrum.</p>
+        </Div>
+        <h5>Baseline doubling period &amp; Baseline recovery period</h5>
+        <p>These properties are used to define the characteristic time scale of a disturbance you consider to be a persistent disturbance.  For example, the walk detection alarm can be configured so that each foot plant lasts about 0.5 seconds.</p>
+        <p>The values relate to how quickly the tracked function can react to changes in the energy response.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Make sure the Baseline periods are set. This enables the tracked function to stay below the impulsive component, and manages the persistent component.</p>
+        </Div>
+        <h5>Preconditioning half life</h5>
+        <p>This property governs the length of a temporal smoothing filter used to minimize the effect of temporal amplitude variations, due to variations of sensitivity in the detectors used.</p>
+        <p>This value should be set between 0.02 to 0.1 seconds, to ensure that persistent signals do not get put into the impulsive component.</p>
+        <h5>Enable weak/noise separation</h5>
+        <p>This routine is used when the signal that is detected is quite weak relative to the noise floor.</p>
+        <p>This method uses the same separation algorithm as the Strong/Weak separation, but does it after it calculates the average time (with the use of a Kalman Filter). This isolates the persistent weak signals from the pseudo random noise floor.  It also improves the delectability of weak persistent signals such as low energy leaks.</p>
+        <h5>Weak/noise separation filter</h5>
+        <p>The check box <b>MUST BE</b> to enable the Weak/Noise Separation module.  If enabled, the <b>Include weak signal spectrum</b> and/or the <b>Include noise floor spectrum</b> check boxes will be active.</p>
+        <p>The value is a positive number greater than or equal to zero.  The smaller this value is, the more noise energy will make it into the weak signal. If it is set to zero, it will put all the noise energy into the weak signal component of the power spectrum.</p>
+        <p>If the value is moved from 0 to 1, it will reduce slightly, the noise level.</p>
+        <p>As this value gets larger, there will be more noise removed from the weak signal.  A typical value is around 2 to 5.</p>
+        <h4>Spatial Processing</h4>
+        <h5>Enable spatial amplitude adjustment</h5>
+        <p>The Spatial Amplitude Adjustment module is useful to fill in spatial gaps in our Detection Statistic.  This module attempts to interpolate a continuous response over the width of the event disturbance to remove these gaps.</p>
+        <p>The objective is to differentiate disturbances that are localised to a short length of <MadCap:variable name="General.fiber/fibre" /> (local), from those that affect much longer sections of the <MadCap:variable name="General.fiber/fibre" /> sensor (non-local).</p>
+        <h5>Structure element width</h5>
+        <p>This field attempts to smooth out spatial amplitude variations.  If this value is set to zero, it applies no spatial smoothing.  If the value is increased, the amount of spatial smoothing is increased.  Set this width to a value that is less than or equal to the current <b>Pulse Width</b>.  For more information about the <b>Pulse Width</b>, refer to <span style="background-color: #1e90ff;">Section XXXX</span>.</p>
+        <p>Typical values for the Structure Element Width are between 2.5 and 7.5 metres.</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle"> 	If this value is too large, it will produce poor results.  If you see large triangles in the event detection value, this indicates there are artefacts that have too much spatial smoothing.</p>
+        </Div>
+        <h5>Enable spatial decomposition</h5>
+        <p>This distinguishes between and separates, local, spatial event disturbances from non-spatially local event disturbances.  Make sure this check box is selected to enable the <b>Spatial cutoff size</b> field.</p>
+        <p>You can exclude the local spectrum from non-local spectrum.  To separate these signals, make sure that only one of the spectra is selected.</p>
+        <h5>Spatial cutoff size</h5>
+        <p>This sets the boundary between disturbances that are deemed to be local and non-local.  Values are set to zero for non-local components and greater than zero for local components.</p>
+        <h4>Spectral Shape Analysis</h4>
+        <h5>Enable spectral shape analysis</h5>
+        <p>This separates the signal energy into three different spectral shape components:</p>
+        <ul>
+            <li>Low Frequency spectrum (modeled)</li>
+            <li>Low Frequency spectrum (un-modeled)</li>
+            <li>Non-low Frequency spectrum</li>
+        </ul>
+        <p>This enables narrowband signals that are buried completely in the low frequency modelled spectrum, to be resolved.</p>
+        <p>Make sure that this check box is selected to enable the <b>Activation threshold</b>.  In addition, the options to exclude the <b>low frequency spectrum (modelled)</b>, the <b>low frequency spectrum (unmodelled)</b> and the <b>non-low frequency spectrum</b> are also available.  In order to successfully separate out these three spectra, they <b>MUST BE</b> deselected.</p>
+        <h5>Activation threshold</h5>
+        <p>This value is used to define the spectral data used as input into a curve fit. This will define a boundary between the expected (modelled) low frequency spectrum, and the non-low frequency spectrum.</p>
+        <p>Typically, for narrow band disturbances, you need to discard the low frequency modelled spectrum, and keep the other two spectra.  Typical values for the <b>Activation threshold</b> are between 2 and 4. The value is dependent on the amplitude of the low frequency modelled spectrum.</p>
+        <p class="SeeAlsoLink" MadCap:conditions="General.Online">
+            <MadCap:conceptLink term="Introduction" />&#160;</p>
+    </body>
+</html>

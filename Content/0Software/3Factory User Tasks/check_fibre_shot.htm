@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2492" MadCap:lastWidth="901">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Check and Display the <MadCap:variable name="General.Fibre/Fiber" /> Shot</h1>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">You <b>MUST BE</b> logged in as either an <i>Administrator</i> or <i>Factory User</i> to change this setting but when a user is logged in with <i>View Only</i> access, they will only see the option that has been configured to be viewed. This view may need to be customised to suit the three types of user.</p>
+        </Div>
+        <p>For the system to display the raw signal that comes off the optics module when the system starts, the <i>Display Type</i> needs to be configured to show the <i>Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot</i>.</p>
+        <p>The default scale for the Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot display type is 32767.  This is the maximum value for raw data.  Even though the Input voltage was set at the factory, there can be data values in a zone of interest that are clipped (they continuously display at the maximum value). In these circumstances, it is recommended that you increase the <b>Input Voltage Range</b> to prevent those <MadCap:variable name="General.fiber/fibre" /> locations from being clipped.</p>
+        <p>Complete these steps:</p>
+        <ol>
+            <li>In <b>Currently Viewing &gt; Display</b>, select the <b>Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot</b> option, to check the right optical settings are configured. The other options to choose are shown in <MadCap:xref href="../1View Only Tasks/0concept_display_types.htm#top" target="_popup">Table of Display Types</MadCap:xref>. </li>
+        </ol>
+        <p><span style="background-color: #ff1493;">[Have call outs and annotate what each option does. Easier than explaining twice!] Can I&#160;run through this with an engineer as well, because I’d like to understand it.</span>
+        </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The four <MadCap:variable name="General.Fibre/Fiber" /> Shot types do not require an active Alarm Report in order for them to display in the <MadCap:variable name="General.Fibre/Fiber" /> Graph.  An Alarm Report is made active if it is selected in the Alarm Report tab of the Optical Channel Properties dialog. Select the desired <MadCap:variable name="General.Fibre/Fiber" /> Shot type for it to display in the <MadCap:variable name="General.Fibre/Fiber" /> Graph.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>Start the <MadCap:variable name="General.ProductName2" />System, refer to <MadCap:xref href="../2Admin Tasks/helios_controls.htm#Run" target="_blank">Change the Monitoring Status</MadCap:xref>. The <MadCap:variable name="General.ProductName2" />Controls dialog will be displayed. The CPU&#160;temperature can vary dependent upon each installation.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/helios_controls.png" alt="The Helios Controls Dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The <MadCap:variable name="General.ProductName2" /> Controls Dialog</p>
+        <ol MadCap:continue="true">
+            <li>To change the Input voltage range, select the <b>Input Voltage</b> drop-down menu and select the next higher value.  Select the <b>Apply</b> and <b>Save</b> button for the change to be confirmed.  This will momentarily stop the system and restart it with the new Input voltage range.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_datacapture.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">The Data Capture Tab</p>
+        <p class="ListIndent">Below is a raw <MadCap:variable name="General.fiber/fibre" /> shot that has been clipped because the Input Voltage property has been set too low (200 mV in this case).</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/raw_fibre_shot_input_voltage_low.png" alt="Raw Fibre Shot that displays a low Input Voltage" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-3: ">Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot with Input Voltage set too low</p>
+        <p class="ListIndent">Below is a  <MadCap:variable name="General.fiber/fibre" /> shot scaled properly (400 mV in this case).</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/raw_fibre_shot_correct.png" alt="Raw Fibre Shot scaled properly" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-4: ">Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot scaled properly</p>
+        <p class="ListIndent">Below is a <MadCap:variable name="General.fiber/fibre" /> shot with the Input Voltage set too high (800 mV&#160;in this case)</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/raw_fibre_shot_input_voltage_high.png" alt="Raw Fibre Shot with Input Voltage set too high" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-5: ">Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot with Input Voltage set too high</p>
+        <ol MadCap:continue="true">
+            <li>It is recommended that the <MadCap:variable name="General.fiber/fibre" /> sensor end position be displayed.  To do this, make sure that the distance that corresponds to the end of the <MadCap:variable name="General.fiber/fibre" /> sensor is in agreement with the known <MadCap:variable name="General.fiber/fibre" /> sensor distance.  Distance discrepancies are typically due to errors in the RI setting being used.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">It is important not to clip the raw data, as this will introduce non-linear distortion into the processing system. This can reduce significantly the sensitivity of the portion of the <MadCap:variable name="General.fiber/fibre" /> sensor being clipped.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>It can be necessary to determine the movement velocity of an event disturbance on the <MadCap:variable name="General.Fibre/Fiber" /> Graph display.  Velocity tracking is the default mode of the <MadCap:variable name="General.Fibre/Fiber" /> Graph display. For instructions about how to create and remove a Velocity, refer to <MadCap:xref href="check_fibre_shot_velocities.htm#top" target="_self">Velocities</MadCap:xref>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_display_types.htm#top" />
+                <MadCap:relatedTopic src="../2Admin Tasks/helios_controls.htm#Run" />
+                <MadCap:relatedTopic src="check_fibre_shot_velocities.htm#top" />
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_view_only_display.htm#top" />
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_main_menu.htm#top" />
+                <MadCap:relatedTopic src="../2Admin Tasks/0concept_admin_menu.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

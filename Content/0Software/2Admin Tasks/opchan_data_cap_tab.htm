@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1657" MadCap:lastWidth="875">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Data"></a>Data Capture Tab</h3>
+        <p>Data Capture properties allow the user to configure what data the system will acquire, and how that data is acquired.  See the image and check the values against the instructions below:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_datacapture.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">Data Capture Tab</p>
+        <ol>
+            <li><a name="Check_the_Monitor_Start/Monitor_End_values"></a>Check the <b>Monitor&#160;Start/Monitor End</b> values. If you need to restrict the monitored zone to a subset of the total <MadCap:variable name="General.fiber/fibre" /> sensor length, enter a positive value in the <b>Monitor Start</b> field. This will restrict the data that is digitized to only include data after this distance. </li>
+        </ol>
+        <p class="ListIndent">If you need to ignore the end portion of the <MadCap:variable name="General.fiber/fibre" /> sensor, set the maximum value for the <b>Monitor End</b> field to the physical <MadCap:variable name="General.fiber/fibre" /> length. For more details about why these field values can be changed, refer to your training materials.</p>
+        <ol MadCap:continue="true">
+            <li>The recommended value for the <b>Sample Rate</b> is 150 mega samples per second (MSPS). However the range can be between 150 mega samples per second (MSPS) and 180 MSPS. Any reduction or increase will affect the compute load. To change the value, select a rate from the drop-down menu.</li>
+            <li>The Number of Samples is calculated from a combination of the <b>Start Monitor/End Monitor</b> and <b>Sample Rate</b> fields.</li>
+            <li>The <a name="Input_Voltage"></a><b>Input Voltage</b> value maximizes the amplitude of the raw <MadCap:variable name="General.fiber/fibre" /> shot without clipping data in the region of interest.  The maximum amplitude of the analog voltage can vary between 200 mV and 4 V. from the start of the <MadCap:variable name="General.fiber/fibre" /> sensor.</li>
+        </ol>
+        <p class="ListIndent">If you use the Raw <MadCap:variable name="General.Fibre/Fiber" /> Display Mode, you can view this raw <MadCap:variable name="General.fiber/fibre" /> shot response.  The default scale of the Raw <MadCap:variable name="General.Fibre/Fiber" /> display should already be set to 32,767, as this is the maximum value of the digitizer card. From here, the Input Voltage should be set as low as possible without clipping the raw <MadCap:variable name="General.fiber/fibre" /> shot in the zone of interest.  A “Clip” occurs if any data sample along the <MadCap:variable name="General.fiber/fibre" /> sensor has amplitudes in excess of 32,767.  If a “Clip” occurs, increase the Input Voltage in the drop down list.  The optimal raw <MadCap:variable name="General.fiber/fibre" /> shot will have maximum amplitude, without any change to data samples within the region of interest.</p>
+        <ol MadCap:continue="true">
+            <li>Check the <b>Shot normalization</b> check box is selected if you want to normalize all <MadCap:variable name="General.fiber/fibre" /> shots to a constant value. Shot normalization is not enabled by default. If enabled, it can reduce the random shot-to-shot amplitude of the raw <MadCap:variable name="General.fiber/fibre" /> shots, which improves the system’s SNR. Shot normalization can extend over the entire monitored section, so you can restrict operation to a subsection of the <MadCap:variable name="General.fiber/fibre" /> sensor, where there are little or no disturbances. To change these values: <ul><li>To restrict shot normalization to a subsection of the <MadCap:variable name="General.fiber/fibre" /> sensor, enter distances that are greater than those defined in the <b>Monitor Start</b>field, and less than the <b>Monitor End</b> field values, entered in <a href="#Check_the_Monitor_Start/Monitor_End_values" target="_self">Step 1</a>.</li><li>Select the tick box. This will make the <b>Shot Normalization Window</b> settings active. You can also select the green and yellow icon on the right-hand side.</li></ul></li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_main_menu.htm#top" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Optical" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

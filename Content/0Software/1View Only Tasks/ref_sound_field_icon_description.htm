@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1174" MadCap:lastWidth="1079">
+    <head>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Table of <MadCap:variable name="General.Fibre/Fiber" /> Graph Functionalities</h1>
+        <p class="TableCaptionCont"><a name="Sound_field_functionality"></a><MadCap:variable name="General.Fibre/Fiber" /> Graph Functionality Table</p>
+        <p class="DeveloperQuery">SK:&#160;- I don't think the way this is presented is very clear. Specifically the icon with the plus is always used to zoom, the one with the minus is always used to unzoom to the previous display, and the one with the big crossed arrows is always used to pan.</p>
+        <p class="DeveloperQuery">Whether they zoom in depth, time, or both depends on where you drag the mouse, regardless of which icon you have clicked.</p>
+        <p class="DeveloperQuery">Specifically if you click and drag in the fibre shot panel or in the depth ruler, you only zoom/pan in depth since that is the only axis available. And if you click and drag in the time ruler you only zoom/pan in time since that is the only axis available. But if you click and drag in the waterfall display you can zoom/pan in both depth and time since both axis are available</p>
+        <p>&#160;</p>
+        <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/Simple.css'); margin-left: 0; margin-right: auto; caption-side: top; mc-table-style-original: url('../../Resources/TableStyles/Simple.css');" class="TableStyle-Simple" cellspacing="1">
+            <col class="TableStyle-Simple-Column-Column1" style="width: 165px;" />
+            <col class="TableStyle-Simple-Column-Column1" style="width: 911px;" />
+            <thead>
+                <tr class="TableStyle-Simple-Head-Header1">
+                    <th class="TableStyle-Simple-HeadE-Column1-Header1">Icon</th>
+                    <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1" style="text-align: center;">
+                        <img src="../../Resources/Images/product_images/gui_images/fotech/mapping/zoom-button.png" alt="Zoom In icon" class="SeventyFivePercent" />
+                    </td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">If selected, it zooms in on the <MadCap:variable name="General.Fibre/Fiber" /> Graph.<p>If you select-and-drag in the <MadCap:variable name="General.fiber/fibre" /> shot panel or the depth ruler, this icon  allows you to zoom and pan in depth only. If you click-and-drag in the  time ruler, then you can only zoom in time only. To do this, define the start and end positions then release the mouse button.</p><p>Pan mode will return a yellow text field. This will indicate the time difference between the upper most row and current time. A negative value implies that the top row is before the current time.</p></td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1" style="text-align: center;">
+                        <img src="../../Resources/Images/product_images/gui_images/fotech/mapping/zoomout-button.png" alt="Zoom out icon" class="SeventyFivePercent" />
+                    </td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">If selected, it zooms out to the previous display of the <MadCap:variable name="General.Fibre/Fiber" /> Graph. This will reset the display to the previous zoom level. If pressed multiple times it will eventually zoom out to the original view.</td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyB-Column1-Row1" style="text-align: center;">
+                        <img src="../../Resources/Images/product_images/gui_images/scroll-button.png" class="SeventyFivePercent" />
+                    </td>
+                    <td class="TableStyle-Simple-BodyA-Column1-Row1" style="font-weight: normal;">
+                        <p>Zooms in and pans for distance only in the Waterfall Display because both axes are available. Pan mode can only be used on data that has already been displayed.</p>
+                        <p>To zoom and pan in distance and time, select the start distance-time point in the Waterfall Display. Select-and-drag the pointer to the distance-time end point and release the mouse button.</p>
+                        <p>It also pans out if selected, and will return to the previous display.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="DeveloperQuery">Please can someone test that the table can be viewed on a tablet/smart phone. If my css workaround hasn’t worked, then I need to know asap</p>
+    </body>
+</html>

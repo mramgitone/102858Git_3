@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1739" MadCap:lastWidth="852">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Calibration of the Noise Floor</h1>
+        <p style="font-style: normal;">In addition to the <a href="../2Admin Tasks/optical_channel_properties.htm#Noise" target="_popup">Noise Floor Bounding <a href="../2Admin Tasks/optical_channel_properties.htm#Noise" target="_popup">controls</a></a>, Factory Users have the ability to “train” the system in order to create the noise floor model. There are two steps to this process:</p>
+        <ul>
+            <li style="font-style: normal;">Collection of the trained data, which can take time.</li>
+            <li style="font-style: normal;">Calibration of the model.</li>
+        </ul>
+        <h2>Factory Calibration</h2>
+        <p>Before it is sent to you, the system will be calibrated at the factory, in a controlled environment. If&#160;your system was purchased before this functionality was available, or it has not been activated for any reason, contact <a href="mailto:customer.support@fotechsolutions.com?subject=Request to return Helios System for Noise Floor Calibration" target="_blank">Customer Services</a> to arrange for your <MadCap:variable name="General.ProductName2" /> system to be returned. </p>
+        <Div class="Note" MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser,HELIOS_HWI.FactoryUser" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser,HELIOS_HWI.FactoryUser" class="noteMiddle">If you are a Fotech Engineer, refer to <MadCap:xref href="../5InternalOnly/io-factory-noise-floor-calibration.htm#top" target="_blank">Factory Procedure for Noise Floor&#160;Calibration</MadCap:xref>. It can be requirement to suppress alarms during this procedure. Refer to <MadCap:xref href="../2Admin Tasks/opchan_alarm_tab.htm#How3" target="_blank">How to suppress Alarm Reports</MadCap:xref>.</p>
+        </Div>
+        <h2>Calibration in the field</h2>
+        <p>Any system that was purchased with version 5.0 of the software, or greater, will have the calibration performed at the factory. However systems that are already in the field can be upgraded to version<MadCap:variable name="General.VersionNumber" /> without this calibration having been performed. In this case, in the <MadCap:xref href="../2Admin Tasks/opchan_noise_floor_tab.htm#Noise" target="_blank">Noise Floor Bounding Tab</MadCap:xref> you will see the black light, mentioned above.  We recommend that the system is returned to the factory for the full calibration.</p>
+        <p>However it may be that such a procedure is not viable, either due to the costs or to the available time. In those cases, a field engineer with Factory Level permissions may be able to perform enough of a calibration to provide a useful, albeit sub-optimal, result. The instructions for this are below:</p>
+        <ol>
+            <li>Disconnect the system from the deployed <MadCap:variable name="General.fiber/fibre" />.</li>
+            <li>Replace the system with a spool of similar length, which should be at least as long as the deployed <MadCap:variable name="General.fiber/fibre" />.</li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">Find as quiet a location as you can in which to place the spool. The more noise there is while the data is collected, the less accurate the model will be.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>Collect the training data. A full sweep is not done due to time constraints, but do enough to cover the portion of the model that interests us. It can take many hours or even days, and is dependant upon the maximum, minimum and step sizes involved. </li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">Make sure the values are set for the Raw Data display before these instructions are completed. If values have not been set, the calibration will be a waste of time and the data collection exercise will have to be repeated. <br /></p>
+        </Div>
+        <p class="ListIndent">To determine the portion of the model required refer to <MadCap:xref href="definition_portion_of_model.htm" target="_self">Definition of the Portion of the Model.</MadCap:xref></p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../2Admin Tasks/optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="../2Admin Tasks/opchan_noise_floor_tab.htm#Noise" />
+                <MadCap:relatedTopic src="noise_floor_calibration.htm#top" />
+                <MadCap:relatedTopic src="definition_portion_of_model.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

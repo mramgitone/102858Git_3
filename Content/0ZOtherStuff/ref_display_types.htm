@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3305" MadCap:lastWidth="849">
+    <head>
+        <link href="../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Table of Display Types</h1>
+        <p class="para">These are the Display Types that, depending on what level of user access you have, you will see. Below is the Display Type Menu. Refer to the table below for a description of each display type.</p>
+        <p class="image">
+            <img src="../Resources/Images/product_images/display_type_menu.png" alt="The Display Type drop-down menu" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Display Type Drop-down Menu</p>
+        <p class="DeveloperQuery">Please can someone test that the table can be viewed on a tablet/smart phone. If my css workaround hasn’t worked, then I need to know asap</p>
+        <p class="TableCaption" MadCap:autonum="Table1-1: ">Table of Display Types</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" class="TableStyle-Simple" cellspacing="1">
+            <col class="TableStyle-Simple-Column-Column1" style="width: 252px;" />
+            <col class="TableStyle-Simple-Column-Column1" style="width: 553px;" />
+            <thead>
+                <tr class="TableStyle-Simple-Head-Header1">
+                    <th class="TableStyle-Simple-HeadE-Column1-Header1">Display Type</th>
+                    <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Default</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">The Default display type has been designed to respond to any valid signal disturbance that occurs between DC Cutoff and Nyquist (the full frequency range as defined by the PRF).  It does not require an active Detection Statistic from an active Alarm Report.  The advantage of the Default display type is that it shows the <MadCap:variable name="General.fiber/fibre" /> sensor’s response to disturbances as a function of distance without an active Alarm Report.</td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Raw <MadCap:variable name="General.Fibre/Fiber" /> Shot</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">This displays the raw digitized data that comes in directly from the optics module, as a function of distance.  The raw data contains values between zero (0) and 32,7687. 
+
+In addition, all of the previous data display types are derived from the power spectra of the input signal, and all have an update rate equal to the FFT update rate.  
+
+The raw data comes in at the PRF, which is at a much higher update rate.  When the raw <MadCap:variable name="General.fiber/fibre" /> shot is displayed, the system simply takes the first <MadCap:variable name="General.fiber/fibre" /> shot of every FFT block, and sends that raw <MadCap:variable name="General.fiber/fibre" /> shot to the <MadCap:variable name="General.ProductName2" /> display. No temporal averages occur in the data reduction.
+</td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">The Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot display shows the mean value (or DC component) of the <MadCap:variable name="General.fiber/fibre" /> response at each <MadCap:variable name="General.fiber/fibre" /> location over the FFT interval.  It is very similar to the Raw Signal display, but updates much slower (at the FFT update rate rather than the PRF).  This display type shows variations of the non-time varying <MadCap:variable name="General.fiber/fibre" /> response (over the duration of an FFT block) as a function of distance. This response closely reflects the ambient response of the <MadCap:variable name="General.fiber/fibre" /> sensor at each sample point. </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot Drift</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">
+                        <p>This displays the amplitude variation of the Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot (also known as the DC Baseline) between FFT blocks as a function of distance.  Ideally, there should be very little drift over time, as the DC Baseline is the <MadCap:variable name="General.fiber/fibre" /> response in the absence of any physical excitation. </p>
+                        <p class="DeveloperQuery">Do you want to say the next thing?</p>
+                        <p>In practice, the Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot drifts a fair amount from FFT block to FFT block.  The Mean <MadCap:variable name="General.Fibre/Fiber" /> Shot Drift provides an indication as to the magnitude of this temporal drift.</p>
+                        <p>  <![CDATA[ ]]></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Signal RMS</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">
+                        <p>This displays the time series Root Mean Square (RMS) of the time samples, over an FFT block due to signal power only, with the band limited to the analysis band.  </p>
+                        <p>If you are a Factory User, refer to the <MadCap:xref href="ref_user_temp_props_detectionstats.htm#top">User Template Properties (Detection Statistics)</MadCap:xref> for a description of the analysis band.  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Noise RMS</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">This is very similar to the Signal RMS value except that it is the time series RMS over an FFT block due to noise power only, band limited to the analysis band. </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Total RMS</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">This displays the time series RMS over an FFT block that includes signal and noise power, with the band limited to the analysis band. </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Stream Detection Value</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">
+                        <p>This displays the Detection Statistic for a particular stream.  This value is a pseudo Signal to Noise Ratio (SNR) of the response of the <MadCap:variable name="General.fiber/fibre" />, with the band limited to the analysis band. 
+
+This value is computed in two stages:
+</p>
+                        <ul>
+                            <li>The raw Detection Statistic is computed if the spectral processing properties is assigned to a particular stream.  
+</li>
+                            <li>The raw Detection Statistic is optionally de-smeared if the Detection Statistic Half-life assigned to a particular stream.  The Stream Detection Value is used as input for the Alarm Threshold module, which generates the Stream Indicators.
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyE-Column1-Row1">Stream Indicators</td>
+                    <td class="TableStyle-Simple-BodyD-Column1-Row1" style="font-weight: normal;">
+                        <p>This display is used a lot.  As described above in Stream Detection Value, raw indicators exist when the Alarm Detection Value falls within a user-defined amplitude range.  
+
+All time and space points with Alarm Detection Values above the Alarm detection threshold, and below the Alarm suppression threshold, will produce a raw indicator.  These raw indicators are can be cleaned to remove false positive and false negative values.  
+
+</p>
+                        <p>Cleaned indicators are displayed with this data display type as it optimizes the Alarm detection threshold, and the Indicator Cleaning properties, to produce a solid stream of cleaned indicators. These appear where disturbances of interest are located.</p>
+                        <p>
+
+Stream Indicators are the input into the Alarm Reporting module, and without properly conditioned indicators, the probability of robust alarms on desired disturbances is greatly diminished.
+</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Simple-Body-Row1">
+                    <td class="TableStyle-Simple-BodyB-Column1-Row1">Alarm Indicators</td>
+                    <td class="TableStyle-Simple-BodyA-Column1-Row1" style="font-weight: normal;">
+                        <p>An Alarm Report can consist of multiple streams, each with a set of Stream Indicators associated with it.  
+
+</p>
+                        <p>This display type shows the Boolean combination of the cleaned indicators which are used as input into the Alarm Reporting module.  This is very helpful if you have to fine-tune the Boolean logic, used if you combine individual streams being fed into the Alarm Report logic. 
+</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1260" MadCap:lastWidth="810">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Factory Procedure for Noise Floor&#160;Calibration</h1>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">You must have a quiet <MadCap:variable name="General.fiber/fibre" /> and access to a controlled “quiet” environment to complete this procedure.</p>
+        </Div>
+        <ol>
+            <li>Place the <MadCap:variable name="General.ProductName2" /> system inside the controlled environment. This can be a quiet area or box. </li>
+            <li>Attach the <MadCap:variable name="General.fiber/fibre" /> is attached and configured to the <MadCap:variable name="General.ProductName2" /> system. </li>
+            <li>In the calibration panel, make sure the combination values are the same as those shown in the image below. <b>DO&#160;NOT</b> deviate from these settings unless your system needs to be fine tuned to suit your site’s requirements and reduce the time taken to calibrate each box. </li>
+            <li>Navigate to the Noise Floor Bounding Tab and make sure that the calibration values are set as shown below. </li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/default_noise_floor_bounding_calibration_values.png" alt="The Default Noise Floor Bounding Calibration Values" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">Default Noise Floor Bounding Calibration Values</p>
+        <ol MadCap:continue="true">
+            <li>Select the <b>Collect training data</b> button. This will cause the system to iterate through all the combined settings and collect suitable training data on each. Expect this to run for 6-8 hours and is best run overnight. </li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">It is critical that the system not be interrupted until the data collection has ended. If it is interrupted, you will need to start this process again from the start.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>When the data collection process has completed, select the <b>Train model</b> button. This  process examines the collected data and creates the noise floor bounds model. This only takes a few minutes.</li>
+        </ol>
+        <p class="ListIndent">Once the model has been trained it will automatically become available for the users. They will see this as a green "light" (<img src="../../Resources/Images/product_images/gui_images/pub/modernl/green-on-16.png" />) in this dialog and they will then have the ability to turn the model on or off.</p>
+    </body>
+</html>

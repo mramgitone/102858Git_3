@@ -1,0 +1,1221 @@
+/* MadCap Table Style: */
+
+/*<meta conditions="" Version="9" />*/
+
+mcTableStyle
+{
+	name: FotechContactDetails;
+	border-collapse: separate;
+	max-id: 9;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #353535;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #353535;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	border-spacing-y: 1;
+	border-spacing-x: 1;
+	overflow: hidden;
+	background-color: #edf0f1;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 0px;
+	separator-color: #353535;
+	name: Column1;
+	id: 0;
+	size: 1px;
+	background-color: #edf0f1;
+	type: Header;
+	font-size: 0.90em;
+	color: #353535;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 0px;
+	separator-color: #353535;
+	name: Row1;
+	id: 1;
+	background-color: #edf0f1;
+	text-align: justify;
+	vertical-align: middle;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	font-size: 0.8em;
+	color: #353535;
+	font-style: inherit;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	id: 8;
+	name: Body1;
+	font-size: 0.8em;
+	color: #353535;
+	font-style: inherit;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	text-align: justify;
+	vertical-align: middle;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	id: 9;
+	name: Body2;
+	cell-padding-left: 5px;
+	cell-padding-right: 5px;
+	cell-padding-top: 5px;
+	cell-padding-bottom: 5px;
+	font-size: 0.80em;
+	color: #353535;
+	font-style: inherit;
+	text-align: justify;
+	vertical-align: middle;
+}
+
+mcTableFootStyle
+{
+	span: 1;
+	separator-style: solid;
+	separator-width: 0px;
+	separator-color: #000000;
+	name: Footer1;
+	id: 3;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-FotechContactDetails
+{
+	border-collapse: separate;
+	overflow: hidden;
+	background-color: #edf0f1;
+	border-top-style: solid;
+	border-top-color: #353535;
+	border-top-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #353535;
+	border-bottom-width: 2px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-spacing: 1px 1px;
+}
+
+.TableStyle-FotechContactDetails-Column-Column1
+{
+	width: 1px;
+}
+
+.TableStyle-FotechContactDetails-HeadI-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadI-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadE-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-HeadE-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadF-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadF-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadH-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-HeadH-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadD-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadD-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadC-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadC-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadB-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-HeadB-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadA-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadA-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-HeadG-Column1-
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-HeadG-Column1- p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-Foot-Footer1
+{
+	
+}
+
+.TableStyle-FotechContactDetails-FootI-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-FootI-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootE-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+	border-top-width: 0px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-FotechContactDetails-FootE-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootF-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-top-width: 0px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-FotechContactDetails-FootF-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootH-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-FootH-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootD-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-top-width: 0px;
+	border-top-color: #000000;
+	border-top-style: solid;
+}
+
+.TableStyle-FotechContactDetails-FootD-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootC-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-FootC-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootB-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-FootB-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootA-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-FootA-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-FootG-Column1-Footer1
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-FootG-Column1-Footer1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-Body-Row1
+{
+	
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 0px;
+	border-bottom-color: #353535;
+	border-bottom-style: solid;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 0px;
+	border-bottom-color: #353535;
+	border-bottom-style: solid;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 0px;
+	border-bottom-color: #353535;
+	border-bottom-style: solid;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Row1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Row1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-Body-Body1
+{
+	
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Body1
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Body1 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-Body-Body2
+{
+	
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyI-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyE-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyF-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyH-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyD-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyC-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+	border-right-width: 0px;
+	border-right-color: #353535;
+	border-right-style: solid;
+}
+
+.TableStyle-FotechContactDetails-BodyB-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyA-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Body2
+{
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+	background-color: #edf0f1;
+}
+
+.TableStyle-FotechContactDetails-BodyG-Column1-Body2 p
+{
+	color: #353535;
+	font-size: 0.90em;
+	font-weight: bold;
+	font-style: inherit;
+}
+
+

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my review destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="P:\Technical Content Reviews\Product Manuals\Hardware"
+  Port=""
+  ViewUrl=""
+  Type="file"></CatapultDestination>

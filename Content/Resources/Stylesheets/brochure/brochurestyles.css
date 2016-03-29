@@ -1,0 +1,495 @@
+/*<meta />*/
+
+body
+{
+	color: #404040;
+	margin: 8px;
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-align: justify;
+	white-space: normal;
+	vertical-align: 2px;
+	font-variant: normal;
+	line-height: 16px;
+	mc-hyphenate: never;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+blockquote
+{
+	background-color: #bed230;
+	background-image: url('../../../../../../test/brochure/Helios1/Content/Resources/BrochureImages/QuotationMark.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-bottom: none;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #a4ac67;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 20px;
+	margin-bottom: 0px;
+	margin-left: 32px;
+	padding-bottom: 0px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 12px;
+}
+
+blockquote.name
+{
+	background-image: none;
+	border-bottom-color: #a4ac67;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding-bottom: 12px;
+	padding-right: 35px;
+	padding-top: 8px;
+	text-align: right;
+}
+
+h1
+{
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-right: 20px;
+	page-break-before: avoid;
+	column-break-before: avoid;
+	font-weight: bold;
+	margin-top: 0px;
+	font-size: 11pt;
+}
+
+h1.DarkBackground
+{
+	color: #e1e1e1;
+	column-break-before: always;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-top: 28px;
+}
+
+h1.SpaceAbove
+{
+	padding-top: 475px;
+}
+
+h2
+{
+	font-size: 10pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 16px;
+	mc-heading-level: 0;
+}
+
+h2.DarkBackground
+{
+	color: #e1e1e1;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-left: 32px;
+	margin-right: 20px;
+	margin-top: 16px;
+	mc-heading-level: 0;
+}
+
+h2.DarkBackgroundSpaceAbove
+{
+	color: #e1e1e1;
+	column-break-before: always;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 16px;
+	mc-heading-level: 0;
+	padding-top: 430px;
+}
+
+li
+{
+	list-style-image: none;
+	list-style-type: disc;
+	text-align: justify;
+	font-size: 10pt;
+	margin-bottom: 4px;
+	margin-top: 4px;
+	margin-right: 20px;
+	orphans: 2;
+	widows: 2;
+	vertical-align: 2px;
+	left: 40px;
+	margin-left: 30px;
+}
+
+li.DarkBackground
+{
+	color: #e1e1e1;
+	margin-bottom: 6px;
+	margin-right: 12px;
+	margin-top: 6px;
+	orphans: 2;
+	widows: 2;
+}
+
+ol
+{
+	list-style-image: none;
+	margin-left: 60px;
+}
+
+p
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	mc-auto-number-offset: 8px;
+	margin-top: 0px;
+	font-size: 10pt;
+	margin-bottom: 8px;
+}
+
+p.CompanyInfo1
+{
+	font-size: 7pt;
+	margin-bottom: 12px;
+	margin-left: 25px;
+	padding-top: 60px;
+}
+
+p.CompanyInfo2
+{
+	font-size: 7pt;
+	margin-bottom: 12px;
+	margin-left: 25px;
+	margin-top: 0px;
+}
+
+p.CompanyInfo3
+{
+	font-size: 7pt;
+	margin-bottom: 0px;
+	margin-left: 25px;
+	margin-top: 0px;
+}
+
+p.CreatedUsingFlare
+{
+	font-size: 7pt;
+	font-weight: bold;
+	margin-top: 18px;
+}
+
+p.DarkBackground
+{
+	color: #e1e1e1;
+	margin-left: 32px;
+}
+
+p.Example
+{
+	background-color: #bed230;
+	border-bottom-color: #a4ac67;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	margin-top: 0px;
+	padding-bottom: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+}
+
+p.ExampleHead
+{
+	background-color: #bed230;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #a4ac67;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	font-size: .9em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-bottom: 0px;
+	margin-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 14px;
+	page-break-after: avoid;
+}
+
+p.ExampleMiddleSection
+{
+	background-color: #bed230;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+}
+
+p.FrameFooterImages
+{
+	margin-left: 15px;
+	margin-right: 25px;
+}
+
+p.ManualTitle1
+{
+	column-break-before: always;
+	font-family: 'Century Gothic';
+	font-size: 14pt;
+	margin-bottom: 0;
+	margin-left: 50px;
+	padding-top: 60px;
+}
+
+p.ManualTitle2
+{
+	color: #bed230;
+	font-family: 'Century Gothic';
+	font-size: 22pt;
+	line-height: 0;
+	margin-bottom: 0;
+	margin-left: 50px;
+	margin-top: 0;
+}
+
+p.SpaceAbove
+{
+	padding-top: 496px;
+}
+
+span.DarkGreen
+{
+	color: #5e6914;
+	font-weight: bold;
+}
+
+span.Emphasis
+{
+	font-weight: bold;
+}
+
+span.LightGreen
+{
+	color: #bed230;
+	font-weight: bold;
+}
+
+ul
+{
+	list-style-image: url('../../../../../../test/brochure/Helios1/Content/Resources/BrochureImages/BulletDark.eps');
+	margin-left: 6px;
+}
+
+ul.DarkBackground
+{
+	list-style-image: url('../../../../../../test/brochure/Helios1/Content/Resources/BrochureImages/BulletLight.eps');
+	margin-left: 60px;
+}
+
+h1.ListItem
+{
+	font-size: 12pt;
+	margin-bottom: 4px;
+	margin-right: 20px;
+	page-break-before: avoid;
+	column-break-before: avoid;
+	margin-top: 20px;
+	font-weight: bold;
+	margin-left: 4px;
+	padding-top: 0px;
+}
+
+td
+{
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+	vertical-align: top;
+}
+
+p.footer
+{
+	mc-auto-number-offset: 8px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 7pt;
+}
+
+th.address
+{
+	text-align: left;
+	font-size: 9pt;
+}
+
+p.nospace
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 1pt;
+}
+
+p.imagecenter
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	mc-auto-number-offset: 8px;
+	margin-top: 0px;
+	font-size: 10pt;
+	margin-bottom: 8px;
+}
+
+@media print
+{
+	li
+	{
+		text-align: justify;
+	}
+
+	p.imagecenter
+	{
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin: 0;
+		margin-top: 160px;
+	}
+
+	td.RightAligned
+	{
+		text-align: right;
+		font-size: 7pt;
+	}
+
+	td.LeftAligned
+	{
+		font-size: 7pt;
+	}
+
+	p.footer
+	{
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	p.Helios
+	{
+		font-size: 12pt;
+		font: Brush Script MT;
+		font-family: sans-serif;
+		text-align: right;
+	}
+
+	big.VeryBig
+	{
+		font-size: 44pt;
+	}
+
+	p.Helios1
+	{
+		text-align: right;
+		margin-right: 30px;
+	}
+}
+
+td.RightAligned
+{
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+	vertical-align: top;
+}
+
+td.LeftAligned
+{
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+	vertical-align: top;
+}
+
+p.Helios
+{
+	margin-top: 0px;
+	font-size: 10pt;
+	margin-bottom: 8px;
+}
+
+big.VeryBig
+{
+	
+}
+
+p.Helios1
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	mc-auto-number-offset: 8px;
+	margin-top: 0px;
+	font-size: 10pt;
+	margin-bottom: 8px;
+}
+
+@media non-print
+{
+	body
+	{
+		font: Roboto;
+		font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+	}
+}
+

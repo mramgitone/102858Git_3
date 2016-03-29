@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles MadCap:conditions="General.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Width="800" Height="800" Padding="1in" PageSize="A4" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="left" Name="Copy of LeftPortrait">
+        <Frame X="2px" Y="2px" Width="597px" Height="915px" Flow="body" Right="2px" Bottom="13px" />
+        <Frame X="-2px" Y="-52px" Width="603px" Height="46px" Flow="header" Right="0px" Bottom="936px" PaddingLeft="2px" PaddingRight="2px" PaddingTop="2px" PaddingBottom="2px" BorderTopStyle="solid" BorderTopWidth="1px" BorderTopColor="#353535" BorderBottomStyle="solid" BorderBottomWidth="1px" BorderBottomColor="#353535" TextAlign="justify" VerticalAlign="top" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../../TableStyles/headerfooter_tablestyle.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;mc-table-style: url('../../TableStyles/headerfooter_tablestyle.css');" xhtml:class="TableStyle-headerfooter_tablestyle" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column1" />
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column2" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1">
+                                    <xhtml:th xhtml:class="TableStyle-headerfooter_tablestyle-BodyE-Column1-Body1"><MadCap:variable xhtml:name="General.CompanyName" />
+                                    </xhtml:th>
+                                    <xhtml:th xhtml:class="TableStyle-headerfooter_tablestyle-BodyD-Column2-Body1">&#160;</xhtml:th>
+                                </xhtml:tr>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1" MadCap:pattern="1">
+                                    <xhtml:th xhtml:class="TableStyle-headerfooter_tablestyle-BodyB-Column1-Body1"><MadCap:variable xhtml:name="System.Title" />: Contents</xhtml:th>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyA-Column2-Body1" xhtml:style="text-align: right;"><MadCap:variable xhtml:name="General.UserGuideTitle" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="-2px" Y="933px" Width="603px" Height="52px" Flow="footer" Right="0px" Bottom="-55px" Anchors="" BorderTopStyle="solid" BorderTopWidth="1px" BorderTopColor="#353535" BorderBottomStyle="solid" BorderBottomWidth="1px" BorderBottomColor="#353535" TextAlign="justify" VerticalAlign="top" PaddingLeft="2px" PaddingRight="2px" PaddingTop="2px" PaddingBottom="2px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../../TableStyles/headerfooter_tablestyle.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;mc-table-style: url('../../TableStyles/headerfooter_tablestyle.css');" xhtml:class="TableStyle-headerfooter_tablestyle" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column1" />
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column2" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyE-Column1-Body1"><MadCap:variable xhtml:name="System.PageNumber" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyD-Column2-Body1" xhtml:style="text-align: right;">Document Version:&#160;<MadCap:variable xhtml:name="General.DocVersion" /></xhtml:td>
+                                </xhtml:tr>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1" MadCap:pattern="1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyB-Column1-Body1">&#160;</xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyA-Column2-Body1" xhtml:style="text-align: right;">Copyright:&#160;<MadCap:variable xhtml:name="General.Copyright" /></xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+    <Page Name="Normal" Width="800" Height="800" Padding="1in" PageSize="A4" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="right">
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="6.25in" Height="9.583333in" X="0px" Y="3px" Right="1px" Bottom="7px">
+        </Frame>
+        <Frame X="-2px" Y="-52px" Width="606px" Height="48px" Flow="header" Right="-3px" Bottom="934px" BorderTopStyle="solid" BorderTopWidth="1px" BorderTopColor="#353535" BorderBottomStyle="solid" BorderBottomWidth="1px" BorderBottomColor="#353535" Anchors="" FlowIndex="1">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../../TableStyles/headerfooter_tablestyle.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;mc-table-style: url('../../TableStyles/headerfooter_tablestyle.css');" xhtml:class="TableStyle-headerfooter_tablestyle" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column1" />
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column2" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyE-Column1-Body1">&#160;</xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyD-Column2-Body1" xhtml:style="text-align: right;"><MadCap:variable xhtml:name="General.CompanyName" />
+                                    </xhtml:td>
+                                </xhtml:tr>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1" MadCap:pattern="1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyB-Column1-Body1"><MadCap:variable xhtml:name="General.UserGuideTitle" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyA-Column2-Body1" xhtml:style="text-align: right;"><MadCap:variable xhtml:name="System.Title" />: Contents</xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="-3px" Y="934px" Width="605px" Height="42px" Flow="footer" Right="-1px" Bottom="-46px" BorderTopStyle="solid" BorderTopWidth="1px" BorderTopColor="#353535" BorderBottomStyle="solid" BorderBottomWidth="1px" BorderBottomColor="#353535" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:head>
+                        <xhtml:link xhtml:href="../../TableStyles/headerfooter_tablestyle.css" xhtml:rel="stylesheet" MadCap:stylesheetType="table" />
+                    </xhtml:head>
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;mc-table-style: url('../../TableStyles/headerfooter_tablestyle.css');" xhtml:class="TableStyle-headerfooter_tablestyle" xhtml:cellspacing="0">
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column1" />
+                            <xhtml:col xhtml:class="TableStyle-headerfooter_tablestyle-Column-Column2" />
+                            <xhtml:tbody>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyE-Column1-Body1">Document Version:&#160;<MadCap:variable xhtml:name="General.DocVersion" /></xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyD-Column2-Body1" xhtml:style="text-align: right;"><MadCap:variable xhtml:name="System.PageNumber" /> </xhtml:td>
+                                </xhtml:tr>
+                                <xhtml:tr xhtml:class="TableStyle-headerfooter_tablestyle-Body-Body1" MadCap:pattern="1">
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyB-Column1-Body1">Copyright: <MadCap:variable xhtml:name="General.Copyright" /></xhtml:td>
+                                    <xhtml:td xhtml:class="TableStyle-headerfooter_tablestyle-BodyA-Column2-Body1">&#160;</xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+    </Page>
+</PageStyles>

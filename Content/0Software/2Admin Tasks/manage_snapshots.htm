@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1410" MadCap:lastWidth="1075">
+    <head>
+    </head>
+    <body>
+        <h1 MadCap:autonum=" 1.1. "><a name="top"></a>Manage Snapshots</h1>
+        <p>To save a database snapshot:</p>
+        <ol>
+            <li>Select <b>Admin &gt; Manage snapshot</b>.  Below is the screen that is displayed.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/manage_snapshots.png" alt="The Manage Snapshots Dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">The Manage Snapshots Dialog</p>
+        <p>Once a snapshot file has been created, a number of options become available.  Snapshot files can be:</p>
+        <ul>
+            <li>Restored in whole, or in part, to the same Helios Controller they were taken from.</li>
+            <li>They can be downloaded to your local computer.</li>
+            <li>Uploaded to another Helios Controller.</li>
+            <li>Restored in whole or in part.</li>
+        </ul>
+        <p>You can download, upload and import all or parts of databases. The sections below give instructions for the options available, once a snapshot file has been created.</p>
+        <h2 MadCap:autonum=" 1.1.1."><a name="Download"></a>Download a Database Snapshot</h2>
+        <p>Select the <b>Download</b> button beside the desired database.  The file will be automatically downloaded into the default Downloads folder on the user’s local computer.  This file can then be emailed to another user to have it uploaded to, and imported into, another Helios controller.</p>
+        <h2 MadCap:autonum=" 1.1.2."><a name="Upload"></a>Upload a Database Snapshot</h2>
+        <ol>
+            <li>Select the <b>Choose File</b> button.  A standard file selection dialog appears.</li>
+        </ol>
+        <p>&lt;<span style="background-color: #ff00ff;">image</span>&gt;</p>
+        <ol MadCap:continue="true">
+            <li>Navigate to the folder that contains the database snapshot file.</li>
+            <li>Select the file and then the <b>Open</b> button in the file selection dialog.  The selected file will then be listed in the <i>Manage Snapshots</i> dialog to the right of the <b>Choose File</b> button.</li>
+            <li>To have the selected file from your local computer uploaded to the Helios Controller, select the <b>Upload</b> button. The file will then appear in the list of available snapshot files, and can be selected to import into the Helios Controller.</li>
+            <li>If you do not want to upload the file, select the <b>Cancel</b> button. To delete a selected file, select the <b>Delete Selected</b> button.</li>
+        </ol>
+        <h2 MadCap:autonum=" 1.1.3."><a name="Import"></a>Import a Database Snapshot</h2>
+        <ol>
+            <li>Select the <b>Import</b> button that is beside the desired snapshot file. A new dialog will be displayed. It prompts the user to either restore the entire snapshot database, or to only select a specific component of the snapshot database.</li>
+        </ol>
+        <p>&lt;<span style="background-color: #ff00ff;">image</span>&gt;</p>
+        <ol MadCap:continue="true">
+            <li>Select the appropriate option, then choose the <b>Submit</b> button to confirm your choice, the <b>Cancel</b> button to return to the <i>Manage Snapshots</i> dialog, or the <b>Reset</b> button to restore the database currently in use.</li>
+        </ol>
+        <p class="ListIndent">If you select the <b>Submit</b> button, the <i>Import snapshot</i> dialog is shown below.</p>
+        <p>&lt;<span style="background-color: #ff00ff;">image</span>&gt;</p>
+        <ol MadCap:continue="true">
+            <li>To completely restore the database, refer to <MadCap:xref href="snapshots_restore_database.htm#top" target="_popup">Restore the Database</MadCap:xref>. </li>
+        </ol>
+        <h2 MadCap:autonum=" 1.1.4."><a name="Import2"></a>Import an Element of a Database</h2>
+        <p>As an alternative to the restoration of an entire database snapshot, individual elements of the database can be imported from the database snapshot file.</p>
+        <p>Properties in Helios are divided up into Channel properties and Alarm Reports (and their components).  Channel properties include all properties that are not specific to a particular stream or Alarm Report. To import a portion of a database snapshot:</p>
+        <ol>
+            <li>Make sure the second radio button entitled <b>Select elements to import</b> has been selected.</li>
+            <li>Select the check box for the required element of the database snapshot to import.</li>
+            <li>
+                <MadCap:xref href="snapshots_import_channel_properties.htm#top" target="_popup">Import the Channel Properties</MadCap:xref>.</li>
+        </ol>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm" />
+                <MadCap:relatedTopic src="0concept_administrator_functions.htm" />
+            </MadCap:relatedTopics>
+        </p>
+        <p class="SeeAlsoLink" MadCap:conditions="General.Online">
+            <MadCap:conceptLink term="Introduction" />&#160;</p>
+    </body>
+</html>

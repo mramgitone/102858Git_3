@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4388" MadCap:lastWidth="800">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>The Factory Menu</h1>
+        <h2><a name="Wipe"></a>Wipe Database</h2>
+        <h3><a name="Precauti"></a>Precautions</h3>
+        <p>Before you wipe the database, check with the person in authority that this should be done and then do a back-up of your system. </p>
+        <p>Once you wipe the database, the information cannot be retrieved. This should only be done as a last resort, typically on the instructions of a <MadCap:variable name="General.CompanyName" /> Representative. </p>
+        <p>Once a system has been wiped you have a truly empty database and will have to enter <b>ALL</b> content from scratch, manually. In particular you will need to reset the various hardware and optical settings from the original specification sheets.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H2">
+                <MadCap:dropDownHotspot>Instructions to Wipe Database</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="cautionMiddle">A wipe is the last resort for a troubled system and you will have to enter all data from scratch. If you try to restore the wiped database, you can reimport the problem you are trying to fix. </p>
+                </Div>
+                <ol>
+                    <li>Select the <b>Factory Menu &gt; Wipe database</b> option and a warning message will prompt you whether you wish to proceed or not. Select <b>OK</b>.  <span style="background-color: #ff1493;">Can I actually have a screenshot?</span></li>
+                    <li> Before the database is wiped you will be given a warning and a chance to change your mind. </li>
+                    <li>A  snapshot of the database will be automatically created which can be restored if required and is stored as "Backup from last system wipe" in the Manage Snapshots dialog. </li>
+                </ol>
+                <ol MadCap:continue="true">
+                    <li>After the wipe is completed the system will automatically restart and you will be presented with a truly empty database.</li>
+                    <li> Populate all the <MadCap:xref href="../2Admin Tasks/hardware_properties.htm#top" target="_blank">Hardware Properties</MadCap:xref> and <MadCap:xref href="../2Admin Tasks/optical_channel_properties.htm#top" target="_blank">Optical Channel Properties</MadCap:xref> dialogs before you use the system. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="Save"></a>Save Factory Defaults</h2>
+        <p>There may be times when the edited properties no longer produce acceptable results in the <MadCap:variable name="General.Fibre/Fiber" /> Graph.  If this happens, the Helios system can be restored to its Factory Defaults.  </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>This process needs to be completed before the newly configured system is sent to the customer. Click or tap here to see below.</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="cautionMiddle"> 	Use this function with extreme caution. If a Helios Controller is reset to its factory defaults, all property changes made to the system will be destroyed!  This includes all zone definitions and their associated properties.</p>
+                </Div>
+                <ol>
+                    <li>Any testing settings should be removed, the hardware settings should be checked to make sure they are correct, the proper serial numbers entered, a unique UUID created, and all available channels for MUX systems created. </li>
+                    <li>Any customer bespoke configurations should be completed.</li>
+                    <li>Select <b>Save as factory defaults</b> and this will save the settings in a special location which will prompt the <b>Admin/Reset to factory defaults</b> menu item to appear, where you would:<ol style="list-style-type: lower-alpha;"><li>Select <b>Admin &gt; Reset</b> to factory defaults.  A confirmation dialog will be displayed.</li><li>Select <b>OK</b> to reset the Helios system to its Factory Defaults. The system will then shut down and restart the Helios Controller.</li><li>Select <b>Cancel</b> to dismiss the warning message and return to the Operations Screen.</li></ol></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="Temporar"></a>Temporary System Thresholds</h2>
+        <p>The Temporary System Thresholds dialog is where the system temperature and disk space allowance can be controlled and tested. The main reason to run these tests is to force an XML notification of a system alarm so you can test   the high temperature and the low disk space warning system messages. These tests can be conducted together or as lone incidences. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="H3">
+                <MadCap:dropDownHotspot>Instructions for Temporary System Threshold Tests</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="noteMiddle">The logging drive tests are only performed if the system is actually logging. If the logging drive is full but we are not logging, then no warning is given.</p>
+                </Div>
+                <ol>
+                    <li>Select <b>Factory &gt; Temporary system thresholds...</b> and the dialog below is displayed. Enter the required details, as shown in the image below.</li>
+                </ol>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/temp_system_thresholds.PNG" alt="Image of Temporary System Thresholds dialog" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-1: ">Temporary System Thresholds Dialog</p>
+                <ol MadCap:continue="true">
+                    <li>Set the values in the <b>Admin &gt; Hardware Properties&#160;&gt;</b> <MadCap:xref href="../2Admin Tasks/hardware_properties.htm#Reportin" target="_blank">Reporting</MadCap:xref> tab. </li>
+                    <li>Open the <b>System Health panel </b>. </li>
+                    <li>Test the System Temperature Warning. To do this, open the <b>Temporary System Thresholds</b> dialog and enter a value one or two degrees lower than the current temperature.</li>
+                    <li>Test the Disk Space Warning thresholds. To do this enter a value for the threshold beneath the <b>System Drive</b> and <b>Logging Drive</b> values. </li>
+                    <li>Select <b>Submit</b> to run the test and <b>Cancel</b> to stop the test. The <b>CPU Temperature</b> will turn amber and our blue spinning warning icon  appears.</li>
+                </ol>
+                <p class="image"> <img src="../../Resources/Images/product_images/temp_system_threshold_tests.PNG" alt="Temporary System Threshold Test Results in amber with blue spinning warning sign" class="OneHundredPercentThumbnail" /></p>
+                <p class="captionCont" MadCap:autonum="Figure 1-2: ">The System Threshold Test Results</p>
+                <ol MadCap:continue="true">
+                    <li>For the CPU&#160;Temperature test, lower the threshold a further 5°C below the <b>CPU&#160;Temperature</b> value and a warning message will appear in the status message area. </li>
+                </ol>
+                <p class="DeveloperQuery">&lt;Image required - This didn’t work for me?&#160;Is the warning message different to the blue triangle or the same?&gt;</p>
+                <ol MadCap:continue="true">
+                    <li>Lower it another 10°C below the value, and the system will display a temperature error pop-up message. This will automatically stop FDEL to allow the CPU and GPU to cool down.</li>
+                    <li>The tests are now complete. When you press the <b>Cancel</b> button, close the dialog, or refresh the page the system, the temporary thresholds and the alarms and warnings are removed automatically and cleared.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="Microcon"></a>Microcontroller console...</h2>
+        <Div class="Warning" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;WARNING!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="warningMiddle">This process should only be completed by trained personnel. Take care when you enter data because the vendor cannot be held liable for any errors made!</p>
+        </Div>
+        <p>When chosen, the microcontroller console opens in a new window. This console allows you to enter (manually) the commands to be sent directly to the optics unit microcontroller. </p>
+        <p>This console is intended as a troubleshooting aide, as well as to test proof of concept hardware. The interface is  simple and intuitive to use. When it first comes up it will be connected to the necessary WebSocket port of the Helios unit and has the functions shown in the image below.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/microcontroller_console.png" alt="The microcontroller console" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-3: ">The Microcontroller Console</p>
+        <p>Simply enter the word “help” to get a list of the commands that the current hardware supports, or enter the file format <code>*.help</code>, to get some on-screen instructions about how the terminal window itself works.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary
+  conditions=""
+  fileTags="StatusFileTags.7 Needs to be Tested in Online Output,StatusFileTags.5 Needs to be Finished with Edits">
+  <GlossaryEntry
+    Terms="Copy (35) of New"
+    TermClass="Popup">
+    <Terms>
+      <Term>XML</Term>
+    </Terms>
+    <Definition
+      Link="">Extensible Markup Language (XML) is a markup language that defines a set of rules for encoded documents in a format which is both human and machine-readable.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    Terms="Copy (93) of New"
+    TermClass="Popup">
+    <Terms>
+      <Term>Disturbance Event</Term>
+    </Terms>
+    <Definition
+      Link="">A disturbance event is notification that something has happened or is happening along the distance where the fibre is installed. Various DAS technologies have different icons they use to identify such events, but when a disturbance event is identified, a signal is sent back to the DAS controller, which records the event and shows it in realtime to the operative.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>DAS</Term>
+    </Terms>
+    <Definition
+      Link="">Distributed Acoustic Sensor. This technology converts a single optical fibre into the equivalent of tens of thousands of highly-sensitive vibrational sensors.It can be used with a standard single mode telecommunications cable and provides dynamic real-time information to operatives in a variety of industries, but most commonly seen in Oil &amp; Gas, Pipeline, Rail and Security Management.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Alarm Detection Event</Term>
+    </Terms>
+    <Definition
+      Link="">This is a defined disturbance that can be recorded and sent back to the Helios Web Interface. The Alarm Detection Event will be seen as a pre-determined icon in the Waterfall Display. For a list of Alarm Detection Event icons, refer to (Select Topic from Topic Browse sequence below in Glossary Properties Flare dialog)</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>RF</Term>
+    </Terms>
+    <Definition
+      Link="">Radio Frequency refers to Radio Frequency Interference in the context of DAS technology. This is electromagnetic radiation which is emitted by electrical circuits that carry rapid changed signals, as a by-product of their normal operation, and can cause unwanted signals (interference or noise) to be induced in other circuits.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Fracture Monitoring</Term>
+    </Terms>
+    <Definition
+      Link="">This is the observation process of how an hydraulic fracture operation. Hydraulic fracturing is a stimulation treatment performed on oil and gas wells in low-permeability reservoirs. Specially engineered fluids are pumped at high pressure and rate into the reservoir interval to be treated. This causes vertical fracture(s) to open. The wings of a fracture extend away from the wellbore in accordance to the natural stresses within the formation. Proppant, such as grains of sand of a particular size, is mixed with the treatment fluid (known as frac fluid) to keep the fracture open when the treatment is complete.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>EM</Term>
+    </Terms>
+    <Definition
+      Link="">Electromagnetic with regards to DAS technology, refers to Electromagnetic Interference. This is a disturbance that affects an electrical circuit due to either induction or radiation emitted from an external source.  The disturbance can limit the effective performance of the circuit, and result in either a simple degradation or a total loss of data. The source can be any object that carries rapidly changing electrical currents.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Slug Monitoring</Term>
+    </Terms>
+    <Definition
+      Link="">This can apply to a product that flows in a pipeline, or be used to describe an oil &amp; gas process where a mud product of a different density or composition to the type of fluid found in a well is monitored. This constituent(s) can be quickly added or removed from a well, and the change in hydraulic head is monitored through time, to determine a well's flow and production characteristics.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>OTDR</Term>
+    </Terms>
+    <Definition
+      Link="">An optical time-domain reflectometer (OTDR) is an optoelectronic instrument used to characterise an optical fibre.  It injects a series of optical pulses into the fibre under test.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Sand Detection</Term>
+    </Terms>
+    <Definition
+      Link="">This term relates to Well Completion and refers to the use of equipment or  techniques to prevent the migration of reservoir sand into the wellbore or near-wellbore area. In weak formations, sand can be used to maintain the structure of the reservoir around the wellbore. In other formation types, sand in the wellbore can severely restrict production.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>PPE</Term>
+    </Terms>
+    <Definition
+      Link="">Means Personal Protective Equipment. PPE is worn to protect the wearer from injury and death when handling certain materials/substances, or during the performance of a procedure.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Well Integrity</Term>
+    </Terms>
+    <Definition
+      Link="">This is a term used in Oil &amp; Gas and is defined by NORSOK D-010 as the "“Application of technical, operational and organizational solutions to reduce risk of uncontrolled release of formation fluids throughout the life cycle of a well”. There are various aspects to well integrity, which include:
+- accountability/responsibility.
+- well operating processes.
+- well service processes.
+- tubing/annulus integrity.
+- christmas tree/wellhead integrity.
+- testing of safety systems.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Hot Tapping</Term>
+    </Terms>
+    <Definition
+      Link="">This is the when a product being carried by one container type, is syphoned into another container type. It is a term used in Pipeline Management, where pipelines can become subject to theft and oil is syphoned into an external carrier(s) for reselling or personal use. 
+
+In Oil &amp; Gas, this term is used during Well Completion, to describe the process of drilling a hole through a pressure barrier using special equipment and procedures to make sure fluids are contained safely when access is made. It is often used to access the wellbore when wellhead valves are jam closed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Proppant</Term>
+    </Terms>
+    <Definition
+      Link="">This is a mixture of chemicals and sand of a particular size that is mixed with the treatment fluid (known as frac fluid) to keep a fracture open so that oil and gas can be captured during an hydraulic fracture process.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Hydraulic Fracture</Term>
+    </Terms>
+    <Definition
+      Link="">Hydraulic Fracturing is the stimulation treatment performed on oil and gas wells in low-permeability reservoirs. Specially engineered fluids are pumped at high pressure and rate into the reservoir interval to be treated. This causes vertical fracture(s) to open. The wings of a fracture extend away from the wellbore in accordance to the natural stresses within the formation. Proppant, such as grains of sand of a particular size, is mixed with the treatment fluid (known as frac fluid) to keep the fracture open when the treatment is complete.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>HTML</Term>
+    </Terms>
+    <Definition
+      Link="">HyperText Markup Language is the standard markup language used to create web pages and help files.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>CE Mark</Term>
+    </Terms>
+    <Definition
+      Link="">This is a mandatory conformity mark for hardware products sold within the European Economic Area (EEA) and has been in force since 1985. The CE marking is the manufacturer's declaration that the product meets the requirements of the applicable EC directives. It consists of the CE logo and, if applicable, the four digit identification number of the notified body involved in the conformity assessment procedure.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>ISO/IEC Guide 37:2012</Term>
+    </Terms>
+    <Definition
+      Link="">ISO/IEC Guide 37: 2012 refers to the internal quality standards policy for the draft and publication of instructions for use of products by consumers. If you feel quality standards have been breached, you are best contacting Fotech Solutions Ltd direct. 
+
+ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardisation.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>IEC 82079-1</Term>
+    </Terms>
+    <Definition
+      Link="">IEC stands for Internal Electrotechnical Commission, and refers to an international quality standard. The IEC 82079-1 “Erstellen von Gebrauchsanleitungen”  is the successor to EN 62079 of 2001, and is a horizontal standard relating to the creation of user materials. It does not apply to just a specific product or sector, but contains rules for use across sectors for almost all branches of industries.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Helios</Term>
+    </Terms>
+    <Definition
+      Link="">This is the name of the DAS technology manufactured, produced and sold by Fotech Solutions Limited</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Noise Floor</Term>
+    </Terms>
+    <Definition
+      Link="">The Noise Floor is the measure of a signal created from the sum of all noise sources and unwanted signals within a measurement system, where noise can be defined as any signal other than one being monitored.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>FFT</Term>
+    </Terms>
+    <Definition
+      Link="">Fast Fourier Transform (FFT) is an algorithm used to compute the discrete Fourier transform (DFT) and its inverse. Fourier analysis converts time/space to frequency (or wavenumber) and vice versa; an FFT computes transformations by factorising the DFT matrix into a product of sparse (mostly zero) factors.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>S/N value or ratio</Term>
+    </Terms>
+    <Definition
+      Link="">This means signal to noise value or ratio. It can be used to describe the ratio of the strength of an electrical or other signal carrier of information, to that of unwanted interference.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>HDF5 Logging Format</Term>
+    </Terms>
+    <Definition
+      Link="">Hierarchical Data Format  is a set of file formats designed to store and organise large amounts of numerical data.
+
+HDF distribution consists of a library, command-line utilities, test suite source, Java interface, and the Java-based HDF Viewer (HDFView) and the current version, differs significantly in design and API from the major legacy version HDF4.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>NetCDF4 Logging Format</Term>
+    </Terms>
+    <Definition
+      Link="">Network Common Data Form is a set of software libraries and self-descriptive, machine-independent data formats that support the creation, access and sharing of array oriented scientific data. Version 4 allows the use of the HDF5 data file format.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>MSPS</Term>
+    </Terms>
+    <Definition
+      Link="">This is the unit of measure to describe Mega-Samples per Second.
+
+In data conversion, an analog signal is converted to a stream of numbers, each represents an analog signal's amplitude at a moment in time. Each number is called a "sample." The number sample per second is called the sample rate, measured in samples per second. In terms of DAS there can be millions of samples relayed per second.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>4U</Term>
+    </Terms>
+    <Definition
+      Link="">This is used as a unit of measure to describe the height of electronic equipment in relation to racks. The size of a piece of rack-mounted equipment is frequently described as a number in "U". For example, a four rack unit is often referred to as "4U".</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>FDS</Term>
+    </Terms>
+    <Definition
+      Link="">Fotech Data Stream</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>WCS Width</Term>
+    </Terms>
+    <Definition
+      Link="">WCS refers to a Web Coverage Service that allows publications of digital geospatial information. The Width of the image is measured in pixels.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Data Logging</Term>
+    </Terms>
+    <Definition
+      Link="">This is a process of monitoring performance against set criteria.
+
+In relation to applications of Helios, it is a term often used where information is collated in relation to the performance over the distance of the fibre(s) installation.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Colour Map</Term>
+    </Terms>
+    <Definition
+      Link="">The colour map in Helios is where colour control points are defined.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Alarm Type or Alarm Detection Type</Term>
+    </Terms>
+    <Definition
+      Link="">Helios can be configured to detect and monitor different types of activity. The Alarm and Alarm Detection Types are the activities monitored and from which reports are generated.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Zones</Term>
+    </Terms>
+    <Definition
+      Link="">A zone is a defined area of distance. In relation to Helios, it relates to the stretch of fibre that is monitored.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Sound Field</Term>
+    </Terms>
+    <Definition
+      Link="">This is the name given to the area of the operator's screen in Helios DAS technology that displays the sensitivity and intensity of disturbance activity that occurs across the area that is logged.  This activity is measured in scaled values.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Waterfall Display</Term>
+    </Terms>
+    <Definition
+      Link="">This is the name of the area of the operator's screen in Helios DAS technology that displays the logging output.
+
+The output is dependant on the application of the installation. For example for third party intrustion, where Panoptes is installed, all "alarm" generation applications are used and the waterfall display is not observed by the operator. Instead, all alarm detections are managed by Panoptes.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Display Types</Term>
+    </Terms>
+    <Definition
+      Link="">Display Types are the different alarms that are configured for use with the Helios System.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Optical Channel</Term>
+    </Terms>
+    <Definition
+      Link="">The Optical Channel is the carrier for the fibre optic and where the fibre optic thread(s) are configured.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Detection Statistic</Term>
+    </Terms>
+    <Definition
+      Link="">A Detection Statistic refers to the finer detail of activity that the system identifies and monitors.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Indicator</Term>
+    </Terms>
+    <Definition
+      Link="">An Indicator gives a status report on the surveillance level of the alarm detection type that is monitored.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>FDEL</Term>
+    </Terms>
+    <Definition
+      Link="">Full-disk Encryption Language works by automatically converting data on a hard drive into a form that cannot be understood by anyone who doesn’t have the key to “undo” the conversion. Without the proper authentication key, even if the hard drive is removed and placed in another machine, the data remains inaccessible.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Fibre Shot</Term>
+    </Terms>
+    <Definition
+      Link="">A Fibre Shot is the way information recorded by the fibre optics can be displayed. Helios currently has ten types of Fibre Shot displays, including a Default option. The Raw Fibre Shot is the most common type displayed.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Snapshot</Term>
+    </Terms>
+    <Definition
+      Link="">In relation to Helios DAS technology, the term snapshot is used to describe a bespoke client database.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>PSD Kalman Filter</Term>
+    </Terms>
+    <Definition
+      Link="">The PSD Kalman Filter is a powerful method for the production of measurements that display less noise. The Kalman Filter estimates the state of the physical system that is being measured by modeling system dynamics. This permits an estimate of future states to be predicted, which serves as a basis to mitigate the noise in measurements. It is particularly useful when a rigid body motion is measured.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Decimation Factor</Term>
+    </Terms>
+    <Definition
+      Link="">The Decimation Factor is usually an integer or a rational fraction greater than one. This factor multiplies the sampling time or divides the sampling rate.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>Temporal Decomposition</Term>
+    </Terms>
+    <Definition
+      Link="">Temporal Decomposition refers to the partition of control, with a large-scale control system, such as Helios, into sub problems based on the different time scales relevant to the associated action functions.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Morphological Cleaning</Term>
+    </Terms>
+    <Definition
+      Link="">Morphological Cleaning refers to the clarity of image processing.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>False Negative Rate</Term>
+    </Terms>
+    <Definition
+      Link="">A False Negative Rate is the number of false report alarms generated by systems, other than Helios.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Power Spectrum</Term>
+    </Terms>
+    <Definition
+      Link="">The Power Spectrum is the distribution of the energy of a waveform among its different frequency components.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Halo</Term>
+    </Terms>
+    <Definition
+      Link="">How should I describe this in relation to Relative Halo (%) &amp; Absolute Halo (m) in Alarm Reports?</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>Burst Count</Term>
+      <Term>period and Density</Term>
+    </Terms>
+    <Definition
+      Link="">What is this in relation to Alarm Reports?</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    TermClass="Popup">
+    <Terms>
+      <Term>EDFA</Term>
+    </Terms>
+    <Definition
+      Link="">This is a type of amplifier used in fibre optic transmission systems (FOTS) and comprises a short length of fibre that has been doped with erbium and spliced into the operating single-mode fiber (SMF) in a configuration known as discrete amplification, or lumped amplification.
+
+It acts to boost the signal in an optical fibre by the use of a semiconductor pump laser to introduce a powerful beam, at a shorter wavelength, into a section of erbium-doped fibre, several meters long. The pump light excites the erbium atoms to higher levels, and the input signal stimulates them to release excess energy as photons in phase and at the same wavelength. EDFAs boost wavelengths in the 1550 nm range, and the pump light is typically 1480 nm or 980 nm.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry>
+    <Terms>
+      <Term>RMS</Term>
+    </Terms>
+    <Definition
+      Link="">Root Mean Square, also known as the quadratic mean in statistics, is a statistical measure defined as the square root of the mean of the squares of a sample.
+
+It can be calculated for a sequence of discrete values, or for a continuously varied function. The name is simply a description: the square root of the arithmetic mean of the squares of the samples.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

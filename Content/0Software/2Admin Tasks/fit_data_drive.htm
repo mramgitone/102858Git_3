@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3666" MadCap:lastWidth="671">
+    <head>
+    </head>
+    <body>
+        <h2><a name="Data2"></a>Data Logging &amp;&#160;Playback Controls</h2>
+        <h3><a name="top"></a>How to fit a Data Drive</h3>
+        <p>Data logging management is located to the right of your display and allows the user to log to an optimized internal data file, known as an FDS. To do this, the system records raw and <MadCap:variable name="General.fiber/fibre" /> graph data over the entire monitored <MadCap:variable name="General.fiber/fibre" /> section, which can be used in Playback mode. The user can also enter a defined subset of the entire <MadCap:variable name="General.fiber/fibre" /> section, or over one or more pre-defined zones.</p>
+        <p>These controls let you control how you mount a disk drive and start data logging. To do this, go to the relevant section below and complete the tasks. The disk drive has to be mounted before logging can begin.</p>
+        <ol>
+            <li>To mount a data drive, select the drive-mounting icon <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/drive_add.png" />. This will display the dialog below.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/drive_mount_utility.png" title="The Drive Mounting Utility dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="Caption" MadCap:autonum="Figure&#160;1-1: ">The Drive Mount Utility Dialog</p>
+        <ol>
+            <li>Select the required disk drive from the list shown. Only use the <b>No external mount</b> option if you know you have enough internal space on the data drive, or if you do not have access to an external data drive.</li>
+            <li>Define the directory and file name.</li>
+            <li>Select the <b>Submit</b> button to confirm, or the <b>Cancel</b> button to select an alternative disk drive or stop the selection process.</li>
+        </ol>
+        <h3><a name="Unmount_a_Data_Drive"></a>Unmount a Data Drive</h3>
+        <ol>
+            <li>To unmount a data drive, select the unmount drive icon <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/drive_delete.png" alt="Unmount this drive icon" />. This will display the dialog below.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/unmount_data_drive.PNG" alt="Unmount device prompt message" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">Unmount Device Prompt Message</p>
+        <ol MadCap:continue="true">
+            <li>Select <b>OK</b> to confirm removal of this device drive or <b>Cancel</b> to leave the drive mounted.</li>
+        </ol>
+        <h3><a name="Start"></a>Start Data Logging</h3>
+        <p>The Data Logging Properties must be checked when the system is not logging data. These properties can be viewed in the Data Logging Controls dialog. </p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/data_logging_controls.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-3: ">Data Logging Controls dialog</p>
+        <p>If data is being logged, and the distances are changed, the current FDS file will be closed and a new FDS file will be created with the new distances displayed. The Data Logging Properties can be checked in two ways:</p>
+        <ul>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/cog.png" alt="Data log cog icon" /> icon to access the <a href="#Data">Data Logging tab</a>.</li>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/dynamic.png" alt="The dynamic start logging icon" /> to access the <a href="#Dynamic" target="_self">Dynamic Data Logging dialog</a>.</li>
+        </ul>
+        <h4><a name="Data"></a>Data Logging </h4>
+        <p>See the image below and complete these tasks:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/comms_properties_datalogging.PNG" alt="The Data Logging Tab in the Communications Properties Dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-4: ">The Data Logging Tab</p>
+        <ol>
+            <li>Locate the directory to be used and enter the name in the <b>Data logging directory</b> field.</li>
+            <li><a name="DefineLoggingFileName"></a>Define the <b>Logging filename</b>. This will appear as a prefix in all logging file names. It is recommended that you enter a descriptive name to help you locate a file after it has been logged.</li>
+            <li>Check that the <b>Raw Logging</b> checkbox is selected.</li>
+            <li>Enter the Global Logging range in the <b>Start</b> and <b>End</b> fields. This must be entered in lower case and the strings <code>start </code>and <code>end </code>will be accepted in the respective fields to match the length values they represent.</li>
+            <li>If necessary, select the <b>Limit log file size</b> checkbox and set the <b>Size Limit</b>.</li>
+            <li>If necessary, select the <b>Sound field logging</b> checkbox. Check with the Person In Charge (PIC) that this information is to be logged.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle"><MadCap:variable name="General.Fibre/Fiber" /> Graph data can only be logged over the entire monitored <MadCap:variable name="General.fiber/fibre" /> section. Whilst it can be run in conjunction with global logging, it can reduce the amount of raw data that can be logged to disk. For more details, refer to your training materials. </p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>Select the <b>Apply</b> and <b>Save</b> buttons. This will stop the <MadCap:variable name="General.ProductName2" /> controller and restart it with data logging operational. If a property change is made and submitted, a new data log file with creation date/time, incorporated into its file name, will be created when the system restarts.</li>
+        </ol>
+        <h4><a name="Dynamic"></a>Dynamic Data Logging</h4>
+        <p>Below is an image of the Dynamic Global Logging dialog:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/dynamic_data_logging.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-5: ">Dynamic Global Logging dialog</p>
+        <ol>
+            <li>Either enter the text value for the <b>start</b> and <b>end</b> distances in their respective fields. <br /><b>OR</b><br />Choose the <b>Select logging area visually</b> button, and choose and then grab the distance measured in the graphical selection.</li>
+            <li>When the logging interval is defined, select the <b>Off</b> button. It will then change to <b>On</b>, and data logging will commence. To define the logging interval, refer to <a href="#DefineLoggingFileName" target="_parent">Step 2 above</a>. </li>
+            <li>Make sure the data logged does not exceed the maximum write speed of the disk drive that is used. To do this, monitor the <span style="background-color: #1e90ff;">write speed on the System Health dashboard</span>. If it approaches the maximum sustained write speed for the disk drive, reduce the amount of data that is logged.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_view_only_display.htm#top" />
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_main_menu.htm#top" />
+                <MadCap:relatedTopic src="helios_controls.htm#Run" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Hardware" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Optical" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Communic" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="../../0ZOtherStuff/0concept_factory_login_display.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

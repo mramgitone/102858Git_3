@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4453" MadCap:lastWidth="619">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Hardware Properties</h1>
+        <p>This dialog consists of six tabs:</p>
+        <ul>
+            <li><a href="#Identity">Identity</a>
+            </li>
+            <li><a href="#Optics">Optics Module</a>
+            </li>
+            <li><a href="#MUX">MUX</a>
+            </li>
+            <li><a href="#Reportin">Reporting</a>
+            </li>
+            <li><a href="#Watchdog">Watchdog</a>
+            </li>
+            <li><a href="#Install">Install</a>
+            </li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>For a more in-depth description of each module, select here to see the relevant areas (shown above) detailed below.</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h2><a name="Identity"></a>Identity</h2>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser">This tab below shows the serial and identification numbers for the Helios Controller and Panoptes Server, which are only editable by a Factory User.</p>
+                <p>Give the Helios Controller a custom name and custom identification number, if it interacts with a third party interface.</p>
+                <p class="DeveloperQuery">I&#160;need some call outs to describe what the UUID is and where the serial number originates from. </p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_identity.PNG" alt="The identity tab in hardware properties dialog" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-1: ">Identity Tab</p>
+                <h2><a name="Optics"></a>Optics Module</h2>
+                <ol>
+                    <li>Before you can set the Optical Channel Properties, check the optics properties. You will see the <MadCap:xref href="optics_properties.htm#top" target="_popup">Optics Properties</MadCap:xref> options.</li>
+                </ol>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_opticismodule1.PNG" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-2: ">Optics Properties</p>
+                <p>
+                </p>
+                <ol MadCap:continue="true">
+                    <li>From the <b>Admin &gt; Hardware Properties</b> and the <b>Optics Module</b> tab, check the settings for the <b>Trigger level</b> and <b>Box delay</b>.</li>
+                </ol>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_opticsmodule.png" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-3: ">The Optics Module displayed from the Hardware Properties dialog</p>
+                <ol MadCap:continue="true">
+                    <li>The <b>TEC1 controller set point</b> can be set to optimize from a value range of zero (0) to 22 (which units). To do this:<ol style="list-style-type: lower-alpha;"><li>Select the green button next to the Optimize button and drag the value ruler to the desired optimization value.</li><li>Check the Coarseness Value. This value can be set to a range of zero (0) to 991 (which units). After that, the value is infinite.</li><li>Select the <b>Submit</b> button.</li><li>Select the <b>Cancel</b> and <b>Reset</b> buttons, to cancel or reset the values to their original settings.</li></ol></li>
+                </ol>
+                <h2 MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser"><a name="MUX"></a>MUX</h2>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser">This is a reference only field, and it displays the multiplexer type for the Helios Controller. Select the Port Name for each MUX&#160;Assignment from the drop-down lists.</p>
+                <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser">Need content for this. What is a multiplexer type?</p>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser" class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_mux.PNG" class="OneHundredPercentThumbnail" />
+                </p>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser" class="captionCont" MadCap:autonum="Figure 1-4: ">The Multiplexer Type Tab</p>
+                <p MadCap:conditions="HELIOS_HWI.BasicUser,HELIOS_HWI.AdminUser">&#160;</p>
+                <h2><a name="Reportin"></a>Reporting</h2>
+                <p>The properties contained in the Reporting tab, shown below, are only used to communicate with a Panoptes server, and/or a third party interface.  It is split into two sections: XML submission type and Binary submission type.</p>
+                <p>The XML submission type holds information that the Helios Controller sends out to third party interface in an ASCII XML format to specific URLs.</p>
+                <p>The Binary submission type entries are only required when a Panoptes server is connected to the system. These options send disturbance alarms and <MadCap:variable name="General.Fibre/Fiber" /> Graph data to the Panoptes server.</p>
+                <p class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_reporting.png" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:autonum="Figure 1-5: ">The Reporting Module displayed in the Hardware Properties dialog</p>
+                <h4><a name="XML"></a>XML Submission Type</h4>
+                <ol>
+                    <li>Check the <b>Time Zone</b> that you want the XML message timestamps to be displayed in.</li>
+                    <li>Select the appropriate <b>Submit disturbance alarms</b> and <b>Submit system alarms</b> checkbox.  A URL must be specified for the communication to be established with the server that will receive this information.</li>
+                    <li>Select if appropriate, the <b>Submit heartbeats</b> checkbox. A URL must be specified for the communication to be established with the server that will receive this information. A heartbeat rate must be specified to determine how often the heartbeat is sent.</li>
+                </ol>
+                <h4><a name="Binary"></a>Binary Submission Type</h4>
+                <ol>
+                    <li>In the <b>Binary host</b> field, enter the URL details for the Panoptes server. This is an 11 digit number.</li>
+                    <li>In the <b>port</b> field, enter the server port number. These properties are a factory setting and is not changed unless there is a non-standard communication requirement. If the latter is a requirement, or you experience issues with the communication to the Panoptes server, refer to the <i>Panoptes User Guide</i>, and <a href="mailto:customer.support@fotechsolutions.com?subject=Helios Client experiencing communication problems with Panoptes Server" target="_blank">contact Customer Support</a>.</li>
+                    <li>Select the <b>Submit disturbance alarms</b> checkbox, so alarm detections can communicate with the Panoptes server.</li>
+                    <li>Select the <b>Submit <MadCap:variable name="General.fiber/fibre" /> shots</b> checkbox to enable <MadCap:variable name="General.Fibre/Fiber" /> Graph data to be sent to the Panoptes server.</li>
+                </ol>
+                <h2 MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser"><a name="Watchdog"></a>Watchdog</h2>
+                <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser">The Watchdog field gives the signal automation rules for the FDEL These are configured during the installation. Refer to the <a href="../5InternalOnly/installation_configuration/Helios Communications.pdf" target="_blank">Installation &amp; Configuration Manual</a> for more details.</p>
+                <h2 MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser"><a name="Install"></a>Install</h2>
+                <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser">The <b>Default display, divide by noise</b> floor option allows you to <span style="background-color: #9400d3;">?????</span>.</p>
+                <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser">Reviewers – I need some information please to tell users why it is important this tick box is checked or left unchecked.</p>
+                <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser" class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_install.png" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser" MadCap:autonum="Figure 1-6: ">The Install Module displayed in the Hardware Properties dialog</p>
+                <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser">To activate this option, select the checkbox or select the <img src="../../Resources/Images/product_images/gui_images/dynamic.png" alt="the dynamic arc-flash icon" /> and make sure the <b>Divide by noise floor?</b> option is checked, as shown in the dialog below.</p>
+                <p MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser" class="image">
+                    <img src="../../Resources/Images/product_images/hardware_properties_install_dividebynoisefloor.png" class="OneHundredPercentThumbnail" />
+                </p>
+                <p class="captionCont" MadCap:conditions="HELIOS_HWI.AdminUser,HELIOS_HWI.BasicUser" MadCap:autonum="Figure 1-7: ">Divide by Noise Floor option </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <p class="SeeAlsoLink" MadCap:conditions="General.Online">
+            <MadCap:conceptLink term="Introduction" />&#160;</p>
+    </body>
+</html>

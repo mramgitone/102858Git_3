@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="user_guide_A4"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="first"
+  MasterToc="/Project/TOCs/User Guide_A4.fltoc"
+  ConditionTagExpression="include[General.PDF or HELIOS_HWI.AdminUser or HELIOS_HWI.BasicUser or HELIOS_HWI.FactoryUser]exclude[General.Online or &quot;HELIOS_HWI.Customer Support&quot;]"
+  PatchHeadingLevels="true"
+  InjectEmptyPages="true"
+  UseLocalBuildSettings="true"
+  IgnoredCompilerWarnings="20032,20033,20034,20035,20036,20037,20038,20039,20040,20041"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  OutputFile="user_guide_A4"
+  OutputFolder="C:\madcap\Helios\Helios\Output\claire_wood\PDF Output\UK"
+  GetLatestBeforeCompile="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="footnote"
+    GenerateTOCProxy="false" />
+  <DocumentProperties
+    Title="Helios User Guide - A4"
+    Author="Fotech Solutions Limited" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="50"
+    PageLayout="TwoColumnRight"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true"
+    Tagged="true"
+    RestrictPermissions="true"
+    ModifyPassword="xYUDL8EzJK9YCecVK0s9kg=="
+    RestrictPrinting="false"
+    DownsampleImages="false" />
+  <Variables>
+    <Variable
+      Name="General/Welcome/Overview">Overview of </Variable>
+    <Variable
+      Name="General/About/Preface">Preface</Variable>
+  </Variables>
+</CatapultTarget>

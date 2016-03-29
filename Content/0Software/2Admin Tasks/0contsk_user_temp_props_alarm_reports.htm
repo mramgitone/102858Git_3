@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="11094" MadCap:lastWidth="645">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Factory2"></a>Factory Template Properties (Alarm Reports)</h3>
+        <h3><a name="top"></a>User Template Properties (Alarm Reports)</h3>
+        <p>Below is an image of the Alarm Reports User Template and a description of the fields for each section.</p>
+        <p class="DeveloperQuery">Can you let me know if you were happy with how I’d shown the Detection Statistics screen and I will do the same here.&#160;Didn’t want to waste time in case it’s not what you expected.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/alarm_reports_templates.PNG" alt="The Alarm Reports Templates Dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Alarm Reports Templates Dialog</p>
+        <Div class="Note" MadCap:conditions="HELIOS_HWI.BasicUser" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p MadCap:conditions="HELIOS_HWI.BasicUser" class="noteMiddle"><a name="Factory"></a>Factory Template Properties (Alarm Reports) has the same fields as the User Template.</p>
+        </Div>
+        <h4>Name</h4>
+        <p>Enter the name to be given to the Alarm Report. If a duplicate name is entered, it will be appended with a number to differentiate it from the original named report.</p>
+        <h4>Alarm Type</h4>
+        <p>Each Alarm Report requires an associated Alarm type and the system comes with pre-defined Alarm Report types. For a full list, refer to the <MadCap:xref href="../1View Only Tasks/ref_alarm_detection_types.htm#top" target="_popup">Table of Alarm Detection Types</MadCap:xref>.</p>
+        <p>From the drop-down menu, select the Alarm type.  If an alarm is generated, you will see the associated, predefined icon displayed in the <MadCap:variable name="General.Fibre/Fiber" /> Graph.</p>
+        <h4>Streams Tab</h4>
+        <h5>Include time series?</h5>
+        <p>For stationary Alarms, the time series associated with the Alarm Report can be included as an additional option, with the Alarm Report.  This time series is filtered to the same frequencies as the current analysis band.  If the Alarm Report is viewed on a Panoptes server, the time series can be displayed and/or listened to.  This is enables you to view and/or listen to the data that actually produced the Alarm Report.</p>
+        <p class="DeveloperQuery">&lt;Do we need to highlight the following shortfall for users without Panoptes? Should I add a conditional tag for Panoptes - Steve? I’m thinking it’s something you can switch on/off if projects get user specific&gt;</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Alarm time histories can only be viewed from a Panoptes server.</p>
+        </Div>
+        <h5>Primary Required Stream</h5>
+        <p>Each Alarm Report requires at least one required stream.  To add a required stream:</p>
+        <ol>
+            <li>Select on the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/add-16x16.png" alt="The green add icon" /> icon.  From the drop-down menu, select the desired stream.</li>
+            <li>	Choose the <b>Apply</b> and <b>Save</b> buttons to create the streams.</li>
+            <li>Repeat the process to add all the required streams.</li>
+        </ol>
+        <p>To remove a stream if one or more of them exist:</p>
+        <ol>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" alt="The red delete icon" /> icon next to the stream to be deleted.</li>
+            <li>Select <b>OK</b> to confirm deletion. Choose <b>Cancel</b> to stop the deletion or <b>Reset</b> to restore the original values.</li>
+            <li>Repeat the process to remove all the required streams.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If more than one required stream exists, the indicators of each stream will be combined, before it is entered into the Alarm Report. This is done with a Boolean AND operation. </p>
+            <p class="noteMiddle"><a name="Halos"></a>Halos can be used to adjust the effective width of each stream prior to being combined with the Boolean AND operation.</p>
+        </Div>
+        <h5>Relative Halo (%) &amp;&#160;Absolute Halo (m)</h5>
+        <p>Relative Halos are used if more than one stream is included in an Alarm Report whereas, Absolute Halos are used to increase the original width of an indicator by the entered amount.</p>
+        <p>The Relative Halo is used to increase the indicator width, and a positive value will increase the indicator width by the entered percentage.  Likewise, a positive Absolute Halo value increases the indicator width by the entered distance. If the values are set to zero, they will not affect the original width.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">	If a Relative and Absolute Halo is entered, the larger of the two will indicate by how much the indicator width will have increased.</p>
+        </Div>
+        <h5>Disallowed Stream</h5>
+        <p>It is used if you require the exclusion of an indicator stream in an Alarm Report.</p>
+        <p>To add a disallowed stream:</p>
+        <ol>
+            <li>Select on the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/add-16x16.png" alt="The green add icon" /> icon.  From the drop-down menu, select the stream to be excluded.</li>
+            <li>Choose the <b>Apply</b> and <b>Save</b> buttons to create the streams.</li>
+            <li>Repeat the process to add all the required disallowed streams.</li>
+        </ol>
+        <p>To remove a disallowed streams  when one or more of them exist:</p>
+        <ol>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" alt="The red delete icon" /> icon next to the disallowed stream to be deleted.</li>
+            <li>Select <b>OK</b> to confirm deletion. Choose <b>Cancel</b> to stop the deletion or <b>Reset</b> to restore the original values.</li>
+            <li>Repeat the process to remove all the required disallowed streams.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle"><a href="#Halos" target="_popup">Halos</a> can also be used to adjust the effective width of each disallowed stream prior to being combined with the Boolean AND operation. For more details and an example, refer to your training materials.</p>
+        </Div>
+        <h4>Tracking</h4>
+        <h5>History Length</h5>
+        <p>It is used to track disturbances and provide information on the disturbance width, speed and acceleration.</p>
+        <p>The History length is the amount of time the system uses to decide if the alarm indicators in an alarm track have met the initial Tracking criteria, to generate a disturbance alarm.  This field is used in conjunction with the Reporting Threshold to make this decision.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">For situations where the system needs to alarm very quickly on short duration disturbances, it is recommended that you set the history length to a short time duration and/or set the <MadCap:xref href="#Reportin" target="_blank">Reporting Threshold</MadCap:xref> to a small value. If set too large, both of these properties can significantly delay the actual Alarm Report.</p>
+        </Div>
+        <p>In addition to being used for the Alarm criteria, the History length is the length of time that is remembered when attempts are made, to predict where an alarm track is likely to occur in the future.</p>
+        <h5>History Weight Half-life</h5>
+        <p>It is used to weight recent time samples more heavily if an alarm track is estimated.  It is primarily used if you track disturbances whose motion does not strictly adhere to either the constant velocity or constant acceleration tracking models. This is particularly so, if longer History lengths are used.</p>
+        <p>To apply a uniform weight of the track estimate:</p>
+        <ol>
+            <li>Make sure the <b>Uniform Weight</b> check box is selected.</li>
+            <li>Enter the desired <b>History weight half-life</b> (in seconds) to force the most recent time samples to bias the alarm track estimate.</li>
+        </ol>
+        <p>For longer history lengths, it is advisable to set the History weight half-life to 25-50% of the history length.</p>
+        <h5>Tracking Model</h5>
+        <p>It is used to track Alarms that move.  If it is known in advance that an Alarm will be move or be stationary, this information can be supplied to Helios.  To do this:</p>
+        <ol>
+            <li>From the drop-down menu, select the Tracking model.</li>
+            <li>For alarms select the option that best describes their acceleration speed. For example:<ul><li>For those alarms that do not move (digging, leaks, and so forth), select the <b>Stationary</b> option.</li><li>For alarms that are not expected to accelerate (walking), select the <b>Constant motion</b> option.</li><li>For alarms expected to have significant acceleration (trains that pull in and out of a station), select the <b>Accelerated motion</b> option.</li></ul></li>
+        </ol>
+        <h5>Alarm Reporting Interval</h5>
+        <p>It is used to determine if a disturbance alarm can be generated at a rate equal to the FFT update rate.</p>
+        <p>You can send out Alarm Reports at a time interval between alarm reports, to the HWI display (or other 3rd party interfaces). The Alarm Report will be updated internally with the FFT update rate, but only sent out at the report interval.</p>
+        <h4>Alarm Filters</h4>
+        <h5><a name="Reportin"></a>Reporting Threshold</h5>
+        <p>Alarm filters add another level of capability to <MadCap:variable name="General.ProductName2" />’ ability to alarm on valid disturbances and to reject false alarms and nuisance alarms.  Any number of the Alarm filters can be enabled for a specific Alarm Report.  An Alarm Report will only be generated if the disturbance passes ALL enabled Alarm filters.</p>
+        <p>This property is a fraction ranging between 0 and 1 and it <b>MUST BE</b> set so disturbance alarms can be generated. It works in conjunction with the History length to determine if the disturbance meets the Tracking criteria, and controls the generation of disturbance alarms. If this property is set to 1.0, every time sample in our history length must have an alarm Indicator before an Alarm Report is generated.</p>
+        <p>If a single time sample has does not include an Alarm Indicator, then no Alarm Report will be generated.  If the Reporting Threshold is set to 0.5, then 50% of the time samples in the history length will require Alarm Indicators before an Alarm Report is generated.</p>
+        <p>For more details and an example, refer to your training materials.</p>
+        <p class="DeveloperQuery">The following seven H5 headings (highlighted in yellow) and their content, don’t appear in the V4.5.3 of software. Should I take them out or do they reappear in subsequent versions?</p>
+        <h5 style="background-color: #ffff00;">Size Filter</h5>
+        <p style="background-color: #ffff00;">Enables an Alarm Report to be passed, if its speed falls between the minimum and maximum speed in the currently selected units.</p>
+        <ol>
+            <li style="background-color: #ffff00;">To enable the Speed filter, make sure that its check box is checked.</li>
+            <li style="background-color: #ffff00;">Enter in range values for the speed for an Alarm Report.  An Alarm Report can only be generated if the disturbance falls within the specified speed range.  The minimum and maximum speeds should both be positive values, as the filter only deals with absolute speed values.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle" style="background-color: #ffff00;">One way to define a stationary disturbance, is to enter a minimum value that is slightly below zero, and a maximum value that is slightly above zero.  If both the minimum and maximum speeds are set to zero, an Alarm Report will not be generated.</p>
+        </Div>
+        <h5 style="background-color: #ffff00;">Burst Count Filter</h5>
+        <p style="background-color: #ffff00;">A burst is defined as a group of indicators (in time) surrounded by a group of lulls.  To enable the Burst count filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure the check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter values for the minimum and maximum burst count of an Alarm Report.</li>
+        </ol>
+        <p style="background-color: #ffff00;">As an example, a walking disturbance will create a set of spaced bursts. Each burst corresponds to an individual foot plant.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle" style="background-color: #ffff00;">If Burst filters are used, it is recommended that you set the History length to a longer time interval. This allows multiple bursts to occur within the History length.</p>
+        </Div>
+        <h5 style="background-color: #ffff00;">Median Burst Period</h5>
+        <p style="background-color: #ffff00;">This property defines the median time between the start of successive bursts. <b>ONLY</b> use it if the bursts from the disturbance are uniformly spaced in time. For example, constant walking produces reasonably constant time intervals.</p>
+        <p style="background-color: #ffff00;">To enable the Median burst period filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure that the check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter a minimum and maximum median burst period (in seconds) for an Alarm Report.</li>
+        </ol>
+        <p style="background-color: #ffff00;">An Alarm Report will only be generated if the disturbance contains a median burst period that is larger than the minimum median burst period and less than the maximum median burst period.</p>
+        <h5 style="background-color: #ffff00;">Average Burst Density</h5>
+        <p style="background-color: #ffff00;">The Average burst density is the average of the ratio of bursts to bursts plus lulls.</p>
+        <p class="ExampleHead" style="background-color: #ffff00;">Example</p>
+        <p class="Example" style="background-color: #ffff00;">A walking disturbance will produce bursts that correspond to foot plants, and lulls that correspond to the time between foot plants.  If the bursts last on average for 0.5 seconds and the lulls last on average for 1 second, the Average burst density would be 33.3% or <MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" alt="equation: 0.5 over 0.5+1"><math><mrow><mfrac><mrow><mn>0.5</mn></mrow><mrow><mrow><mo>(</mo><mn>0.5</mn><mo>⁢</mo><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mrow></mfrac></mrow></math></MadCap:equation></p>
+        <p style="background-color: #ffff00;">To enable the Average burst density filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure that the check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter in range values for the minimum and maximum average burst density (in percentages), for an Alarm Report.</li>
+        </ol>
+        <h5 style="background-color: #ffff00;">Activity Duration</h5>
+        <p style="background-color: #ffff00;">This is the length of time that a disturbance lasts, and it can last longer than a History length period of time.</p>
+        <p style="background-color: #ffff00;">To enable the Activity duration filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure that its check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter values for the minimum and maximum activity duration (in seconds), for an Alarm Report.</li>
+        </ol>
+        <h5 style="background-color: #ffff00;">Median Burst Duration</h5>
+        <p style="background-color: #ffff00;">This is the median of the durations of ALL bursts that occur in a history length period of time.</p>
+        <p style="background-color: #ffff00;">To enable the Median Burst duration filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure that the check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter the values (in seconds) for the desired minimum and maximum median burst durations.</li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle" style="background-color: #ffff00;">If you use the median rather than the average allows an anomalously high or low duration to still pass an Alarm Report, as long as the majority of the burst durations fall within the minimum and maximum values.</p>
+        </Div>
+        <h5 style="background-color: #ffff00;">Median Lull Duration</h5>
+        <p style="background-color: #ffff00;">This is the median of the durations of all lulls in a history length period of time.</p>
+        <p style="background-color: #ffff00;">To enable the Median Lull duration filter:</p>
+        <ol>
+            <li style="background-color: #ffff00;">Make sure that the check box is selected.</li>
+            <li style="background-color: #ffff00;">Enter the required values (in seconds) in the minimum and maximum lull duration, for an Alarm Report.</li>
+        </ol>
+        <p style="background-color: #ffff00;">An Alarm Report will only be generated if lulls last for a duration that is larger than the minimum lull duration and less than the lull maximum duration.</p>
+        <h4>High Level Rules Tab</h4>
+        <h5>Report only if</h5>
+        <p>This section adds another level of Alarm Report definition.  After a disturbance event has passed the basic Tracking and relevant filtering criteria, it can then be passed through a set of High-level rules.</p>
+        <p>This feature assists in the generation of an accurate Alarm Report, which rejects false and nuisance alarms.</p>
+        <p>The first time this dialog is displayed, it will appear empty and you will see this text in the dialog: <b>Report only if (No restrictions defined)</b>. To add a new rule:</p>
+        <ol>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/add-16x16.png" alt="The Green Add icon" /> icon.  A new rule template is displayed in the dialog as shown below.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/user_temp_alarm_reps_reportonlyif.png" alt="Add a new template dialog for Alarm Reports user template, high level rules tab and Report Only If" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">New Rule Template displayed in the High Level Rules dialog</p>
+        <ol MadCap:continue="true">
+            <li>From the drop-down menu, select the Alarm Report for the newly added rule.</li>
+            <li>Select whether this Alarm Report <b>occurs</b> or <b>does not occur</b> within the selected distance and/or period of time.</li>
+            <li>Enter in the distance separation and time interval that the selected Alarm Report will or will not be active in.</li>
+            <li>Select the <b>Apply</b> and <b>Save</b> buttons to create an Alarm Report.</li>
+            <li>Repeat this process to add additional High-level rules.</li>
+        </ol>
+        <p>To remove a High-level rule:</p>
+        <ol>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" alt="the red delete icon" /> icon beside the rule to be removed.</li>
+            <li>Select <b>OK</b> to confirm deletion of the rule. To stop the rule deletion, choose <b>Cancel</b> or to restore the original rule, select <b>Reset</b>.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="TitlePage" Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="0" PaddingRight="0" PaddingTop="0" PaddingBottom="0" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in" Orientation="portrait" BackgroundRepeat="no-repeat" BackgroundPositionX="30px" BackgroundPositionY="20px" PageType="first">
+        <Frame Flow="body" ColumnCount="1" ColumnDivider="Solid 1pt Black" Width="4.03125in" Height="4.114583in" X="23px" Y="616px" Right="406px" Bottom="45px" Anchors="" DividerTopMargin="0">
+        </Frame>
+        <Frame X="1px" Y="82px" Width="814px" Height="531px" Flow="header" Right="1px" Bottom="443px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="imagecenter">
+                            <xhtml:img xhtml:src="../../BrochureImages/HeliosUnit_Front.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                        </xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" ColumnDivider="Solid 1pt Black" Width="3.885417in" Height="4.135417in" X="417px" Y="616px" Right="26px" Bottom="43px" Anchors="" DividerTopMargin="0" FlowIndex="1">
+        </Frame>
+        <Frame X="479px" Y="533px" Width="332px" Height="75px" FlowIndex="3" Flow="body" Right="5px" Bottom="448px" />
+    </Page>
+    <Page Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="0" PaddingRight="0" PaddingTop="0" PaddingBottom="0" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in" Orientation="portrait" BackgroundRepeat="no-repeat" BackgroundPositionX="30px" BackgroundPositionY="20px" PageType="normal" Name="backpage">
+        <Frame X="409px" Y="39px" Width="368px" Height="319px" Flow="body" Right="39px" Bottom="698px" />
+        <Frame X="42px" Y="912px" Width="736px" Height="141px" FlowIndex="1" Flow="footer" Right="38px" Bottom="3px" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p xhtml:class="footer">Contact us to discuss your requirements. </xhtml:p>
+                        <xhtml:p xhtml:class="footer">Website: <MadCap:variable xhtml:name="brochure.Website" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or E-mail: <MadCap:variable xhtml:name="brochure.Email" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></xhtml:p>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col xhtml:style="width: 276px;" />
+                            <xhtml:col xhtml:style="width: 243px;" />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:th xhtml:class="address">UK&#160;Office</xhtml:th>
+                                    <xhtml:th xhtml:class="address">Calgary Office<xhtml:br /></xhtml:th>
+                                    <xhtml:th xhtml:class="address">Houston Office<xhtml:br /></xhtml:th>
+                                </xhtml:tr>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <xhtml:p xhtml:class="footer">Titan House, Redfields Industrial Park, Redfields Lane</xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Church Crookham, Hampshire, GU52 0RD</xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Phone: +44 1252 560570</xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td>
+                                        <xhtml:p xhtml:class="footer">215, 1300 8th St SW</xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Calgary, Canada, T2R 1B2</xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Phone: +1-403-852-5696</xhtml:p>
+                                    </xhtml:td>
+                                    <xhtml:td>
+                                        <xhtml:p xhtml:class="footer">1001 S. Dairy Ashford, Suite 100, </xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Houston, Texas 77077, USA</xhtml:p>
+                                        <xhtml:p xhtml:class="footer">Phone: +1-713-595-6604</xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col xhtml:style="width: 32px;" />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td>
+                                        <xhtml:img xhtml:src="../../Images/Conformité_Européenne_(logo)_svg.png" xhtml:alt="The CE Mark" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xhtml:style="mc-thumbnail-max-height: 96px;mc-thumbnail: inherit;width: 24px;height: 20px;" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="padding: 0px;">
+                                        <xhtml:table xhtml:style="width: 100%;">
+                                            <xhtml:col xhtml:style="width: 484px;" />
+                                            <xhtml:col />
+                                            <xhtml:tbody>
+                                                <xhtml:tr>
+                                                    <xhtml:td xhtml:class="LeftAligned">EC60825-1, UK60950-1, CDRH-21 CFR1040, FCC, RoHS certified</xhtml:td>
+                                                    <xhtml:td xhtml:class="RightAligned">© Fotech Solutions 2015</xhtml:td>
+                                                </xhtml:tr>
+                                            </xhtml:tbody>
+                                        </xhtml:table>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="42px" Y="39px" Width="364px" Height="318px" Flow="body" Right="410px" Bottom="699px" Anchors="" />
+        <Frame X="42px" Y="361px" Width="736px" Height="550px" FlowIndex="3" Flow="body" Right="38px" Bottom="145px" />
+    </Page>
+</PageStyles>

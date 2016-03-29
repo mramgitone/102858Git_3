@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2247" MadCap:lastWidth="798">
+    <head>
+    </head>
+    <body>
+        <h1 class="ChapterTitle"><a name="top"></a>What’s New</h1>
+        <p><a name="New"></a>Version<MadCap:variable name="General.VersionNumber" /> has added three significantly new features which may encourage you to upgrade your software:</p>
+        <ul>
+            <li>Bounded Noise Floor.</li>
+            <li>Overlapping FFTs.</li>
+            <li>HDF5 &amp; NetCDF4 Logging Formats.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>See below for an explanation of each feature.</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h1>Bounded Noise Floor</h1>
+                <p>While the standard noise floor estimate computed by a Helios unit has worked well for many installations, there are a few types of signals, namely signals that have a wide frequency range that can confuse the system. With version<MadCap:variable name="General.VersionNumber" /> we have added the concept of a "bounded" noise floor that significantly improves the response in these situations. Refer to <MadCap:xref href="../2Admin Tasks/opchan_noise_floor_tab.htm#Noise" target="_blank">Noise Floor Bounding Tab</MadCap:xref>.</p>
+                <h1>Overlapping FFTs</h1>
+                <p>In previous versions of our software the user has had to give up temporal resolution in order to gain frequency resolution. That is, increasing the FFT size has always resulted in a loss of precision in time. With version <MadCap:variable name="General.VersionNumber" /> we have added the ability to use an overlapping FFT in order to gain frequency resolution without having to give up the temporal resolution. Refer to the <MadCap:xref href="../2Admin Tasks/opchan_process_tab.htm#Processi" target="_blank">Processing Tab.</MadCap:xref></p>
+                <h1>HDF5 &amp; NetCDF4 Logging Formats</h1>
+                <p>Historically when recording raw data from a Helios system you have had to record to our FDS (Fotech Data Stream) format. This format was optimized to allow the fast writing required by our system, and for a long time was the only option we offered. With version <MadCap:variable name="General.VersionNumber" /> we have added the ability to log to the HDF5 and NetCDF4 formats. The advantage of these formats is that there is already a large and growing number of third-party tools that will work with them. (...need a link to...)</p>
+                <h2>Removed/Deprecated Features</h2>
+                <p>There are two features that have been removed from version <MadCap:variable name="General.VersionNumber" /> of the Helios software:&#160;the 180 MSPS&#160;Sample Rate and Older 4U&#160;Hardware.</p>
+                <p>See below for an explanation as to why these have been removed.</p>
+                <h3>180 MSPS Sample Rate</h3>
+                <p>This applies only to older optics units. Newer optics units support only the 150 MSPS sample rate, which is the most accurate (and has the least optical "jitter") of the sample rates. The 180 MSPS sample rate has always been problematic with some of our digitizing cards giving a good result and others giving poor results. In the past we have simply relied on the end user knowing whether or not their card would get a good result and not using this option if it does not. </p>
+                <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="noteMiddle">There is no way to tell from the card itself. The only way to recognise whether a digitizing card yields a good result is to log raw data and examine the results.</p>
+                </Div>
+                <p>However, there have been enough reports of problems with logged data being sub-standard due to the end user not realizing that this setting would give a poor result on their system. Hence it was decided to remove this optional altogether.</p>
+                <h3>Older 4U Hardware</h3>
+                <p>Support for the older hardware (4U&#160;boxes) ceases with this new release. </p>
+                <p> If an older box is in operation, an error message will be displayed when version <MadCap:variable name="General.VersionNumber" />is installed onto the hardware. To use the new features in version <MadCap:variable name="General.VersionNumber" />of&#160;the software, a hardware upgrade is required. Contact us for more information.</p>
+                <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+                    <p class="noteMiddle">The older hardware will continue to support V4.5.X via any critical patches that are deemed necessary.</p>
+                </Div>
+                <p> <![CDATA[ ]]></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

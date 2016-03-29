@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="BrochureInsert1"
+    Link="/Content/0Brochures/BrochureInsert1.htm" />
+  <TocEntry
+    Title="BrochureInsert2"
+    Link="/Content/0Brochures/BrochureInsert2.htm" />
+  <TocEntry
+    Title="BrochureInsert3"
+    Link="/Content/0Brochures/BrochureInsert3.htm"></TocEntry>
+  <TocEntry
+    Title="BrochureInsert4"
+    Link="/Content/0Brochures/BrochureInsert4.htm" />
+</CatapultToc>

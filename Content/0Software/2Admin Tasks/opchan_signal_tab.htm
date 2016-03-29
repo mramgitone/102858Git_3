@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1926" MadCap:lastWidth="901">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Signal"></a>Signal Tab</h3>
+        <p>The Signal tab contains the <MadCap:variable name="General.Fibre/Fiber" /> Break and Signal degradation properties. See image below:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_signal.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Signal Tab</p>
+        <h4><MadCap:variable name="General.Fibre/Fiber" /> Break Check</h4>
+        <p>The <MadCap:variable name="General.Fibre/Fiber" /> Break check module is designed to trigger an alarm when the <MadCap:variable name="General.fiber/fibre" /> sensor is severed or damaged. The <MadCap:variable name="General.Fibre/Fiber" /> Break scans the <MadCap:variable name="General.fiber/fibre" /> response, and identifies the break detection value along the length of the <MadCap:variable name="General.fiber/fibre" /> sensor. Large amplitude discontinuities occur as normal on a <MadCap:variable name="General.fiber/fibre" /> sensor, and can be similar in magnitude to a <MadCap:variable name="General.fiber/fibre" /> break. This makes a <MadCap:variable name="General.fiber/fibre" /> break harder to detect. However, if there is a clear distinction between the <MadCap:variable name="General.fiber/fibre" /> sensor discontinuity and <MadCap:variable name="General.fiber/fibre" /> sensor break, then it is easier to specify a break alarm threshold. When this threshold is breached, it will generate an alarm that indicates there has been a <MadCap:variable name="General.fiber/fibre" /> break.</p>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle"> 	A problem occurs when there is not a clean boundary between the magnitudes of the break detection value between normal <MadCap:variable name="General.fiber/fibre" /> sensors and broken <MadCap:variable name="General.fiber/fibre" /> sensors.  On screen, you will see a <MadCap:variable name="General.fiber/fibre" /> break represented, as shown below.</p>
+        </Div>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_signal_fibrecheck.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: "><MadCap:variable name="General.Fibre/Fiber" /> Break Check Module</p>
+        <p>This is represented by the maths formula:</p>
+        <p class="DeveloperQuery">*********I’m still waiting for an equation or formula to put in here. The description for what I want is in red text below******</p>
+        <p class="DeveloperQuery">A math formula will be shorter and easier for people to take in. Could I&#160;have the following paragraph in red, represented in a formula please? You can email me it in a visio diagram  if you like. You can have parameters listed below the formula. For example:</p>
+        <p class="DeveloperQuery">X=Y x Z </p>
+        <p class="DeveloperQuery">where:&#160;Y = (a + b)</p>
+        <p class="DontKnow">In other words, if the separation between the mean values for broken fibre and unbroken fibre is greater than the sum of the half-error bars, there will always be a clear distinction between a break condition and a normal fibre sensor.  When the mean values are not separated by the sum of the half-error bars, there is overlap in the distribution curves, and now, regardless of what value the break alarm threshold is set to, there will be a possibility of either false positives (detecting a break in a normal fibre sensor) or false negatives (failing to detect a valid fibre sensor break).</p>
+        <p>To configure the Fibre Break module, see the image below and complete these steps:</p>
+        <ol>
+            <li>Select the <b>Enable <MadCap:variable name="General.fiber/fibre" /> break check</b> tick box, so that the system will activate an alarm for if a break occurs in the <MadCap:variable name="General.fiber/fibre" /> sensor.</li>
+            <li>Enter a value for the <b>Checking period</b>. </li>
+        </ol>
+        <p class="DeveloperQuery">This is a value that does what ????? Is this dependant on the difference between the lowest value of where the break starts, that you see on the graph, and the start of the time where you wouldn’t see much of a response from the fibre?</p>
+        <ol MadCap:continue="true">
+            <li>Select the <b>Apply</b> and <b>Save</b> buttons.</li>
+            <li>Select <b>Cancel</b> or <b>Reset</b> to reject any of the settings, and return to the original values.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="detection_statistics_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

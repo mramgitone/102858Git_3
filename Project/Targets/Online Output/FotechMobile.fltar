@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Fotech Mobile Target"
+  Type="WebHelpMobile"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/HeliosHWI.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  OutputFile="fotechmobile"
+  OutputFolder="C:\madcap\Helios\Helios\Output\claire_wood\Mobile Output"
+  MakeFileLowerCase="true"
+  ReplaceSpacesWithUnderscores="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  AutoSizeCaptureCaptions="true"
+  GetLatestBeforeCompile="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

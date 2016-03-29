@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="UKAddress1">Titan House</Variable>
+  <Variable
+    Name="UKAddress2"
+    Comment="">Redfields Industrial Park</Variable>
+  <Variable
+    Name="UKAddress3"
+    Comment="">Redfields Lane</Variable>
+  <Variable
+    Name="UKAddress4"
+    Comment="">Church Crookham</Variable>
+  <Variable
+    Name="UKAddress5"
+    Comment="">Hampshire</Variable>
+  <Variable
+    Name="UKPostCode"
+    Comment="">GU52 0RD</Variable>
+  <Variable
+    Name="UKPhoneNo"
+    Comment="">+44 1252 560570</Variable>
+  <Variable
+    Name="CANAddress1"
+    Comment="">215, 1300 8th St SW</Variable>
+  <Variable
+    Name="CANAddress2"
+    Comment="">Calgary</Variable>
+  <Variable
+    Name="CANAddress3"
+    Comment="">Canada</Variable>
+  <Variable
+    Name="CANAddress4"
+    Comment="">T2R 1B2</Variable>
+  <Variable
+    Name="CANPhoneNo"
+    Comment="">+1-403-852-5696</Variable>
+  <Variable
+    Name="USAAddress1"
+    Comment="">1001 S. Dairy Ashford</Variable>
+  <Variable
+    Name="USAAddress2"
+    Comment="">Suite 100</Variable>
+  <Variable
+    Name="USAAddress3"
+    Comment="">Houston</Variable>
+  <Variable
+    Name="USAAddress4"
+    Comment="">Texas77077</Variable>
+  <Variable
+    Name="USAAddress5"
+    Comment="">USA</Variable>
+  <Variable
+    Name="USAPhoneNo"
+    Comment="">+1-713-595-6604</Variable>
+  <Variable
+    Name="Website"
+    Comment="">www.fotechsolutions.com</Variable>
+  <Variable
+    Name="Email"
+    Comment="">info@fotechsolutions.com</Variable>
+  <Variable
+    Name="fibre/fiber"
+    Comment="">fibre</Variable>
+  <Variable
+    Name="fibre/fiber"
+    Comment="">fiber</Variable>
+  <Variable
+    Name="Fibre/Fiber"
+    Comment="">Fibre</Variable>
+  <Variable
+    Name="Fibre/Fiber"
+    Comment="">Fiber</Variable>
+</CatapultVariableSet>

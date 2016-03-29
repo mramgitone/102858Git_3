@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.Online">
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Print Only Topics/Copyright.htm"
+    StartPageLayout="true"
+    StartSection="false"
+    BreakType="pageLayout"></TocEntry>
+  <TocEntry
+    Title="guidelines_for_review"
+    Link="/Content/0Software/00Welcome/guidelines_for_review.htm" />
+  <TocEntry
+    Title="Welcome"
+    Link="/Content/0Software/00Welcome/welcome.htm"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="Welcome to Helios Web Interface (HWI)"
+      Link="/Content/0Software/00Welcome/welcome.htm" />
+    <TocEntry
+      Title="What’s New"
+      Link="/Content/0Software/00Welcome/whats_new.htm" />
+    <TocEntry
+      Title="About this Help System"
+      Link="/Content/0Software/00Welcome/about_this_help.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/0Software/0Getting Started/get_started.htm"
+    StartSection="false">
+    <TocEntry
+      Title="How to Log-in"
+      Link="/Content/0Software/0Getting Started/how_to_login.htm" />
+    <TocEntry
+      Title="How to set-up the Helios Software"
+      Link="/Content/0Software/0Getting Started/setup_helios_software.htm" />
+    <TocEntry
+      Title="Operations Set-up"
+      Link="/Content/0Software/0Getting Started/operations_setup.htm" />
+    <TocEntry
+      Title="Logout and Pack-up"
+      Link="/Content/0Software/0Getting Started/logout_and_packup.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="View Only User Tasks"
+    Link="/Content/0Software/1View Only Tasks/0concept_view_only_functions.htm">
+    <TocEntry
+      Title="View Only Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm">
+      <TocEntry
+        Title="The Colour Map"
+        Link="/Content/0Software/1View Only Tasks/0concept_colour_map.htm"></TocEntry>
+      <TocEntry
+        Title="Change the Colour Control Point &amp; Highlight Colour"
+        Link="/Content/0Software/2Admin Tasks/change_colour_control_point.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Main Menu"
+      Link="/Content/0Software/1View Only Tasks/0concept_main_menu.htm">
+      <TocEntry
+        Title="Table of Display Types"
+        Link="/Content/0Software/1View Only Tasks/0concept_display_types.htm"></TocEntry>
+      <TocEntry
+        Title="Functions in the Alarm List"
+        Link="/Content/0Software/1View Only Tasks/ref_functions_alarmlist.htm"></TocEntry>
+      <TocEntry
+        Title="Table of Alarm Detection Types"
+        Link="/Content/0Software/1View Only Tasks/ref_alarm_detection_types.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Administator User Tasks"
+    Link="/Content/0Software/2Admin Tasks/0concept_administrator_functions.htm">
+    <TocEntry
+      Title="Administrator Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Helios Controls"
+        Link="/Content/0Software/2Admin Tasks/helios_controls.htm">
+        <TocEntry
+          Title="How to fit a Data Drive"
+          Link="/Content/0Software/2Admin Tasks/fit_data_drive.htm" />
+        <TocEntry
+          Title="Data Logging Controls"
+          Link="/Content/0Software/2Admin Tasks/fit_data_drive.htm" />
+        <TocEntry
+          Title="Playback Mode"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#top"></TocEntry>
+        <TocEntry
+          Title="Live Fibre Mode"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#LiveFibr"></TocEntry>
+        <TocEntry
+          Title="Change Software Status"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#Run"></TocEntry>
+        <TocEntry
+          Title="System Health"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#System"></TocEntry>
+        <TocEntry
+          Title="Processing Module"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#Processi"></TocEntry>
+        <TocEntry
+          Title="Logging Module"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#Logging"></TocEntry>
+        <TocEntry
+          Title="Display Module"
+          Link="/Content/0Software/2Admin Tasks/helios_controls.htm#Display" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Main Menu"
+      Link="/Content/0Software/1View Only Tasks/0concept_main_menu.htm">
+      <TocEntry
+        Title="Colour Map Settings"
+        Link="/Content/0Software/2Admin Tasks/colour_map_settings.htm" />
+      <TocEntry
+        Title="Change the Colour Control Point"
+        Link="/Content/0Software/2Admin Tasks/change_colour_control_point.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Admin Menu"
+      Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm">
+      <TocEntry
+        Title="Hardware Properties"
+        Link="/Content/0Software/2Admin Tasks/hardware_properties.htm">
+        <TocEntry
+          Title="Identity"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Identity"></TocEntry>
+        <TocEntry
+          Title="Optics Module"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Optics"></TocEntry>
+        <TocEntry
+          Title="MUX"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#MUX"></TocEntry>
+        <TocEntry
+          Title="Reporting"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Reportin"></TocEntry>
+        <TocEntry
+          Title="Watchdog"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Watchdog"></TocEntry>
+        <TocEntry
+          Title="Install"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Install" />
+      </TocEntry>
+      <TocEntry
+        Title="Optical Channel Properties"
+        Link="/Content/0Software/2Admin Tasks/optical_channel_properties.htm">
+        <TocEntry
+          Title="Optics Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_optics_tab.htm" />
+        <TocEntry
+          Title="Data Capture Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_data_cap_tab.htm" />
+        <TocEntry
+          Title="Processing Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_process_tab.htm" />
+        <TocEntry
+          Title="Signal Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_signal_tab.htm" />
+        <TocEntry
+          Title="Suppression Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_suppression_tab.htm" />
+        <TocEntry
+          Title="Alarm Report Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_alarm_tab.htm" />
+        <TocEntry
+          Title="Noise Floor Bounding Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_noise_floor_tab.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Communications Properties"
+        Link="/Content/0Software/2Admin Tasks/communications_properties.htm" />
+      <TocEntry
+        Title="Zone Properties"
+        Link="/Content/0Software/2Admin Tasks/zone_properties.htm">
+        <TocEntry
+          Title="Zoom in/out of a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_Zoom_in_out.htm" />
+        <TocEntry
+          Title="Define a New Zone"
+          Link="/Content/0Software/2Admin Tasks/zone_properties.htm#Define"></TocEntry>
+        <TocEntry
+          Title="Edit a Zone"
+          Link="/Content/0Software/2Admin Tasks/zone_properties.htm#Edit"></TocEntry>
+        <TocEntry
+          Title="Delete a Zone"
+          Link="/Content/0Software/2Admin Tasks/zone_properties.htm#Delete" />
+        <TocEntry
+          Title="Change the Properties of a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_change_properties_of_zone.htm" />
+        <TocEntry
+          Title="Graphical Definition of a Zone's Extent"
+          Link="/Content/0Software/2Admin Tasks/zones_define_graphically.htm" />
+        <TocEntry
+          Title="Termination of a Zone Logging Operation"
+          Link="/Content/0Software/2Admin Tasks/zones_termination_zone_logging_operation.htm" />
+        <TocEntry
+          Title="Change Start and End Distances in a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_change_start_end_distances.htm" />
+        <TocEntry
+          Title="How to resolve an Overlap"
+          Link="/Content/0Software/2Admin Tasks/zones_how_to_resolve_overlap.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Annotations Properties"
+        Link="/Content/0Software/2Admin Tasks/annotations_properties.htm" />
+      <TocEntry
+        Title="Detection Statistics Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#System3">
+        <TocEntry
+          Title="Detection Statistics User Templates"
+          Link="/Content/0Software/2Admin Tasks/detection_statistics_user_templates.htm" />
+        <TocEntry
+          Title="User Template Properties (Alarm Reports)"
+          Link="/Content/0Software/2Admin Tasks/0contsk_user_temp_props_alarm_reports.htm" />
+        <TocEntry
+          Title="User Template Properties (Detection Statistics)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_detectionstats.htm" />
+        <TocEntry
+          Title="User Template Properties (Indicators)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_indicators.htm" />
+        <TocEntry
+          Title="User Template Properties (Streams)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_streams.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Indicator Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Indicato" />
+      <TocEntry
+        Title="Streams Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Streams.">
+        <TocEntry
+          Title="Change Inactive Stream Properties"
+          Link="/Content/0Software/2Admin Tasks/streams_change_inactive_stream_properties.htm" />
+        <TocEntry
+          Title="How to set an Alarm Detection Threshold for Streams"
+          Link="/Content/0Software/2Admin Tasks/streams_set_alarm_detection_threshold.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Alarm Report Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Alarm">
+        <TocEntry
+          Title="Import Alarm Reports"
+          Link="/Content/0Software/2Admin Tasks/import_alarm_reports.htm"></TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Diagnostics"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#View">
+        <TocEntry
+          Title="View FDEL Properties"
+          Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#View" />
+        <TocEntry
+          Title="Toggle Dialogs on screen..."
+          Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Toggle" />
+        <TocEntry
+          Title="Download Diagnostic Logs"
+          Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Download" />
+      </TocEntry>
+      <TocEntry
+        Title="Snapshots"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Snapshot">
+        <TocEntry
+          Title="Save Properties Snapshot"
+          Link="/Content/0Software/2Admin Tasks/save_properties_snapshot.htm" />
+        <TocEntry
+          Title="Manage Snapshots"
+          Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="System &amp; User Administration"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#System">
+        <TocEntry
+          Title="Manage Users Properties"
+          Link="/Content/0Software/2Admin Tasks/manage_users.htm">
+          <TocEntry
+            Title="Add a New User"
+            Link="/Content/0Software/2Admin Tasks/manage_users.htm#Add"></TocEntry>
+          <TocEntry
+            Title="Remove a User"
+            Link="/Content/0Software/2Admin Tasks/manage_users.htm#Remove" />
+        </TocEntry>
+        <TocEntry
+          Title="Restart Helios"
+          Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Restart" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Factory User Tasks"
+    Link="/Content/0Software/3Factory User Tasks/0concept_factory_user_functions.htm">
+    <TocEntry
+      Title="Factory Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm" />
+    <TocEntry
+      Title="Factory Menu"
+      Link="/Content/0Software/3Factory User Tasks/0concept_factory_menu.htm" />
+    <TocEntry
+      Title="Industry Settings"
+      Link="/Content/0Software/3Factory User Tasks/0concept_industry_settings.htm">
+      <TocEntry
+        Title="How to Set-up the Helios Software"
+        Link="/Content/0Software/3Factory User Tasks/0concept_how_to_set_up_helios_software.htm" />
+      <TocEntry
+        Title="Check and Display the Fibre Shot"
+        Link="/Content/0Software/3Factory User Tasks/check_fibre_shot.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Templates"
+      Link="/Content/0Software/3Factory User Tasks/detection_stats_factory_templates.htm">
+      <TocEntry
+        Title="Detection Statistics Factory Templates"
+        Link="/Content/0Software/3Factory User Tasks/detection_stats_factory_templates.htm" />
+      <TocEntry
+        Title="Detection Statistics User Templates"
+        Link="/Content/0Software/2Admin Tasks/detection_statistics_user_templates.htm" />
+      <TocEntry
+        Title="User Template Properties (Alarm Reports)"
+        Link="/Content/0Software/2Admin Tasks/0contsk_user_temp_props_alarm_reports.htm" />
+      <TocEntry
+        Title="User Template Properties (Detection Statistics)"
+        Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_detectionstats.htm" />
+      <TocEntry
+        Title="User Template Properties (Indicators)"
+        Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_indicators.htm" />
+      <TocEntry
+        Title="User Template Properties (Streams)"
+        Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_streams.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Velocities"
+      Link="/Content/0Software/3Factory User Tasks/check_fibre_shot_velocities.htm" />
+    <TocEntry
+      Title="Calibration of the Noise Floor"
+      Link="/Content/0Software/3Factory User Tasks/noise_floor_calibration.htm" />
+    <TocEntry
+      Title="Definition of the Portion of the Model"
+      Link="/Content/0Software/3Factory User Tasks/definition_portion_of_model.htm" />
+    <TocEntry
+      Title="Reset Factory Defaults"
+      Link="/Content/0Software/3Factory User Tasks/reset_factory_defaults.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Customer Support"
+    Link="/Content/0Software/4CustomerSupport/hwi_customer_support.htm">
+    <TocEntry
+      Title="Customer Support Information"
+      Link="/Content/0Software/4CustomerSupport/hwi_customer_support.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Internal Only"
+    Link="/Content/0Software/5InternalOnly/io_introduction.htm">
+    <TocEntry
+      Title="Introduction"
+      Link="/Content/0Software/5InternalOnly/io_introduction.htm#Introduc"></TocEntry>
+    <TocEntry
+      Title="Error List"
+      Link="/Content/0Software/5InternalOnly/ref_error_list.htm" />
+  </TocEntry>
+</CatapultToc>

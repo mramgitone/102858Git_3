@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="Title"
+    Link="/Content/Print Only Topics/PDFGuideATitle.htm"
+    StartSection="false"
+    PageNumber="0"
+    PageType="title"
+    PageNumberReset="reset"
+    StartPageLayout="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/MainBody.flpgl"
+    AutoEndOnLeftPage="disabled"
+    ComputedTocAction="Insert"></TocEntry>
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Print Only Topics/Copyright.htm"
+    StartPageLayout="true"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageType="left"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/hwi_copyright.flpgl"
+    AutoEndOnLeftPage="disabled"
+    ReplaceMergeNode="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"></TocEntry>
+  <TocEntry
+    Title="PrintTOC"
+    Link="/Content/Print Only Topics/TOC.htm"
+    StartSection="true"
+    PageNumber="1"
+    PageNumberReset="reset"
+    PageType="right"
+    PageNumberFormat="lower-roman"
+    StartPageLayout="false"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/hwi_TOC.flpgl"
+    BreakType="chapter"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Welcome"
+    BreakType="chapter"
+    PageType="firstright"
+    PageNumberReset="reset"
+    StartSection="true"
+    PageNumber="{chapnum}-{page}"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    Link="/Content/0Software/00Welcome/welcome.htm"
+    ChapterNumber="1"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="text"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"></TocEntry>
+  <TocEntry
+    Title="Getting Started"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    StartSection="true"
+    PageNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    Link="/Content/0Software/0Getting Started/get_started.htm"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="text">
+    <TocEntry
+      Title="Get Started"
+      Link="/Content/0Software/0Getting Started/get_started.htm"
+      PageType="continue"
+      StartSection="false" />
+    <TocEntry
+      Title="Logout and Pack-up"
+      Link="/Content/0Software/0Getting Started/logout_and_packup.htm"
+      StartSection="false"
+      PageType="continueFLR" />
+  </TocEntry>
+  <TocEntry
+    Title="View Only Tasks"
+    Link="/Content/0Software/1View Only Tasks/0concept_view_only_functions.htm"
+    StartSection="true"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumberReset="reset"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    SectionNumber="1"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="text">
+    <TocEntry
+      Title="View Only Functions"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_functions.htm"
+      StartSection="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Admin Tasks"
+    Link="/Content/0Software/2Admin Tasks/0concept_administrator_functions.htm"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    StartSection="true"
+    PageNumberReset="reset"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    PageNumberFormat="text"
+    PageNumber="{chapnum}-{page}">
+    <TocEntry
+      Title="Operator Functions"
+      Link="/Content/0Software/2Admin Tasks/0concept_administrator_functions.htm"
+      StartSection="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Factory User Tasks"
+    BreakType="chapter"
+    PageType="firstright"
+    StartSection="true"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    Link="/Content/0Software/3Factory User Tasks/0concept_factory_user_functions.htm"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="text">
+    <TocEntry
+      Title="Factory User Functions"
+      Link="/Content/0Software/3Factory User Tasks/0concept_factory_user_functions.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Appendix"
+    Link="/Content/Print Only Topics/Appendix.htm"
+    StartPageLayout="false"
+    StartSection="true"
+    StartChapter="true"
+    BreakPageType="normal"
+    PageNumber="{chapnum}-{page}"
+    PageNumberReset="reset"
+    PageType="firstright"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    SectionNumberFormat="decimal"
+    ChapterNumber="A"
+    ChapterNumberFormat="upper-alpha"
+    PageNumberFormat="text"></TocEntry>
+  <TocEntry
+    Title="Glossary"
+    Link="/Content/Print Only Topics/Glossary.htm"
+    BreakType="chapter"
+    PageType="firstright"
+    StartSection="true"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/StartRightPage.flpgl"
+    PageNumber="{chapnum}-{page}"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    ChapterNumberFormat="upper-alpha"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    PageNumberFormat="text" />
+  <TocEntry
+    Title="backpage"
+    Link="/Content/Print Only Topics/backpage.htm"
+    BreakType="pageLayout"
+    PageType="left"
+    StartSection="true"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageLayout="/Content/Resources/PageLayouts/A4_PageLayout/hwi_backpage.flpgl"
+    PageNumberReset="continue" />
+</CatapultToc>

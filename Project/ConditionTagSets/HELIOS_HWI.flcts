@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags"
+  conditions="HELIOS_HWI.BasicUser,General.Online,HELIOS_HWI.Customer Support">
+  <ConditionTag
+    BackgroundColor="#7e00ff"
+    Name="BasicUser"
+    Comment="View Only Level Users only"
+    OriginalName="BasicUser" />
+  <ConditionTag
+    BackgroundColor="#055914"
+    Name="AdminUser"
+    Comment="Admin Level Users only"
+    OriginalName="AdminUser" />
+  <ConditionTag
+    BackgroundColor="#ca3800"
+    Name="FactoryUser"
+    Comment="Factory Level Users only"
+    OriginalName="FactoryUser" />
+  <ConditionTag
+    BackgroundColor="#ff00eb"
+    Name="Customer Support"
+    Comment="Customer Support section for external communications" />
+  <ConditionTag
+    BackgroundColor="#ffb6c1"
+    Name="InternalOnly"
+    Comment="Fotech Employees only" />
+  <ConditionTag
+    BackgroundColor="#d0d0d0"
+    Name="ImageBlock"
+    Comment="To block out functionality on certain images and used in conjunction with BasicUser &amp; InternalOnly" />
+</CatapultConditionTagSet>

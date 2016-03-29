@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is Fotech's publish destination for PDF deliveries"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="S:\System Support\Manuals"
+  Port="22"
+  ViewUrl=""
+  Type="file"
+  SftpServerValidation="validation-none"
+  SftpAuthentication="authentication-password"></CatapultDestination>

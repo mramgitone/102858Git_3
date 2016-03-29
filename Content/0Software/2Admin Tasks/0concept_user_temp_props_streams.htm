@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="4487" MadCap:lastWidth="852">
+    <head>
+    </head>
+    <body>
+        <h3 MadCap:conditions="HELIOS_HWI.BasicUser"><a name="Factory"></a>Factory Template Properties (Streams)</h3>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">Below is an image of the Streams Factory Template and a description of each field.</p>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser" class="image">
+            <img src="../../Resources/Images/product_images/streams_templates.PNG" MadCap:conditions="HELIOS_HWI.BasicUser" class="OneHundredPercentThumbnail" />
+        </p>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser" class="captionCont" MadCap:autonum="Figure 1-1: ">The Streams Factory Template Dialog</p>
+        <h4 MadCap:conditions="HELIOS_HWI.BasicUser">Name</h4>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">Enter the Name to be given to the Stream being created.  It should be something that clearly describes the Stream, and the associated input Detection Statistic template and Indicator Cleaning mask.  If the name already exists, the file will be appended with a number to differentiate it from the original stream.</p>
+        <h4 MadCap:conditions="HELIOS_HWI.BasicUser"><a name="Streams"></a>Streams</h4>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">This section is split into 3 sections, as listed below: </p>
+        <ul>
+            <li MadCap:conditions="HELIOS_HWI.BasicUser">Detection Statistic</li>
+            <li MadCap:conditions="HELIOS_HWI.BasicUser">Power Spectrum Averaging</li>
+            <li MadCap:conditions="HELIOS_HWI.BasicUser">Signal Separation</li>
+        </ul>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">Enter the properties associated with each field, a description of which is given below.</p>
+        <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.BasicUser">This is a concept topic and I&#160;need some content describing these three sections on the screen. If there are any instructions, they will be copied into a separate task topic and a link will be added. Also, what general description should go in the image above for these 3 sections, so that it is less wordy below?</p>
+        <h5 MadCap:conditions="HELIOS_HWI.BasicUser">Detection Statistic</h5>
+        <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.BasicUser">info required</p>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">&#160;</p>
+        <h5 MadCap:conditions="HELIOS_HWI.BasicUser">Power Spectrum Averaging</h5>
+        <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.BasicUser">info required</p>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">&#160;</p>
+        <h5 MadCap:conditions="HELIOS_HWI.BasicUser">Signal Separation</h5>
+        <p class="DeveloperQuery" MadCap:conditions="HELIOS_HWI.BasicUser">info required</p>
+        <p MadCap:conditions="HELIOS_HWI.BasicUser">&#160;</p>
+        <h3><a name="top"></a> User Template Properties (Streams)</h3>
+        <p>Below is an image of the Streams User Template and a description of the fields for each section.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/streams_templates_user.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">Streams User Template Dialog</p>
+        <h4>Description of Fields</h4>
+        <h5>Detection Statistic</h5>
+        <p>From the drop-down menu, select the input Detection Statistic template.  The list is divided up into factory templates and user defined templates.  It will default to the currently selected template.</p>
+        <h5>Disturbance Detection Threshold</h5>
+        <p>For an alarm on a specific disturbance, the detection statistic needs to be converted into an alarm indicator. Any detection statistic values above the Alarm Detection Threshold and below the Alarm Suppression Threshold will produce a raw alarm indicator.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Failure to set the Alarm Detection Threshold to the correct value will significantly reduce the accuracy of disturbance alarming.</p>
+        </Div>
+        <p>Set the Alarm Detection Threshold at a level that will allow the system to alarm only on valid disturbances.  Once the Alarm Indicators are produced, then they can be configured to remove any false positives and false negatives.</p>
+        <p>A quick way to determine an optimal Alarm Detection Threshold is to use a colour bar with a colour discontinuity at a specific position in the colour map. Refer to <MadCap:xref href="colour_map_settings.htm#Configur" target="_blank">Configure Alarm Detection Thresholds in Streams</MadCap:xref> for instructions.</p>
+        <p>As the <MadCap:variable name="General.fiber/fibre" /> sensor increases in length, the sensitivity of the <MadCap:variable name="General.fiber/fibre" /> sensor decreases. Therefore, a disturbance detected closer to the <MadCap:variable name="General.ProductName2" /> controller can have a higher amplitude than one detected further down the <MadCap:variable name="General.fiber/fibre" /> sensor.</p>
+        <p>In order to detect disturbances anywhere along the <MadCap:variable name="General.fiber/fibre" /> sensor, the Alarm Detection Threshold needs to be reduced for longer distances. Create a few zones that cover the further sections of the <MadCap:variable name="General.fiber/fibre" /> sensor, then override the Alarm Detection Threshold for each stream in each zone.  Refer to <MadCap:xref href="zones_change_properties_of_zone.htm#top" target="_blank">Change the Properties of a Zone</MadCap:xref> about how to override zone properties.</p>
+        <h5>Enable Disturbance Suppression</h5>
+        <p>Used to define an upper threshold to create a range of values that will produce Alarm Indicators.  To enable this, make sure the Enable alarm suppression check box is selected.</p>
+        <h5>Disturbance Suppression Threshold</h5>
+        <p>Enter a value for the Alarm Suppression Threshold.  Indicators are not produced when Alarm detection values are above the Alarm Suppression Threshold.  This can prevent alarms on extremely high amplitude disturbances.</p>
+        <p class="DeveloperQuery">Concept Information is required on all the Heading 5’s below where there’s a gap. If there are to be any instructions, I will copy them into a task topic and link to it.</p>
+        <h5>Monitor Duration</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Monitor Width</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Monitor Overlap</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Max Variation</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Start/End Disturbance Threshold</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>End Disturbance Duration</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Max Disturbance Duration</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Event Region Margin</h5>
+        <p class="DeveloperQuery">info required</p>
+        <p>&#160;</p>
+        <h5>Indicator </h5>
+        <p>From the drop-down menu, select the Indicator Mask to use as input into the stream.  The list is divided up into factory masks and user defined mask.  It will default to the currently selected mask.</p>
+        <h5>Alarm Reports using this Stream</h5>
+        <p class="DeveloperQuery">Info required here too</p>
+    </body>
+</html>

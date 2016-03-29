@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles MadCap:conditions="General.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Width="800" Height="800" Padding="1in" PageSize="A4" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="left" Name="LeftBackPage">
+        <Frame X="-43px" Y="780px" Width="682px" Height="219px" Flow="body" Right="-38px" Bottom="-69px" Anchors="" BorderLeftStyle="solid" BorderLeftWidth="1px" BorderLeftColor="#ff1200" BorderRightStyle="solid" BorderRightWidth="1px" BorderRightColor="#ff1200" BorderTopStyle="solid" BorderTopWidth="1px" BorderTopColor="#ff1200" BorderBottomStyle="solid" BorderBottomWidth="1px" BorderBottomColor="#ff1200" />
+    </Page>
+</PageStyles>

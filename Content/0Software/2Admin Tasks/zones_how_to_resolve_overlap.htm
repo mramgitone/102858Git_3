@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1258" MadCap:lastWidth="882">
+    <head>
+    </head>
+    <body>
+        <h4 MadCap:autonum=" 1.1.0.0.1. "><a name="top"></a>How to resolve an Overlap</h4>
+        <p>This procedure is best explained by the use of an example. </p>
+        <p class="ExampleHead">Example</p>
+        <p class="ExampleMiddleSection">Let’s say you need a new zone, labelled as <i>Zone2</i>, which extends from 300 m to 550 m.  When <i>Zone2</i> is created with those distances, it overlaps with <i>Zone1</i>.  If there has been an overlap, once the <b>Submit</b> button is selected, a warning message is displayed. The image below states that <i>Zone2</i> overlaps <i>Zone1</i>.</p>
+        <p class="image_in_example">
+            <img src="../../Resources/Images/product_images/zones_overlap_warning.png" class="ExampleOneHundredPercentThumbnail" style="mc-thumbnail: none;" />
+        </p>
+        <p class="ExampleCaptionCont" MadCap:autonum=" Figure 1-2: ">The Overlap Warning Message</p>
+        <p>To resolve this:</p>
+        <ol>
+            <li>Select the option <b>Truncate Self</b>. This shifts the right edge of <i>Zone2</i> to the left to remove the overlap.</li>
+        </ol>
+        <p><b>OR</b>
+        </p>
+        <p class="ListIndent">Select <b>Truncate Sibling(s)</b> to shift the left edge of <i>Zone1</i> to the right.  The image below shows how the zones look if <b>Truncate Sibling(s)</b> is selected.  The left edge of <i>Zone1</i> was changed from 300 m to 350 m in order to remove the overlap.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/zones_truncate_siblings.png" alt="The Truncate Sibling(s) dialog" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-3: ">The Truncate Sibling(s)&#160;Dialog</p>
+        <ol MadCap:continue="true">
+            <li>
+                <MadCap:xref href="zone_properties.htm#Define" target="_popup">Define a New Zone</MadCap:xref>, called <i>Zone3</i>. For instructions. Make sure the new zone extends from 350m to 500m. <i>Zone3</i> is located entirely within <i>Zone2</i>. A warning message is displayed to indicate that <i>Zone3</i> is within another zone, as shown below.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/zones_split_sibling_within_zone.png" alt="Warning Message prompt to Split Sibling within a Zone" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-4: ">Warning Message to Split Sibling within a Zone</p>
+        <ol MadCap:continue="true">
+            <li>Select <b>Cancel</b> to stop the creation of the new zone, or <b>Split Sibling</b>, to create an additional zone, called <i>Zone4</i>. This will appear to the right of Zone 3.  The image below shows the zones after the Split Sibling button is chosen.  As shown, <i>Zone3</i> is inserted into <i>Zone2</i>, and the right side of <i>Zone2</i> is replaced with <i>Zone4</i>. See the image below.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/zones_created_zone.png" alt="Dialog that displays created zone" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-5: ">Dialog that displays the created zone</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If a new zone is created to rectify an overlap issue, it will inherit all of the properties of the zone that it replaces. In addition, if the new zone completely encompasses its siblings, there is an option to delete the sibling zone all together.</p>
+        </Div>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Zones..." />
+                <MadCap:relatedTopic src="zone_properties.htm#top" />
+                <MadCap:relatedTopic src="zones_Zoom_in_out.htm#top" />
+                <MadCap:relatedTopic src="zones_change_properties_of_zone.htm#top" />
+                <MadCap:relatedTopic src="zones_change_start_end_distances.htm#top" />
+                <MadCap:relatedTopic src="zones_define_graphically.htm#top" />
+                <MadCap:relatedTopic src="zones_log_zone_dynamically.htm#top" />
+                <MadCap:relatedTopic src="zones_termination_zone_logging_operation.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

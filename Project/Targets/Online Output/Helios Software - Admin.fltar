@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Helios Software - Internal Only"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/0Software/00Welcome/welcome.htm"
+  Skin="/Project/Skins/FotechSkinHTML5.flskn"
+  MasterToc="/Project/TOCs/HeliosHWI.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  OutputFolder="C:\madcap\Helios\Helios\Output\claire_wood\Online Output\HTML5\internal_only"
+  GetLatestBeforeCompile="true"
+  GenerateWebSafeImages="true"
+  WebSafeFileExtension="png"
+  MakeFileLowerCase="true"
+  AutoSizeCaptureCaptions="true"
+  Medium="non-print"
+  MasterPage="/Content/Resources/MasterPages/MasterPage.flmsp"
+  PartialWordSearch="true"
+  ConditionTagExpression="exclude[HELIOS_HWI.FactoryUser or HELIOS_HWI.ImageBlock or HELIOS_HWI.InternalOnly] ">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/TCR_HTML5Help.fldes" />
+  </Destinations>
+</CatapultTarget>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3496" MadCap:lastWidth="849">
+    <head>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h3><a name="Noise"></a>Noise Floor Bounding Tab</h3>
+        <p>In order to produce a signal/noise value (S/N value), the Helios system will automatically compute a noise floor value to use as N. This is performed automatically as it is assumed that noise will generally cover a large frequency range, while the signal will have a more limited frequency range. However there are some environments, where the signal covers a large frequency range, hence it is interpreted as noise and taken out of our S/N displays. It is in these applications that the bounded noise floor becomes useful.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_noisefloorbounding.PNG" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: "><a name="The_Noise_Floor_Bounding_Tab"></a>The Noise Floor Bounding Tab</p>
+        <h4>When to use a bounded noise floor</h4>
+        <p>This depends on your application. The standard, unbounded, noise floor works usually does not need to be checked once it is first set. The time to use the bounded noise floor is when you have an application where the signal covers a large frequency range, and is interpreted by our system as noise. If the noise floor needs to be changed, there are two symptoms that the system will display:</p>
+        <ul>
+            <li>Within the Default or Stream Detection Value, the S/N&#160;field does not display a signal.</li>
+            <li>There is a lowered signal where you expect to see an increase.</li>
+        </ul>
+        <h4>Check the Noise Floor</h4>
+        <p>To check the Noise Floor is displayed correctly, open the <b> Noise Floor Bounding</b> Tab. See the <MadCap:xref href="#The_Noise_Floor_Bounding_Tab" target="_popup">The Noise Floor Bounding Tab</MadCap:xref> image above.</p>
+        <p>This dialog displays the typical exponential decay along the length of the <MadCap:variable name="General.fiber/fibre" />. If it does not, that is another indication of signal interpretation as noise. For example, an increase can occur at times that you expect to see more signal.</p>
+        <p>If you see either of these cases, you should consider the use of a bounded noise floor.</p>
+        <h4>How to use a bounded noise floor </h4>
+        <p>Once you have decided that you wish to use a bounded noise floor, you need to configure the system to use it.&#160;Complete these steps:</p>
+        <p class="note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #000000;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE: &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">It is necessary that a quiet <MadCap:variable name="General.fiber/fibre" /> is used for this procedure.</p>
+        <ol>
+            <li>Select the <b>Optical Properties Channel &gt; Noise Floor Bounding</b> tabs. See the <MadCap:xref href="#The_Noise_Floor_Bounding_Tab" target="_popup">The Noise Floor Bounding Tab</MadCap:xref> image above.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Run the live system with a <MadCap:variable name="General.fiber/fibre" /> and start to configure the noise floor bounding controls, to get the noise floor bounding curve, which is displayed as a line graph, like the one displayed below.</li>
+        </ol>
+        <p>&#160;</p>
+        <p style="background-color: #ff1493;">&lt;image of line graph on the top of the noise floor bounds display, slightly above the level of the noise floor bounds display&gt;</p>
+        <p><span style="background-color: #ff1493;">The text below should go into the image as a callout</span>
+        </p>
+        <p style="background-color: #ff1493;">The goal will be to get the noise floor bounding curve (which is displayed as a line graph on top of the noise floor bounds display) to be just slightly above the level of the noise floor bounds display.</p>
+        <h5><a name="Model"></a>Model trained &amp; ready</h5>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Check the colour of the light on the Noise Floor Bounding tab and take the appropriate action, as detailed below:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table style="width: 100%; mc-table-style: url('../../Resources/TableStyles/Simple.css'); margin-left: 0; margin-right: auto; mc-table-style-original: url('../../Resources/TableStyles/Simple.css');" class="TableStyle-Simple" cellspacing="1">
+                    <col class="TableStyle-Simple-Column-Column1" style="width: 135px;">
+                    </col>
+                    <col class="TableStyle-Simple-Column-Column1" style="width: 441px;">
+                    </col>
+                    <col style="width: 11px;" class="TableStyle-Simple-Column-Column1">
+                    </col>
+                    <thead>
+                        <tr class="TableStyle-Simple-Head-Header1">
+                            <th class="TableStyle-Simple-HeadE-Column1-Header1">Parameter</th>
+                            <th class="TableStyle-Simple-HeadE-Column1-Header1">Status</th>
+                            <th class="TableStyle-Simple-HeadD-Column1-Header1">Action Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">Green Light</td>
+                            <td class="TableStyle-Simple-BodyE-Column1-Row1">A noise floor model has been configured and is available to be used.</td>
+                            <td class="TableStyle-Simple-BodyD-Column1-Row1">No action required</td>
+                        </tr>
+                        <tr class="TableStyle-Simple-Body-Row1">
+                            <td class="TableStyle-Simple-BodyB-Column1-Row1">Black Light</td>
+                            <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                <p>This model is created at the factory and indicates that the machine does not have a suitable noise floor model. If you have a machine that was purchased prior to version <MadCap:variable name="General.VersionNumber"></MadCap:variable>, the light will be black until a suitable model is created. </p>
+                            </td>
+                            <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                <p>To create a model, <a href="mailto:customer.support@fotechsolutions.com?subject=Request to create noise floor model" target="_blank">contact us</a> and include your system details.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h5>Enable Noise Floor Bounding</h5>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If the Noise Floor Bound has not been configured, then contact us. A Fotech Engineer will need to configure and define the portion of the noise floor. Refer to <MadCap:xref href="../3Factory User Tasks/noise_floor_calibration.htm#top" target="_blank">Calibration of the Noise Floor</MadCap:xref>.</p>
+        </Div>
+        <p>This is where the noise floor bounding can be turned on or off. </p>
+        <p>After the Noise Floor Bounding has been turned on, look at the noise floor display. If the bounding curve appears exponential in its shape and seems to sit just slightly above the bulk of the noise floor, then this is all you need to do. If not, there are two other controls that you need to adjust: <MadCap:xref href="#Bounds" target="_popup">Bounds offset %</MadCap:xref> and <MadCap:xref href="#Use" target="_popup">Use exponential fit </MadCap:xref>.</p>
+        <h5><a name="Bounds"></a>Bounds offset %</h5>
+        <p>If the bounds curve seems to have the correct shape but is either too high above, or is below, the noise floor, then it can be moved either up or down with this control. </p>
+        <h4><a name="Use"></a>Use exponential fit </h4>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">It is only necessary to use this option if the noise floor model  does not produce a good curve on its own. This option is only used with the Bounds Offset (%)&#160;setting to produce a usable noise floor bounds curve.</p>
+        </Div>
+        <p>Most of the time the noise floor bounds curve should automatically look like an exponential curve.  If the noise floor is not exponential, the <MadCap:variable name="General.ProductName"></MadCap:variable> will need to have a positive offset in order to be useful. To do this:</p>
+        <ol>
+            <li>Select the <MadCap:xref href="#Optics" target="_popup">Optics Tab</MadCap:xref> and check the settings. Make sure the optical properties are suitable for the application. </li>
+            <li>If the curve has still not rapidly increased in size, you can force it to be more curved. Turn on the <b>Use exponential fit</b> option. This will often need to be used in combination with the <MadCap:xref href="#Bounds" target="_popup">Bounds offset %</MadCap:xref>&#160;setting.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Optical" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="../3Factory User Tasks/noise_floor_calibration.htm#top" />
+                <MadCap:relatedTopic src="../3Factory User Tasks/definition_portion_of_model.htm#top" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

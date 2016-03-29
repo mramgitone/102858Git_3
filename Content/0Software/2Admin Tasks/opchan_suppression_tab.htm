@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2098" MadCap:lastWidth="671">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Suppress"></a>Suppression Tab</h3>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Suppression Zones are visible only in the Stream Detection Value display type.  They are not visible in any of the other <MadCap:variable name="General.Fibre/Fiber" /> Graph display types.</p>
+        </Div>
+        <p>There are situations where it can be advantageous to block the response for a subsection of the <MadCap:variable name="General.fiber/fibre" /> sensor.  This can be due to excessive nuisance disturbances.  It is for this reason that the Suppression zone module was developed.  The image below shows the Suppression tab where suppression zones can be defined for the current Optical Channel.  Suppression zones can affect all streams, or be defined to affect only a specific stream.</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties_suppressiontab.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">The Suppression Tab</p>
+        <h4>Create a Suppression Zone</h4>
+        <p>To create a suppression zone, follow this process:</p>
+        <ol>
+            <li> 	From the drop-down menu, select the stream type. The stream can be either <b>Active</b> or <b>Inactive</b>. Select the stream to be associated with the suppression zone that is to be configured. If all of the streams are to be associated with the suppression zone,  select <b>All Streams</b>.</li>
+            <li>Select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/add-16x16.png" /> icon and enter the desired start and end distances for this suppression zone into the text boxes.</li>
+        </ol>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/define_signal_suppression.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">Suppression Zone Definition dialog</p>
+        <p class="ListIndent">The start distance must be ≥0, and the end distance must be greater than the start distance, and less than or equal to the physical <MadCap:variable name="General.fiber/fibre" /> length for the current Optical Channel.</p>
+        <p class="ListIndent"><b>OR</b>
+        </p>
+        <p class="ListIndent">Choose the <b>Select visually</b> button to select the Start and End distances from the <MadCap:variable name="General.Fibre/Fiber" /> Graph display.</p>
+        <ol MadCap:continue="true">
+            <li>Repeat steps 1 to 3 to create additional suppression zones.</li>
+            <li>Select the <b>Apply</b> and <b>Save</b> buttons to save the changes.</li>
+        </ol>
+        <h4>Change Suppression Zone</h4>
+        <ol>
+            <li>From the drop-down menu, select the stream the suppression zone is associated with.</li>
+            <li>Edit the <b>Start (m)</b> and/or <b>End (m)</b> distances as required.</li>
+        </ol>
+        <p class="ListIndent"><b>OR</b>
+        </p>
+        <p class="ListIndent">Choose the <b>Select visually</b> button and reselect the Start and End distances from the <MadCap:variable name="General.Fibre/Fiber" /> Graph display.</p>
+        <ol MadCap:continue="true">
+            <li>Select the <b>Apply</b> and the <b>Save</b> buttons to confirm the changes.</li>
+        </ol>
+        <h4>Delete a Suppression Zone</h4>
+        <ol>
+            <li>From the drop-down menu, select the stream the suppression zone is associated with.</li>
+            <li>Select the  <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" /> icon. This will remove the selected suppression zone from the list.</li>
+            <li>Select the <b>Apply</b> and the <b>Save</b> buttons to confirm the changes.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../1View Only Tasks/0concept_main_menu.htm#Report" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Optical" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

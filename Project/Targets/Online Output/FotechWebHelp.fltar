@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="WebHelp"
+  Type="WebHelp"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/0Software/00Welcome/welcome.htm"
+  MasterToc="/Project/TOCs/HeliosHWI.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/Fotechstyles.css"
+  OutputFolder="H:\Flare Projects\Training\FotechTest2\Output\Claire_Wood"
+  ConditionTagExpression="include[General.Online]"
+  InsertMOTW="true"
+  UseLocalBuildSettings="false"
+  Skin="/Project/Skins/FotechWebHelp.flskn"
+  OutputFile="FotechWebHelpStart"
+  Medium="non-print"
+  MakeFileLowerCase="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

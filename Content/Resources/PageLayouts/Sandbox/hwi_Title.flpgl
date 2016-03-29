@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles MadCap:conditions="General.PDF" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <Page Width="800" Height="800" Padding="1in" PageSize="A4" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in" PageType="title" Name="TitlePage" BackgroundRepeat="no-repeat" BackgroundImage="none">
+        <Frame X="70px" Y="28px" Width="459px" Height="215px" Flow="header" Right="72px" Bottom="687px" BackgroundRepeat="no-repeat" BackgroundPositionX="center" BackgroundPositionY="center" Anchors="" BackgroundImage="../../Images/fosol.png" />
+        <Frame X="-63px" Y="939px" Width="107px" Height="72px" Flow="decoration" Right="557px" Bottom="-81px" Anchors="" BackgroundRepeat="no-repeat" BackgroundImage="../../Images/Conformité_Européenne_(logo)_svg.png" />
+        <Frame X="51px" Y="940px" Width="595px" Height="70px" Flow="footer" Right="-45px" Bottom="-80px" TextAlign="right" VerticalAlign="top" Anchors="">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:p>&#160;</xhtml:p>
+                        <xhtml:p>Document Version:&#160;<MadCap:variable xhtml:name="General.DocVersion" /></xhtml:p>
+                        <xhtml:p>Software Version:&#160;<MadCap:variable xhtml:name="General.VersionNumber" /></xhtml:p>
+                        <xhtml:p>Date of Release:&#160;<MadCap:variable xhtml:name="System.LongDate" /></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="0px" Y="318px" Width="599px" Height="272px" Flow="body" Right="2px" Bottom="340px">
+        </Frame>
+    </Page>
+</PageStyles>

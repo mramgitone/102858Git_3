@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2565" MadCap:lastWidth="888">
+    <head>
+    </head>
+    <body>
+        <h3><a name="Optics"></a>Optics Tab</h3>
+        <p>This tab controls the laser properties, which pulses the <MadCap:variable name="General.fiber/fibre" /> in order to produce the actual <MadCap:variable name="General.fiber/fibre" /> response. The specific details of what is in this tab can change from one optics unit to another, and depends on the options that were chosen when you purchased your unit. This topic describes the core properties that you will see on any system. If your system differs from this, you will have  received a separate description of those differences. Refer to <MadCap:xref href="opchan_optics_bespoke.htm#top" target="_blank">Optics Tab - Bespoke Properties</MadCap:xref> and see the image below:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties2.png" alt="Optical Channel Properties " class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">Laser Properties</p>
+        <p>To check the laser properties, see the image below and complete these tasks:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties3.png" class="OneHundredPercentThumbnail">
+            </img>
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-2: ">Optics Tab showing Laser and EDFA&#160;properties</p>
+        <ol>
+            <li>Set the <b>Pulse Repetition Frequency (PRF)</b>. You can enter the value, use the drop-down list of predetermined common values, or the <img src="../../Resources/Images/product_images/gui_images/dynamic.png" alt="The Dynamic Properties button" /> button. </li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle"> 	An increase in the PRF will increase the response bandwidth and increase the compute load, as there will be more <MadCap:variable name="General.fiber/fibre" /> shots processed in the time interval.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>Check and set the <a name="Pulse_Width"></a><b>Pulse Width</b> in accordance to the length of the <MadCap:variable name="General.fiber/fibre" /> sensor. 50ns and 100ns are the common properties. </li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">If changes are required, these need to be completed by a Fotech Engineer because knowledge of the physics used, is required. <a href="mailto:customer.support@fotechsolutions.com?subject=Change Request for EDFAs" target="_blank">Contact Customer Support</a> as required. </p>
+        </Div>
+        <p class="ListIndent">The essential tradeoff is that a longer pulse width will be more sensitive (since it sends more light down the <MadCap:variable name="General.fiber/fibre" />) but will have less spatial accuracy. </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The actual pulse width is limited by a step size based on the internal hardware clock. As a result the actual pulse width will be close to, but not exactly equal to, the value you request. To get a value you can either:</p>
+            <ul>
+                <li>Enter the pulse width value, and the <b>Clock Periods</b> value will display the number of steps with the closest value. </li>
+                <li>Enter the number of clock periods and it will display the pulse width.</li>
+            </ul>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>Check the <b>Bias current (mA)</b> field. This sets the amplitude of the light pulse that is launched by the source laser. This has a range of 188-220mA. You can enter the value, use the drop-down menu or the <img src="../../Resources/Images/product_images/gui_images/dynamic.png" alt="The Dynamic Processing button" /> button. <span style="background-color: #dc143c;">To do this, you may have to refer to your training materials.	</span></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Set the <b>Pulse Trigger Mode</b> to one of the settings described below: </li>
+        </ol>
+        <p class="ListIndent">By default, this is set to <b>Internal</b>. This will use the internal trigger mechanism and is the normal means of operation. The result is that you will see <MadCap:variable name="General.fiber/fibre" />shots when the <MadCap:variable name="General.ProductName2" />system starts. </p>
+        <p class="ListIndent">&#160;</p>
+        <p class="ListIndent">Set it to <b>External</b>, only if you are to use an external trigger mechanism. When it is in external trigger mode, nothing will happen until the external trigger is received.</p>
+        <p class="ListIndent">You must also set the <b>Operation Type</b> when this property is used. If this field is set to <b>Continuous</b>, then once the initial trigger has been received the internal trigger will take over and continue to trigger at the PRF.</p>
+        <p class="ListIndent">&#160;</p>
+        <p class="ListIndent">If this field is set to <b>Timed</b> then you must also specify the <b>Timed Run Duration</b>. In this mode once the external trigger is received the triggers will continue at the PRF until the time specified here has been completed. Then the system will pause and wait for the next external trigger to arrive and it will restart the process.</p>
+        <ol MadCap:continue="true">
+            <li>The optical amplifiers  are rarely changed from the factory defaults. </li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">If changes are required, these need to be completed by a Fotech Engineer because knowledge of the physics used, is required. <a href="mailto:customer.support@fotechsolutions.com?subject=Change Request for EDFAs" target="_blank">Contact Customer Support</a> as required. </p>
+        </Div>
+        <p class="ListIndent">To check the <b><a name="Erbium_Doped_Fibre_Amplifiers_(EDFAs)"></a>Erbium Doped <MadCap:variable name="General.Fibre/Fiber" /> Amplifiers (EDFAs)</b>:</p>
+        <ul class="FirstLevelLessIndentation">
+            <li>EDFA 1 controls the intensity of the light pulse that enter the <MadCap:variable name="General.fiber/fibre" />.</li>
+            <li>EDFA 2 &amp; 3 control the backscattered light from the event disturbance.</li>
+        </ul>
+        <ol class="FirstLevelLessIndentation" start="5">
+            <li>Select the <b>Apply</b> and <b>Save</b> buttons, then close the screen. Select <b>Cancel</b> or <b>Reset</b> to reject any of the settings, and return to the original values.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Optical" />
+                <MadCap:relatedTopic src="0concept_admin_menu.htm#Detectio" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="optics_properties.htm" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

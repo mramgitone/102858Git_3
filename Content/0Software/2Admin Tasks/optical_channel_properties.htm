@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1942" MadCap:lastWidth="645">
+    <head>
+    </head>
+    <body>
+        <h2><a name="top"></a>Optical Channel Properties</h2>
+        <p>It can be necessary to have multiple <MadCap:variable name="General.fiber/fibre" /> sensors attached to a Helios controller. An optical multiplexor is used to connect sequentially, to each <MadCap:variable name="General.fiber/fibre" />.  As each <MadCap:variable name="General.fiber/fibre" /> sensor is different, it requires its own set of properties.  The <MadCap:variable name="General.ProductName" /> (<MadCap:variable name="General.ProductNameShort" />) can handle multiple <MadCap:variable name="General.fiber/fibre" /> sensors by the definition of a unique Optical Channel for each <MadCap:variable name="General.fiber/fibre" /> sensor.</p>
+        <p>In addition to the multiple <MadCap:variable name="General.fiber/fibre" /> sensors attached to a single <MadCap:variable name="General.ProductName2" /> controller, you can configure simultaneous detections and alarm types on multiple disturbance types.  This requires multiple streams to process alarms on multiple disturbance types.  There is a core set of properties that are defined for each optical channel. Additional properties are defined for each process stream used to satisfy the alarm requirements.  The Optical Channel Properties dialog contains this core set of properties for each Optical Channel.  For more details about which configurations to check, the Operator will need to view the image below and complete this process:</p>
+        <p class="image">
+            <img src="../../Resources/Images/product_images/optical_channel_properties2.png" class="OneHundredPercentThumbnail" />
+        </p>
+        <p class="captionCont" MadCap:autonum="Figure 1-1: ">Core properties of the Optical Channel Properties Dialog</p>
+        <ol>
+            <li>Check the <MadCap:variable name="General.fiber/fibre" /> sensor attached to the back panel of your <MadCap:variable name="General.ProductName2" /> Controller. Refer to the <a href="../5InternalOnly/installation_configuration/Helios Communications.pdf" target="_blank">Installation &amp;&#160;Configuration Manual</a> as required.</li>
+            <li>Select <b>Admin &gt; Optical Channel Properties</b> and check the settings for the name, <MadCap:variable name="General.fiber/fibre" /> attributes and zero point. The names need to be unique to each <MadCap:variable name="General.fiber/fibre" /> sensor. </li>
+            <li>If a <MadCap:variable name="General.fiber/fibre" /> break occurs, an additional length of optical <MadCap:variable name="General.fiber/fibre" /> needs to be spliced into the <MadCap:variable name="General.fiber/fibre" /> sensor.  If this is done, all distance correlations and zone distance definitions, will be displaced by the amount of additional <MadCap:variable name="General.fiber/fibre" /> being inserted.  To remove this distance displacement, the user can inform HWI of the <MadCap:variable name="General.fiber/fibre" /> splice. To view splices whilst logging, review the history, refer to <MadCap:xref href="insert_splice.htm#top" target="_popup">Insert a Splice</MadCap:xref>.</li>
+            <li>Make sure the <b>Zero Point</b> is set to zero on the <MadCap:variable name="General.Fibre/Fiber" /> Graph. In situations when the zero point is further down the <MadCap:variable name="General.fiber/fibre" /> sensor, set the Zero Point to that desired distance.</li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="cautionMiddle">A non-zero point can only be used for the <MadCap:variable name="General.Fibre/Fiber" /> Graph display. Any distances defined in the system dialog will refer to the actual non-adjusted distances.</p>
+        </Div>
+        <ol MadCap:continue="true">
+            <li>If a Panoptes server is installed with your Helios solution, a Fotech Engineer <b>MUST</b> check that the Panoptes <MadCap:variable name="General.Fibre/Fiber" /> ID matches the associated <MadCap:variable name="General.Fibre/Fiber" /> Sensor on the Helios Controller. Refer to the <i>Panoptes Installation &amp;&#160;Configuration Manual</i>, and <a href="mailto:customer.support@fotechsolutions.com?subject=Client Request to check Panoptes Fibre ID matches Fibre Sensor on Helios Controller" target="_blank">contact Customer Support</a> if you require help.</li>
+            <li>Next, you need to check the settings in the tabs. Refer to the list below for instructions to check the options under each tab:<ul><li><MadCap:xref href="opchan_optics_tab.htm#Optics" target="_popup">Optics Tab</MadCap:xref></li><li><MadCap:xref href="opchan_data_cap_tab.htm#Data" target="_popup">Data Capture Tab</MadCap:xref></li><li><MadCap:xref href="opchan_process_tab.htm#Processi" target="_popup">Processing Tab</MadCap:xref></li><li><MadCap:xref href="opchan_signal_tab.htm#Signal" target="_popup">Signal Tab</MadCap:xref></li><li><MadCap:xref href="opchan_suppression_tab.htm#Suppress" target="_popup">Suppression Tab</MadCap:xref></li><li><MadCap:xref href="opchan_alarm_tab.htm#Alarm" target="_popup">Alarm Report Tab</MadCap:xref></li><li><MadCap:xref href="opchan_noise_floor_tab.htm#Noise" target="_popup">Noise Floor Bounding Tab</MadCap:xref>.</li></ul></li>
+        </ol>
+        <p>
+            <MadCap:relatedTopics style="mc-use-custom-sort-order: true;">
+                <MadCap:relatedTopic src="hardware_properties.htm#top" />
+                <MadCap:relatedTopic src="optical_channel_properties.htm" />
+                <MadCap:relatedTopic src="opchan_optics_tab.htm#Optics" />
+                <MadCap:relatedTopic src="optics_properties.htm" />
+                <MadCap:relatedTopic src="insert_splice.htm#top" />
+                <MadCap:relatedTopic src="detection_statistics_properties.htm#top" />
+                <MadCap:relatedTopic src="opchan_data_cap_tab.htm#Data" />
+                <MadCap:relatedTopic src="opchan_process_tab.htm#Processi" />
+                <MadCap:relatedTopic src="opchan_signal_tab.htm#Signal" />
+                <MadCap:relatedTopic src="opchan_suppression_tab.htm#Suppress" />
+                <MadCap:relatedTopic src="opchan_alarm_tab.htm#Alarm" />
+                <MadCap:relatedTopic src="opchan_noise_floor_tab.htm#Noise" />
+                <MadCap:relatedTopic src="helios_controls.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

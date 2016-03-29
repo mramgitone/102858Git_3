@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="4031" MadCap:lastWidth="852">
+    <head>
+    </head>
+    <body>
+        <h3><a name="top"></a>Colour Map Settings</h3>
+        <p>See the <MadCap:xref href="../1View Only Tasks/0concept_colour_map.htm#The_Colour_Map" target="_popup">The Colour Map manipulation dialog</MadCap:xref> image. Instructions to make changes to the Colour Map configurations are listed below:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#Add/Remo" target="_self">Add/Remove a new Colour Control Point</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Edit" target="_self">Edit or Adjust a Colour Control Point</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Add">Add a Colour Highlight</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Remove">Remove a Colour Highlight</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Save" target="_self">Save a New Colour Map</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Reload" target="_self">Reload a Saved Colour Map</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Restore" target="_self">Restore the Default Colour Map</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Configur" target="_self">Configure Alarm Detection Thresholds in Streams</MadCap:xref>
+            </li>
+        </ul>
+        <h4><a name="Add/Remo"></a>Add/Remove a new Colour Control Point</h4>
+        <ul>
+            <li>To add a new colour control point, select the inside-right of the colour map.  This will add a new colour control point at that amplitude, and with its initial colour set to an interpolation between it's two surrounding points.</li>
+            <li>To remove a colour control point from the current colour map, select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" alt="The red x icon" /> icon next to the Colour Control Point.</li>
+        </ul>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">If you select in the ruler area, it will have no effect when you want to change the Control Points. If you select within the Colour Bar area, it will only create temporary highlights, not control points.</p>
+        </Div>
+        <h4><a name="Edit"></a>Edit or Adjust a Colour Control Point</h4>
+        <p>If a control point is edited, this changes the amplitude and/or its colour.  You will also see the interpolated colours in the colour bar change to match the setting. </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The colour remains unchanged. </p>
+        </Div>
+        <ol>
+            <li>Add a new Colour Control Point, as described above.</li>
+            <li>You can move the Colour Control Point to a new location. To do this, select the white arrow (on the left edge of the colour control point) and drag the Colour Control Point up or down the colour bar, as required. As you do this you will see the amplitude written in the control, change its value to match its current position. A hover gesture appears if you move your mouse over the white arrow, which indicates you can move the arrow. To change the colour of a Control Point, refer to <MadCap:xref href="change_colour_control_point.htm#top" target="_popup">Change the Colour Control Point</MadCap:xref>.</li>
+        </ol>
+        <h4><a name="Add"></a>Add a Colour Highlight</h4>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The colour highlight cannot be resized once it has been added to the colour bar.</p>
+        </Div>
+        <p>Colour highlights are very useful to dynamically change the colour map to focus attention on a specific range of intensity levels. A Highlight is temporary and does not affect the Colour Map base itself. This allows the Highlight to be created easily and deleted. It is interactive, can be created quickly and you can drag it up and down to see its affects in the <MadCap:variable name="General.Fibre/Fiber" /> Shot and Waterfall displays. This allows you to interactively search for specific amplitudes within these displays and is a powerful way to search without having to change the colour map itself. To create a dynamic colour highlight:</p>
+        <ol>
+            <li>Move the mouse pointer directly over the colour map to the start to get the hover gesture. </li>
+            <li>Then select-and-drag the mouse to the end position, then release.  The highlight colour is displayed over the colour map.  It will grow and shrink in size as the mouse is dragged up and down the colour map.</li>
+            <li>Once a colour highlight has been added, it can be dragged anywhere in the colour map. Select-and-drag the colour highlight to the new location. </li>
+        </ol>
+        <p class="ListIndent">Each time you complete a drag you will see the appropriate amplitudes in the <MadCap:variable name="General.Fibre/Fiber" /> Graph and Waterfall displays reflect the movement. </p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Yellow is the default colour but the highlight colour can be chosen in the <MadCap:xref href="../1View Only Tasks/0concept_main_menu.htm#Preferen" target="_blank">Preferences...</MadCap:xref> dialog.</p>
+        </Div>
+        <h4><a name="Remove"></a>Remove a Colour Highlight</h4>
+        <p>To remove a colour highlight, select the <img src="../../Resources/Images/product_images/gui_images/fotech/common_gui/delete-16x16.png" alt="The delete button" /> button inside the upper right corner of the colour highlight.</p>
+        <h4><a name="Save"></a>Save a New Colour Map</h4>
+        <p>To save a new Colour Map, select the <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/database_save.png" alt="The database save icon" />  icon in the Colour Map dialog.  This will save the current Colour Map as the default, and can be retrieved from the database if required.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The temporary highlight is not considered part of the colour map and is not stored.</p>
+        </Div>
+        <h4><a name="Reload"></a>Reload a Saved Colour Map</h4>
+        <p>To restore a colour map that was saved to the database, select on the <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/database_refresh.png" />  icon in the Colour Map dialog. This will replace the current Colour Map with the one that was last saved in the database.</p>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The temporary highlight is not considered part of the colour map and is not removed when the Colour Map is reloaded.</p>
+        </Div>
+        <h4><a name="Restore"></a>Restore the Default Colour Map</h4>
+        <p>This feature is useful if you have edited the Colour Map and want to revert back to the original settings.</p>
+        <p>The default Colour Map is defined when the software is installed on a <MadCap:variable name="General.ProductName2" /> Controller.  To restore it, select the <img src="../../Resources/Images/product_images/gui_images/pub/famfamfam/database.png" /> icon in the Colour Map dialog.  The default Colour Map can then be edited, saved and restored as described in the above sections.</p>
+        <h4><a name="Configur"></a>Configure Alarm Detection Thresholds in Streams</h4>
+        <p>To determine an optimal Alarm Detection Threshold, use a colour bar with a colour discontinuity at a specific position in the colour map. Below are instructions to configure the Alarm Detection Thresholds in the displayed streams:</p>
+        <ol>
+            <li>Refer to <MadCap:xref href="#Add/Remo" target="_popup">Add/Remove a new Colour Control Point</MadCap:xref> for instructions to add a new Colour Control Point.</li>
+            <li>Configure the colour map to display from dark blue to a lighter blue on the bottom half.</li>
+            <li>Repeat this process to set the top half of the colour map to go from yellow to red.  Use a colour bar like this to make it easy to see when an Alarm Detection Value has crossed the mid-way point of the full range.</li>
+            <li>With the system live, observe the background noise level and the disturbance of interest. Adjust the <MadCap:variable name="General.Fibre/Fiber" /> Graph display scale so that the amplitude of the required disturbances are above the midway point in the colour bar. (They <b>MUST BE</b> in the yellow to red colour range).</li>
+            <li>When an Alarm Detection Threshold is displayed in yellow or red, an Event Indicator will be created. </li>
+        </ol>
+        <Div class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: Black;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;NOTE:&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">Do not worry too much if the odd noise value crosses into the yellow/red zone, as the indicator clean process will remove random Alarm Indicators that are not part of a valid disturbance.</p>
+        </Div>
+        <p>&#160;</p>
+    </body>
+</html>

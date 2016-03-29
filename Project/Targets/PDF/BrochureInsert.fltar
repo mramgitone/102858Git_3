@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="BrochureInsert"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterStylesheet="/Content/Resources/Stylesheets/brochure/brochurestyles.css"
+  MasterToc="/Project/TOCs/BrochureInsert.fltoc"
+  OutputFile="helios_brochure_insert"
+  OutputFolder="C:\madcap\Helios\Helios\Output\claire_wood\PDF Output\brochure"
+  GetLatestBeforeCompile="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

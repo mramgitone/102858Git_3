@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1486" MadCap:lastWidth="852">
+    <head>
+    </head>
+    <body>
+        <h3><a name="top"></a>Definition of the Portion of the Model</h3>
+        <ol>
+            <li>
+                <p>Select the <MadCap:xref href="../2Admin Tasks/opchan_optics_tab.htm" target="_blank">Optics Tab</MadCap:xref> and <MadCap:xref href="../2Admin Tasks/opchan_data_cap_tab.htm" target="_blank">Data Capture Tab</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>View the values for the <b>Pulse Width</b>, <b>Input Voltage</b>, and <b>EDFA1</b> and <b>EDFA3</b> settings.</p>
+            </li>
+            <li>In the <MadCap:xref href="../2Admin Tasks/opchan_noise_floor_tab.htm" target="_blank">Noise Floor Bounding Tab</MadCap:xref> select values for the calibration that are close to and bracketing the optics properties that are actually being used. </li>
+        </ol>
+        <p class="ExampleHead">Example</p>
+        <p class="Example">If you use an EDFA1 value of say 85mA, you canset the EDFA1 range in the calibration tab to use a min of 80, a max of 90, and a step size of 5. The pulse width and input voltage do not need to be bracketed but can be set to the expected values.</p>
+        <ol MadCap:continue="true">
+            <li>To do this, disconnect the system from the deployed <MadCap:variable name="General.fiber/fibre" /> and put in its place a spool of a similar length. It should be at least as long as the deployed <MadCap:variable name="General.fiber/fibre" />. </li>
+            <li>Find as quiet a location as possible to place that spool. The more noise there is while the data is collected, the less accurate the model will be.</li>
+            <li>Collect the training data. A full sweep of the system can take up to many hours or even days. Do enough to capture a portion for the model of interest. </li>
+            <li>In the <MadCap:xref href="../2Admin Tasks/opchan_noise_floor_tab.htm" target="_popup">Noise Floor Bounding Tab</MadCap:xref> select values for the calibration that are close to and bracketing the optics properties that are actually being used. See the example above.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Once done and everything is as quiet as you can get it, select the <b>Collect training data</b> button. This will run for some time - roughly 16s for each combination - and the message below will be displayed. </li>
+        </ol>
+        <p style="background-color: #ff1493;">Insert image here</p>
+        <ol MadCap:continue="true">
+            <li>Once the data has been collected, the model then needs to be trained. In the factory calibration this may be done many times, but for the field calibration you should just do it once and use the same parameters as was used to collect the training data. </li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>After the field calibration has been completed, the <b>Model trained &amp; ready</b> option in the <MadCap:xref href="../2Admin Tasks/opchan_noise_floor_tab.htm" target="_popup">Noise Floor Bounding Tab</MadCap:xref> displays a green light. At this point you need to switch the <MadCap:variable name="General.fiber/fibre" /> back to <MadCap:xref href="../2Admin Tasks/helios_controls.htm#LiveFibr" target="_blank">LiveFibre Mode</MadCap:xref> and view the <b>Noise Floor</b> display. </li>
+        </ol>
+        <Div class="Caution" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #ff3800;&quot; class=&quot;mcFormatColor&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot; class=&quot;mcFormatSize&quot;&gt;CAUTION!&#160;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;">
+            <p class="noteMiddle">The noise floor bounds can not be as close to the actual noise floor, as if they would have been if calibrated at the factory. Turn on the <b>Use exponential fit</b> option and give it a larger than normal <b>Bounds offset</b> reading. Even though the combination of these two settings can not guarantee an accurate reading, it is better than not having the bounding at all.</p>
+        </Div>
+        <p>&#160;</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../2Admin Tasks/optical_channel_properties.htm#top" />
+                <MadCap:relatedTopic src="../2Admin Tasks/opchan_noise_floor_tab.htm#Noise" />
+                <MadCap:relatedTopic src="noise_floor_calibration.htm#top" />
+            </MadCap:relatedTopics>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

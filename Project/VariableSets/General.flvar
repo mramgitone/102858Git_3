@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet
+  conditions="">
+  <Variable
+    Name="Year"
+    OriginalName="Year">2015</Variable>
+  <Variable
+    Name="UKTelephone"
+    Comment=""
+    Definition="Some text">Phone: +44 (0) 1252 560570</Variable>
+  <Variable
+    Name="CompanyName"
+    Comment=""
+    Definition="Some text">Fotech Solutions Limited</Variable>
+  <Variable
+    Name="StreetAddress"
+    Comment=""
+    Definition="Some text"
+    OriginalName="StreetAddress">Redfields Lane, Church Crookham, Hampshire, United Kingdom, GU52 0RD</Variable>
+  <Variable
+    Name="CityStateZip"
+    Comment=""
+    Definition="Some text">Titan House, Redfields Industrial Park</Variable>
+  <Variable
+    Name="ProductName"
+    Comment=""
+    OriginalName="ProductName">Helios Web Interface</Variable>
+  <Variable
+    Name="Tollfree"
+    Comment=""
+    OriginalName="Tollfree">Tollfree 1-234-567-890</Variable>
+  <Variable
+    Name="Fax"
+    Comment=""
+    OriginalName="Fax">Fax +44 1252 560570</Variable>
+  <Variable
+    Name="UserGuideTitle"
+    Comment="">Helios Web Interface User Guide</Variable>
+  <Variable
+    Name="VersionNumber"
+    OriginalName="VersionNumberDot">5.0</Variable>
+  <Variable
+    Name="Copyright"
+    Comment="">© Copyright Fotech Solutions Ltd., [2008-2015]. This content is proprietary information. All rights reserved.</Variable>
+  <Variable
+    Name="Website"
+    Comment="">http://www.fotechsolutions.com</Variable>
+  <Variable
+    Name="ProductNameShort"
+    Comment="">HWI</Variable>
+  <Variable
+    Name="ProductName2"
+    Comment="">Helios</Variable>
+  <Variable
+    Name="USAaddress1"
+    Comment="">1001 S. Dairy Ashford, Suite 100,</Variable>
+  <Variable
+    Name="USAaddress2"
+    Comment="">Houston</Variable>
+  <Variable
+    Name="USACityStateZip"
+    Comment="">Texas 77077, USA</Variable>
+  <Variable
+    Name="CANAddress1"
+    Comment="">215, 1300 8th St SW</Variable>
+  <Variable
+    Name="CANAddress2"
+    Comment="">Calgary</Variable>
+  <Variable
+    Name="CANCityStateZip"
+    Comment="">Canada, T2R 1B2</Variable>
+  <Variable
+    Name="USATelephone"
+    Comment="">Phone: +1-713-595-6604</Variable>
+  <Variable
+    Name="CANTelephone"
+    Comment="">Phone: +1-403-852-5696</Variable>
+  <Variable
+    Name="Email"
+    Comment="">info@fotechsolutions.com</Variable>
+  <Variable
+    Name="DocVersion"
+    Comment="">DRAFT - TBD</Variable>
+  <Variable
+    Name="Authors"
+    Comment="">Helios Software Development Team &amp; Technical Publications Team</Variable>
+  <Variable
+    Name="ProductName"
+    Comment="">LivePipe</Variable>
+  <Variable
+    Name="ProductName"
+    Comment="">Helios</Variable>
+  <Variable
+    Name="Welcome/Overview"
+    Comment="">Welcome to</Variable>
+  <Variable
+    Name="Welcome/Overview"
+    Comment="">Overview of</Variable>
+  <Variable
+    Name="optimise/optimize"
+    Comment="">optimise</Variable>
+  <Variable
+    Name="About/Preface"
+    Comment="">About this System</Variable>
+  <Variable
+    Name="About/Preface"
+    Comment="">Preface</Variable>
+  <Variable
+    Name="fiber/fibre"
+    Comment="">fibre</Variable>
+  <Variable
+    Name="fiber/fibre"
+    Comment="">fiber</Variable>
+  <Variable
+    Name="optimise/optimize"
+    Comment="">optimize</Variable>
+  <Variable
+    Name="Fibre/Fiber"
+    Comment="">Fibre</Variable>
+  <Variable
+    Name="Fibre/Fiber"
+    Comment="">Fiber</Variable>
+</CatapultVariableSet>

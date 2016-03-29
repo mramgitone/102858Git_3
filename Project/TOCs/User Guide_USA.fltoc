@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="Title"
+    Link="/Content/Print Only Topics/PDFGuideATitle.htm"
+    StartSection="false"
+    PageNumber="0"
+    PageType="title"
+    PageNumberReset="reset"
+    StartPageLayout="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    BreakType="chapter"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/MainBody.flpgl"
+    AutoEndOnLeftPage="disabled"
+    ComputedTocAction="Insert"></TocEntry>
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Print Only Topics/Copyright.htm"
+    StartPageLayout="true"
+    StartSection="false"
+    BreakType="pageLayout"
+    PageType="left"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/hwi_copyright.flpgl"
+    AutoEndOnLeftPage="disabled"
+    ReplaceMergeNode="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"></TocEntry>
+  <TocEntry
+    Title="PrintTOC"
+    Link="/Content/Print Only Topics/TOC.htm"
+    StartSection="true"
+    PageNumber="1"
+    PageNumberReset="reset"
+    PageType="right"
+    PageNumberFormat="lower-roman"
+    StartPageLayout="false"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/hwi_TOC.flpgl"
+    BreakType="chapter"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Preface"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    PageNumberReset="continue"
+    PageNumberFormat="lower-roman"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    Link="/Content/0Software/00Welcome/about_this_help.htm"
+    StartSection="true"
+    ReplaceMergeNode="false"
+    SectionNumberFormat="text"
+    ChapterNumberFormat="text"
+    ChapterNumber="0"></TocEntry>
+  <TocEntry
+    Title="What’s New"
+    Link="/Content/0Software/00Welcome/whats_new.htm"
+    MarkAsNew="true"
+    ChapterNumberReset="continue"
+    BreakType="chapter"
+    PageType="firstright"
+    PageNumberReset="reset"
+    StartSection="true"
+    PageNumber="{chapnum}-{page}"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    ChapterNumber="" />
+  <TocEntry
+    Title="Overview of Helios Web Interface"
+    BreakType="chapter"
+    PageType="firstright"
+    PageNumberReset="reset"
+    PageNumberFormat="decimal"
+    StartSection="true"
+    PageNumber="{chapnum}-{page}"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ChapterNumber="1"
+    ChapterNumberFormat="decimal"
+    ComputeToc="false"
+    SectionNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    Link="/Content/0Software/00Welcome/welcome.htm"
+    SectionNumberFormat="decimal"></TocEntry>
+  <TocEntry
+    Title="Getting Started"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    StartSection="true"
+    PageNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    Link="/Content/0Software/0Getting Started/get_started.htm"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="text"
+    SectionNumberFormat="decimal">
+    <TocEntry
+      Title="How to Log-in"
+      Link="/Content/0Software/0Getting Started/how_to_login.htm" />
+    <TocEntry
+      Title="Logout and Pack-up"
+      Link="/Content/0Software/0Getting Started/logout_and_packup.htm"
+      StartSection="false"
+      PageType="continueFLR" />
+    <TocEntry
+      Title="How to set-up the Helios Software"
+      Link="/Content/0Software/0Getting Started/setup_helios_software.htm" />
+    <TocEntry
+      Title="Operations Set-up"
+      Link="/Content/0Software/0Getting Started/operations_setup.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="View Only User Tasks"
+    BreakType="chapter"
+    PageType="firstright"
+    PageNumberReset="reset"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="decimal"
+    StartSection="true"
+    ChapterNumberReset="continue"
+    ChapterNumber=""
+    ChapterNumberFormat="decimal"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    Link="/Content/0Software/1View Only Tasks/0concept_view_only_functions.htm"
+    SectionNumber="1">
+    <TocEntry
+      Title="View Only Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Main Menu"
+        Link="/Content/0Software/1View Only Tasks/0concept_main_menu.htm"
+        StartSection="false"
+        BreakType="none"
+        PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/MainBody.flpgl" />
+      <TocEntry
+        Title="The Colour Map"
+        Link="/Content/0Software/1View Only Tasks/0concept_colour_map.htm" />
+      <TocEntry
+        Title="Table of Display Types"
+        Link="/Content/0Software/1View Only Tasks/0concept_display_types.htm" />
+      <TocEntry
+        Title="Table of Alarm Detection Types"
+        Link="/Content/0Software/1View Only Tasks/ref_alarm_detection_types.htm" />
+      <TocEntry
+        Title="Table of Display Types"
+        Link="/Content/0ZOtherStuff/ref_display_types.htm" />
+      <TocEntry
+        Title="Table of Alarm List Functions"
+        Link="/Content/0Software/1View Only Tasks/ref_functions_alarmlist.htm" />
+      <TocEntry
+        Title="Table of Sound Field Functionalities"
+        Link="/Content/0Software/1View Only Tasks/ref_sound_field_icon_description.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Administrator User Tasks"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    StartSection="true"
+    PageNumberReset="reset"
+    BreakType="chapter"
+    PageType="firstright"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    PageNumberFormat="text"
+    PageNumber="{chapnum}-{page}"
+    Link="/Content/0Software/2Admin Tasks/0concept_administrator_functions.htm">
+    <TocEntry
+      Title="View Only Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm" />
+    <TocEntry
+      Title="Main Menu"
+      Link="/Content/0Software/1View Only Tasks/0concept_main_menu.htm"
+      SectionNumberReset="reset"
+      SectionNumber=""
+      BreakType="none"
+      PageNumberReset="reset"
+      PageNumber=""
+      StartSection="true"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue">
+      <TocEntry
+        Title="Helios Controls"
+        Link="/Content/0Software/2Admin Tasks/helios_controls.htm" />
+      <TocEntry
+        Title="Data Logging &amp; Playback Controls"
+        Link="/Content/0Software/2Admin Tasks/fit_data_drive.htm" />
+      <TocEntry
+        Title="Description of Helios Playback Controls"
+        Link="/Content/0Software/2Admin Tasks/ref_helios_controls_playback_controls.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="The Admin Menu"
+      Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm"
+      StartSection="false">
+      <TocEntry
+        Title="Hardware Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Hardware">
+        <TocEntry
+          Title="Identity"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Identity"></TocEntry>
+        <TocEntry
+          Title="Optics Module"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Optics"></TocEntry>
+        <TocEntry
+          Title="MUX"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#MUX"></TocEntry>
+        <TocEntry
+          Title="Reporting"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Reportin">
+          <TocEntry
+            Title="XML Submission Type"
+            Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#XML"></TocEntry>
+          <TocEntry
+            Title="Binary Submission Type"
+            Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Binary" />
+        </TocEntry>
+        <TocEntry
+          Title="Watchdog"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Watchdog"></TocEntry>
+        <TocEntry
+          Title="Install"
+          Link="/Content/0Software/2Admin Tasks/hardware_properties.htm#Install" />
+      </TocEntry>
+      <TocEntry
+        Title="Optical Channel Properties"
+        Link="/Content/0Software/2Admin Tasks/optical_channel_properties.htm">
+        <TocEntry
+          Title="Insert a Splice"
+          Link="/Content/0Software/2Admin Tasks/insert_splice.htm" />
+        <TocEntry
+          Title="Optics Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_optics_tab.htm" />
+        <TocEntry
+          Title="Data Capture Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_data_cap_tab.htm" />
+        <TocEntry
+          Title="Processing Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_process_tab.htm" />
+        <TocEntry
+          Title="Signal Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_signal_tab.htm" />
+        <TocEntry
+          Title="Suppression Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_suppression_tab.htm" />
+        <TocEntry
+          Title="Alarm Report Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_alarm_tab.htm" />
+        <TocEntry
+          Title="Noise Floor Bounding Tab"
+          Link="/Content/0Software/2Admin Tasks/opchan_noise_floor_tab.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Communications Properties"
+        Link="/Content/0Software/2Admin Tasks/communications_properties.htm" />
+      <TocEntry
+        Title="Zone Properties"
+        Link="/Content/0Software/2Admin Tasks/zone_properties.htm">
+        <TocEntry
+          Title="Zoom in/out of a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_Zoom_in_out.htm" />
+        <TocEntry
+          Title="Change the Properties of a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_change_properties_of_zone.htm" />
+        <TocEntry
+          Title="Change Start and End Distances in a Zone"
+          Link="/Content/0Software/2Admin Tasks/zones_change_start_end_distances.htm" />
+        <TocEntry
+          Title="Graphical Definition of a Zone's Extent"
+          Link="/Content/0Software/2Admin Tasks/zones_define_graphically.htm" />
+        <TocEntry
+          Title="Log a Zone dynamically"
+          Link="/Content/0Software/2Admin Tasks/zones_log_zone_dynamically.htm" />
+        <TocEntry
+          Title="Termination of a Zone Logging Operation"
+          Link="/Content/0Software/2Admin Tasks/zones_termination_zone_logging_operation.htm" />
+        <TocEntry
+          Title="How to resolve an Overlap"
+          Link="/Content/0Software/2Admin Tasks/zones_how_to_resolve_overlap.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Annotations Properties"
+        Link="/Content/0Software/2Admin Tasks/annotations_properties.htm" />
+      <TocEntry
+        Title="Detection Statistics"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Detectio">
+        <TocEntry
+          Title="User Template Properties (Detection Statistics)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_detectionstats.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Indicators"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Indicato">
+        <TocEntry
+          Title="Factory Template Properties (Indicators)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_indicators.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Streams"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Streams.">
+        <TocEntry
+          Title="Factory Template Properties (Streams)"
+          Link="/Content/0Software/2Admin Tasks/0concept_user_temp_props_streams.htm" />
+        <TocEntry
+          Title="Change Inactive Stream Properties"
+          Link="/Content/0Software/2Admin Tasks/streams_change_inactive_stream_properties.htm" />
+        <TocEntry
+          Title="How to set an Alarm Detection Threshold for Streams"
+          Link="/Content/0Software/2Admin Tasks/streams_set_alarm_detection_threshold.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Alarm reports..."
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Alarm">
+        <TocEntry
+          Title="User Template Properties (Alarm Reports)"
+          Link="/Content/0Software/2Admin Tasks/0contsk_user_temp_props_alarm_reports.htm" />
+        <TocEntry
+          Title="Import Alarm Reports"
+          Link="/Content/0Software/2Admin Tasks/import_alarm_reports.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="View FDEL Properties"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#View">
+        <TocEntry
+          Title="FDEL Properties"
+          Link="/Content/0Software/2Admin Tasks/view_fdel_properties.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Toggle Dialogs on screen..."
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Toggle">
+        <TocEntry
+          Title="Toggle Dialog Properties"
+          Link="/Content/0Software/2Admin Tasks/toggle_dialogs.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Download Diagnostic Logs"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Download"></TocEntry>
+      <TocEntry
+        Title="Manage Users"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Manage">
+        <TocEntry
+          Title="Add a New User"
+          Link="/Content/0Software/2Admin Tasks/manage_users.htm#Add"></TocEntry>
+        <TocEntry
+          Title="Remove a User"
+          Link="/Content/0Software/2Admin Tasks/manage_users.htm#Remove" />
+      </TocEntry>
+      <TocEntry
+        Title="Manage Snapshots"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Manage2">
+        <TocEntry
+          Title="Manage Snapshots Properties"
+          Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm">
+          <TocEntry
+            Title="Download a Database Snapshot"
+            Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm#Download" />
+          <TocEntry
+            Title="Upload a Database Snapshot"
+            Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm#Upload" />
+          <TocEntry
+            Title="Import a Database Snapshot"
+            Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm#Import" />
+          <TocEntry
+            Title="Import an Element of a Database"
+            Link="/Content/0Software/2Admin Tasks/manage_snapshots.htm#Import2" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Save properties Snapshot"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Save">
+        <TocEntry
+          Title="Snapshot Properties"
+          Link="/Content/0Software/2Admin Tasks/save_properties_snapshot.htm" />
+        <TocEntry
+          Title="Import the Channel Properties"
+          Link="/Content/0Software/2Admin Tasks/snapshots_import_channel_properties.htm" />
+        <TocEntry
+          Title="Restore the Database"
+          Link="/Content/0Software/2Admin Tasks/snapshots_restore_database.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Restart Helios"
+        Link="/Content/0Software/2Admin Tasks/0concept_admin_menu.htm#Restart" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Factory User Tasks"
+    BreakType="chapter"
+    PageType="firstright"
+    StartSection="true"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="text"
+    SectionNumber="1"
+    Link="/Content/0Software/3Factory User Tasks/0concept_factory_user_functions.htm">
+    <TocEntry
+      Title="View Only Display"
+      Link="/Content/0Software/1View Only Tasks/0concept_view_only_display.htm" />
+    <TocEntry
+      Title="Industry Settings"
+      Link="/Content/0Software/3Factory User Tasks/0concept_industry_settings.htm">
+      <TocEntry
+        Title="How to Set-up the Helios Software"
+        Link="/Content/0Software/3Factory User Tasks/0concept_how_to_set_up_helios_software.htm" />
+      <TocEntry
+        Title="Check and Display the Fibre Shot"
+        Link="/Content/0Software/3Factory User Tasks/check_fibre_shot.htm">
+        <TocEntry
+          Title="Fibre Shot Velocities"
+          Link="/Content/0Software/3Factory User Tasks/check_fibre_shot_velocities.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Detection Statistics Factory Templates"
+      Link="/Content/0Software/3Factory User Tasks/detection_stats_factory_templates.htm" />
+    <TocEntry
+      Title="Calibration of the Noise Floor"
+      Link="/Content/0Software/3Factory User Tasks/noise_floor_calibration.htm">
+      <TocEntry
+        Title="Definition of the Portion of the Model"
+        Link="/Content/0Software/3Factory User Tasks/definition_portion_of_model.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Reset Factory Defaults"
+      Link="/Content/0Software/3Factory User Tasks/reset_factory_defaults.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Customer Support"
+    Link="/Content/0Software/4CustomerSupport/hwi_customer_support.htm"
+    BreakType="chapter"
+    PageType="firstright"
+    PageNumberReset="reset"
+    PageNumber="{chapnum}-{page}"
+    PageNumberFormat="decimal"
+    StartSection="true"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"></TocEntry>
+  <TocEntry
+    Title="Internal Only"
+    BreakType="chapter"
+    PageNumberReset="reset"
+    PageNumber="{chapnum}-{page}"
+    PageType="firstright"
+    StartSection="true"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    Link="/Content/0Software/5InternalOnly/io_introduction.htm">
+    <TocEntry
+      Title="Error List"
+      Link="/Content/0Software/5InternalOnly/ref_error_list.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Appendix"
+    Link="/Content/Print Only Topics/Appendix.htm"
+    StartPageLayout="false"
+    StartSection="true"
+    StartChapter="true"
+    BreakPageType="normal"
+    PageNumber="{chapnum}-{page}"
+    PageNumberReset="reset"
+    PageType="firstright"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    SectionNumberReset="reset"
+    SectionNumber="1"
+    VolumeNumberReset="same"
+    ChapterNumberReset="reset"
+    SectionNumberFormat="decimal"
+    ChapterNumber="1"
+    ChapterNumberFormat="upper-alpha"
+    PageNumberFormat="text"></TocEntry>
+  <TocEntry
+    Title="Glossary"
+    Link="/Content/Print Only Topics/Glossary.htm"
+    BreakType="chapter"
+    PageType="firstright"
+    StartSection="true"
+    PageNumberReset="reset"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/StartRightPage.flpgl"
+    PageNumber="{chapnum}-{page}"
+    SectionNumberReset="reset"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    ChapterNumberFormat="upper-alpha"
+    SectionNumber="1"
+    SectionNumberFormat="decimal"
+    PageNumberFormat="text" />
+  <TocEntry
+    Title="backpage"
+    Link="/Content/Print Only Topics/backpage.htm"
+    BreakType="pageLayout"
+    PageType="left"
+    StartSection="true"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageLayout="/Content/Resources/PageLayouts/USA_PageLayout/hwi_backpage.flpgl"
+    PageNumberReset="continue" />
+</CatapultToc>

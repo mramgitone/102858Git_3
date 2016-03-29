@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my review area for HTML5 output"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="P:\Technical Content Reviews\Help Outputs\Responsive Design - HTML 5"
+  Port="22"
+  ViewUrl=""
+  Type="file"
+  fileTags="StatusFileTags.7 Needs to be Tested in Online Output"
+  SftpServerValidation="validation-none"
+  SftpAuthentication="authentication-password"></CatapultDestination>
